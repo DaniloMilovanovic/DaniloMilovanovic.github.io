@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulador de Bosnia</title>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <center>
+    
+    <div id = "container">
+        
+        
+        <div id = "middle_container">
+            <div id = "header"></div>
+            <div id = "igra" oncontextmenu="return false;">
+                <div id = "gornja_leva_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div id = "gornja_desna_ivica"></div>
+                <div id = "vertikalna_duga_ivica"></div>
+                <div id = "br_mina1"></div>
+                <div id = "br_mina2"></div>
+                <div id = "br_mina3"></div>
+                <div id = "smajli" onmousedown="pritisnut_smajli()" onclick = "kliknut_smajli()" onmouseout = "normalan_smajli()"></div>
+                <div id = "brojac1"></div>
+                <div id = "brojac2"></div>
+                <div id = "brojac3"></div>
+                <div id = "vertikalna_duga_ivica"></div>
+                <div id = "levi_spoj"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div id = "desni_spoj"></div>
+
+                <div id = "dugmici">
+                    <div id = "0, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 0)" onmouseover = "prekriveno_polje(0, 0)" onmouseup = "kliknuto_polje(0, 0)" onmouseout = "normalno_polje(0, 0)"></div>
+                    <div id = "0, 1" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 1)" onmouseover = "prekriveno_polje(0, 1)" onmouseup = "kliknuto_polje(0, 1)" onmouseout = "normalno_polje(0, 1)"></div>
+                    <div id = "0, 2" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 2)" onmouseover = "prekriveno_polje(0, 2)" onmouseup = "kliknuto_polje(0, 2)" onmouseout = "normalno_polje(0, 2)"></div>
+                    <div id = "0, 3" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 3)" onmouseover = "prekriveno_polje(0, 3)" onmouseup = "kliknuto_polje(0, 3)" onmouseout = "normalno_polje(0, 3)"></div>
+                    <div id = "0, 4" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 4)" onmouseover = "prekriveno_polje(0, 4)" onmouseup = "kliknuto_polje(0, 4)" onmouseout = "normalno_polje(0, 4)"></div>
+                    <div id = "0, 5" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 5)" onmouseover = "prekriveno_polje(0, 5)" onmouseup = "kliknuto_polje(0, 5)" onmouseout = "normalno_polje(0, 5)"></div>
+                    <div id = "0, 6" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 6)" onmouseover = "prekriveno_polje(0, 6)" onmouseup = "kliknuto_polje(0, 6)" onmouseout = "normalno_polje(0, 6)"></div>
+                    <div id = "0, 7" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 7)" onmouseover = "prekriveno_polje(0, 7)" onmouseup = "kliknuto_polje(0, 7)" onmouseout = "normalno_polje(0, 7)"></div>
+                    <div id = "0, 8" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 8)" onmouseover = "prekriveno_polje(0, 8)" onmouseup = "kliknuto_polje(0, 8)" onmouseout = "normalno_polje(0, 8)"></div>
+                    <div id = "0, 9" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 9)" onmouseover = "prekriveno_polje(0, 9)" onmouseup = "kliknuto_polje(0, 9)" onmouseout = "normalno_polje(0, 9)"></div>
+                    <div id = "0, 10" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 10)" onmouseover = "prekriveno_polje(0, 10)" onmouseup = "kliknuto_polje(0, 10)" onmouseout = "normalno_polje(0, 10)"></div>
+                    <div id = "0, 11" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 11)" onmouseover = "prekriveno_polje(0, 11)" onmouseup = "kliknuto_polje(0, 11)" onmouseout = "normalno_polje(0, 11)"></div>
+                    <div id = "0, 12" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 12)" onmouseover = "prekriveno_polje(0, 12)" onmouseup = "kliknuto_polje(0, 12)" onmouseout = "normalno_polje(0, 12)"></div>
+                    <div id = "0, 13" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 13)" onmouseover = "prekriveno_polje(0, 13)" onmouseup = "kliknuto_polje(0, 13)" onmouseout = "normalno_polje(0, 13)"></div>
+                    <div id = "0, 14" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 14)" onmouseover = "prekriveno_polje(0, 14)" onmouseup = "kliknuto_polje(0, 14)" onmouseout = "normalno_polje(0, 14)"></div>
+                    <div id = "0, 15" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 15)" onmouseover = "prekriveno_polje(0, 15)" onmouseup = "kliknuto_polje(0, 15)" onmouseout = "normalno_polje(0, 15)"></div>
+                    <div id = "0, 16" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 16)" onmouseover = "prekriveno_polje(0, 16)" onmouseup = "kliknuto_polje(0, 16)" onmouseout = "normalno_polje(0, 16)"></div>
+                    <div id = "0, 17" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 17)" onmouseover = "prekriveno_polje(0, 17)" onmouseup = "kliknuto_polje(0, 17)" onmouseout = "normalno_polje(0, 17)"></div>
+                    <div id = "0, 18" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 18)" onmouseover = "prekriveno_polje(0, 18)" onmouseup = "kliknuto_polje(0, 18)" onmouseout = "normalno_polje(0, 18)"></div>
+                    <div id = "0, 19" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 19)" onmouseover = "prekriveno_polje(0, 19)" onmouseup = "kliknuto_polje(0, 19)" onmouseout = "normalno_polje(0, 19)"></div>
+                    <div id = "0, 20" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 20)" onmouseover = "prekriveno_polje(0, 20)" onmouseup = "kliknuto_polje(0, 20)" onmouseout = "normalno_polje(0, 20)"></div>
+                    <div id = "0, 21" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 21)" onmouseover = "prekriveno_polje(0, 21)" onmouseup = "kliknuto_polje(0, 21)" onmouseout = "normalno_polje(0, 21)"></div>
+                    <div id = "0, 22" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 22)" onmouseover = "prekriveno_polje(0, 22)" onmouseup = "kliknuto_polje(0, 22)" onmouseout = "normalno_polje(0, 22)"></div>
+                    <div id = "0, 23" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 23)" onmouseover = "prekriveno_polje(0, 23)" onmouseup = "kliknuto_polje(0, 23)" onmouseout = "normalno_polje(0, 23)"></div>
+                    <div id = "0, 24" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 24)" onmouseover = "prekriveno_polje(0, 24)" onmouseup = "kliknuto_polje(0, 24)" onmouseout = "normalno_polje(0, 24)"></div>
+                    <div id = "0, 25" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 25)" onmouseover = "prekriveno_polje(0, 25)" onmouseup = "kliknuto_polje(0, 25)" onmouseout = "normalno_polje(0, 25)"></div>
+                    <div id = "0, 26" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 26)" onmouseover = "prekriveno_polje(0, 26)" onmouseup = "kliknuto_polje(0, 26)" onmouseout = "normalno_polje(0, 26)"></div>
+                    <div id = "0, 27" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 27)" onmouseover = "prekriveno_polje(0, 27)" onmouseup = "kliknuto_polje(0, 27)" onmouseout = "normalno_polje(0, 27)"></div>
+                    <div id = "0, 28" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 28)" onmouseover = "prekriveno_polje(0, 28)" onmouseup = "kliknuto_polje(0, 28)" onmouseout = "normalno_polje(0, 28)"></div>
+                    <div id = "0, 29" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 29)" onmouseover = "prekriveno_polje(0, 29)" onmouseup = "kliknuto_polje(0, 29)" onmouseout = "normalno_polje(0, 29)"></div>
+                    <div id = "0, 30" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 30)" onmouseover = "prekriveno_polje(0, 30)" onmouseup = "kliknuto_polje(0, 30)" onmouseout = "normalno_polje(0, 30)"></div>
+                    <div id = "0, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(0, 31)" onmouseover = "prekriveno_polje(0, 31)" onmouseup = "kliknuto_polje(0, 31)" onmouseout = "normalno_polje(0, 31)"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "1, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(1, 0)" onmouseover = "prekriveno_polje(1, 0)" onmouseup = "kliknuto_polje(1, 0)" onmouseout = "normalno_polje(1, 0)"></div>
+                    <div id = "1, 1" class = "polje" onmousedown = "pritisnuto_polje(1, 1)" onmouseover = "prekriveno_polje(1, 1)" onmouseup = "kliknuto_polje(1, 1)" onmouseout = "normalno_polje(1, 1)"></div>
+                    <div id = "1, 2" class = "polje" onmousedown = "pritisnuto_polje(1, 2)" onmouseover = "prekriveno_polje(1, 2)" onmouseup = "kliknuto_polje(1, 2)" onmouseout = "normalno_polje(1, 2)"></div>
+                    <div id = "1, 3" class = "polje" onmousedown = "pritisnuto_polje(1, 3)" onmouseover = "prekriveno_polje(1, 3)" onmouseup = "kliknuto_polje(1, 3)" onmouseout = "normalno_polje(1, 3)"></div>
+                    <div id = "1, 4" class = "polje" onmousedown = "pritisnuto_polje(1, 4)" onmouseover = "prekriveno_polje(1, 4)" onmouseup = "kliknuto_polje(1, 4)" onmouseout = "normalno_polje(1, 4)"></div>
+                    <div id = "1, 5" class = "polje" onmousedown = "pritisnuto_polje(1, 5)" onmouseover = "prekriveno_polje(1, 5)" onmouseup = "kliknuto_polje(1, 5)" onmouseout = "normalno_polje(1, 5)"></div>
+                    <div id = "1, 6" class = "polje" onmousedown = "pritisnuto_polje(1, 6)" onmouseover = "prekriveno_polje(1, 6)" onmouseup = "kliknuto_polje(1, 6)" onmouseout = "normalno_polje(1, 6)"></div>
+                    <div id = "1, 7" class = "polje" onmousedown = "pritisnuto_polje(1, 7)" onmouseover = "prekriveno_polje(1, 7)" onmouseup = "kliknuto_polje(1, 7)" onmouseout = "normalno_polje(1, 7)"></div>
+                    <div id = "1, 8" class = "polje" onmousedown = "pritisnuto_polje(1, 8)" onmouseover = "prekriveno_polje(1, 8)" onmouseup = "kliknuto_polje(1, 8)" onmouseout = "normalno_polje(1, 8)"></div>
+                    <div id = "1, 9" class = "polje" onmousedown = "pritisnuto_polje(1, 9)" onmouseover = "prekriveno_polje(1, 9)" onmouseup = "kliknuto_polje(1, 9)" onmouseout = "normalno_polje(1, 9)"></div>
+                    <div id = "1, 10" class = "polje" onmousedown = "pritisnuto_polje(1, 10)" onmouseover = "prekriveno_polje(1, 10)" onmouseup = "kliknuto_polje(1, 10)" onmouseout = "normalno_polje(1, 10)"></div>
+                    <div id = "1, 11" class = "polje" onmousedown = "pritisnuto_polje(1, 11)" onmouseover = "prekriveno_polje(1, 11)" onmouseup = "kliknuto_polje(1, 11)" onmouseout = "normalno_polje(1, 11)"></div>
+                    <div id = "1, 12" class = "polje" onmousedown = "pritisnuto_polje(1, 12)" onmouseover = "prekriveno_polje(1, 12)" onmouseup = "kliknuto_polje(1, 12)" onmouseout = "normalno_polje(1, 12)"></div>
+                    <div id = "1, 13" class = "polje" onmousedown = "pritisnuto_polje(1, 13)" onmouseover = "prekriveno_polje(1, 13)" onmouseup = "kliknuto_polje(1, 13)" onmouseout = "normalno_polje(1, 13)"></div>
+                    <div id = "1, 14" class = "polje" onmousedown = "pritisnuto_polje(1, 14)" onmouseover = "prekriveno_polje(1, 14)" onmouseup = "kliknuto_polje(1, 14)" onmouseout = "normalno_polje(1, 14)"></div>
+                    <div id = "1, 15" class = "polje" onmousedown = "pritisnuto_polje(1, 15)" onmouseover = "prekriveno_polje(1, 15)" onmouseup = "kliknuto_polje(1, 15)" onmouseout = "normalno_polje(1, 15)"></div>
+                    <div id = "1, 16" class = "polje" onmousedown = "pritisnuto_polje(1, 16)" onmouseover = "prekriveno_polje(1, 16)" onmouseup = "kliknuto_polje(1, 16)" onmouseout = "normalno_polje(1, 16)"></div>
+                    <div id = "1, 17" class = "polje" onmousedown = "pritisnuto_polje(1, 17)" onmouseover = "prekriveno_polje(1, 17)" onmouseup = "kliknuto_polje(1, 17)" onmouseout = "normalno_polje(1, 17)"></div>
+                    <div id = "1, 18" class = "polje" onmousedown = "pritisnuto_polje(1, 18)" onmouseover = "prekriveno_polje(1, 18)" onmouseup = "kliknuto_polje(1, 18)" onmouseout = "normalno_polje(1, 18)"></div>
+                    <div id = "1, 19" class = "polje" onmousedown = "pritisnuto_polje(1, 19)" onmouseover = "prekriveno_polje(1, 19)" onmouseup = "kliknuto_polje(1, 19)" onmouseout = "normalno_polje(1, 19)"></div>
+                    <div id = "1, 20" class = "polje" onmousedown = "pritisnuto_polje(1, 20)" onmouseover = "prekriveno_polje(1, 20)" onmouseup = "kliknuto_polje(1, 20)" onmouseout = "normalno_polje(1, 20)"></div>
+                    <div id = "1, 21" class = "polje" onmousedown = "pritisnuto_polje(1, 21)" onmouseover = "prekriveno_polje(1, 21)" onmouseup = "kliknuto_polje(1, 21)" onmouseout = "normalno_polje(1, 21)"></div>
+                    <div id = "1, 22" class = "polje" onmousedown = "pritisnuto_polje(1, 22)" onmouseover = "prekriveno_polje(1, 22)" onmouseup = "kliknuto_polje(1, 22)" onmouseout = "normalno_polje(1, 22)"></div>
+                    <div id = "1, 23" class = "polje" onmousedown = "pritisnuto_polje(1, 23)" onmouseover = "prekriveno_polje(1, 23)" onmouseup = "kliknuto_polje(1, 23)" onmouseout = "normalno_polje(1, 23)"></div>
+                    <div id = "1, 24" class = "polje" onmousedown = "pritisnuto_polje(1, 24)" onmouseover = "prekriveno_polje(1, 24)" onmouseup = "kliknuto_polje(1, 24)" onmouseout = "normalno_polje(1, 24)"></div>
+                    <div id = "1, 25" class = "polje" onmousedown = "pritisnuto_polje(1, 25)" onmouseover = "prekriveno_polje(1, 25)" onmouseup = "kliknuto_polje(1, 25)" onmouseout = "normalno_polje(1, 25)"></div>
+                    <div id = "1, 26" class = "polje" onmousedown = "pritisnuto_polje(1, 26)" onmouseover = "prekriveno_polje(1, 26)" onmouseup = "kliknuto_polje(1, 26)" onmouseout = "normalno_polje(1, 26)"></div>
+                    <div id = "1, 27" class = "polje" onmousedown = "pritisnuto_polje(1, 27)" onmouseover = "prekriveno_polje(1, 27)" onmouseup = "kliknuto_polje(1, 27)" onmouseout = "normalno_polje(1, 27)"></div>
+                    <div id = "1, 28" class = "polje" onmousedown = "pritisnuto_polje(1, 28)" onmouseover = "prekriveno_polje(1, 28)" onmouseup = "kliknuto_polje(1, 28)" onmouseout = "normalno_polje(1, 28)"></div>
+                    <div id = "1, 29" class = "polje" onmousedown = "pritisnuto_polje(1, 29)" onmouseover = "prekriveno_polje(1, 29)" onmouseup = "kliknuto_polje(1, 29)" onmouseout = "normalno_polje(1, 29)"></div>
+                    <div id = "1, 30" class = "polje" onmousedown = "pritisnuto_polje(1, 30)" onmouseover = "prekriveno_polje(1, 30)" onmouseup = "kliknuto_polje(1, 30)" onmouseout = "normalno_polje(1, 30)"></div>
+                    <div id = "1, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(1, 31)" onmouseover = "prekriveno_polje(1, 31)" onmouseup = "kliknuto_polje(1, 31)" onmouseout = "normalno_polje(1, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "2, 0" class ="sakriveno_polje" onmousedown = "pritisnuto_polje(2, 0)" onmouseover = "prekriveno_polje(2, 0)" onmouseup = "kliknuto_polje(2, 0)" onmouseout = "normalno_polje(2, 0)"></div>
+                    <div id = "2, 1" class = "polje" onmousedown = "pritisnuto_polje(2, 1)" onmouseover = "prekriveno_polje(2, 1)" onmouseup = "kliknuto_polje(2, 1)" onmouseout = "normalno_polje(2, 1)"></div>
+                    <div id = "2, 2" class = "polje" onmousedown = "pritisnuto_polje(2, 2)" onmouseover = "prekriveno_polje(2, 2)" onmouseup = "kliknuto_polje(2, 2)" onmouseout = "normalno_polje(2, 2)"></div>
+                    <div id = "2, 3" class = "polje" onmousedown = "pritisnuto_polje(2, 3)" onmouseover = "prekriveno_polje(2, 3)" onmouseup = "kliknuto_polje(2, 3)" onmouseout = "normalno_polje(2, 3)"></div>
+                    <div id = "2, 4" class = "polje" onmousedown = "pritisnuto_polje(2, 4)" onmouseover = "prekriveno_polje(2, 4)" onmouseup = "kliknuto_polje(2, 4)" onmouseout = "normalno_polje(2, 4)"></div>
+                    <div id = "2, 5" class = "polje" onmousedown = "pritisnuto_polje(2, 5)" onmouseover = "prekriveno_polje(2, 5)" onmouseup = "kliknuto_polje(2, 5)" onmouseout = "normalno_polje(2, 5)"></div>
+                    <div id = "2, 6" class = "polje" onmousedown = "pritisnuto_polje(2, 6)" onmouseover = "prekriveno_polje(2, 6)" onmouseup = "kliknuto_polje(2, 6)" onmouseout = "normalno_polje(2, 6)"></div>
+                    <div id = "2, 7" class = "polje" onmousedown = "pritisnuto_polje(2, 7)" onmouseover = "prekriveno_polje(2, 7)" onmouseup = "kliknuto_polje(2, 7)" onmouseout = "normalno_polje(2, 7)"></div>
+                    <div id = "2, 8" class = "polje" onmousedown = "pritisnuto_polje(2, 8)" onmouseover = "prekriveno_polje(2, 8)" onmouseup = "kliknuto_polje(2, 8)" onmouseout = "normalno_polje(2, 8)"></div>
+                    <div id = "2, 9" class = "polje" onmousedown = "pritisnuto_polje(2, 9)" onmouseover = "prekriveno_polje(2, 9)" onmouseup = "kliknuto_polje(2, 9)" onmouseout = "normalno_polje(2, 9)"></div>
+                    <div id = "2, 10" class = "polje" onmousedown = "pritisnuto_polje(2, 10)" onmouseover = "prekriveno_polje(2, 10)" onmouseup = "kliknuto_polje(2, 10)" onmouseout = "normalno_polje(2, 10)"></div>
+                    <div id = "2, 11" class = "polje" onmousedown = "pritisnuto_polje(2, 11)" onmouseover = "prekriveno_polje(2, 11)" onmouseup = "kliknuto_polje(2, 11)" onmouseout = "normalno_polje(2, 11)"></div>
+                    <div id = "2, 12" class = "polje" onmousedown = "pritisnuto_polje(2, 12)" onmouseover = "prekriveno_polje(2, 12)" onmouseup = "kliknuto_polje(2, 12)" onmouseout = "normalno_polje(2, 12)"></div>
+                    <div id = "2, 13" class = "polje" onmousedown = "pritisnuto_polje(2, 13)" onmouseover = "prekriveno_polje(2, 13)" onmouseup = "kliknuto_polje(2, 13)" onmouseout = "normalno_polje(2, 13)"></div>
+                    <div id = "2, 14" class = "polje" onmousedown = "pritisnuto_polje(2, 14)" onmouseover = "prekriveno_polje(2, 14)" onmouseup = "kliknuto_polje(2, 14)" onmouseout = "normalno_polje(2, 14)"></div>
+                    <div id = "2, 15" class = "polje" onmousedown = "pritisnuto_polje(2, 15)" onmouseover = "prekriveno_polje(2, 15)" onmouseup = "kliknuto_polje(2, 15)" onmouseout = "normalno_polje(2, 15)"></div>
+                    <div id = "2, 16" class = "polje" onmousedown = "pritisnuto_polje(2, 16)" onmouseover = "prekriveno_polje(2, 16)" onmouseup = "kliknuto_polje(2, 16)" onmouseout = "normalno_polje(2, 16)"></div>
+                    <div id = "2, 17" class = "polje" onmousedown = "pritisnuto_polje(2, 17)" onmouseover = "prekriveno_polje(2, 17)" onmouseup = "kliknuto_polje(2, 17)" onmouseout = "normalno_polje(2, 17)"></div>
+                    <div id = "2, 18" class = "polje" onmousedown = "pritisnuto_polje(2, 18)" onmouseover = "prekriveno_polje(2, 18)" onmouseup = "kliknuto_polje(2, 18)" onmouseout = "normalno_polje(2, 18)"></div>
+                    <div id = "2, 19" class = "polje" onmousedown = "pritisnuto_polje(2, 19)" onmouseover = "prekriveno_polje(2, 19)" onmouseup = "kliknuto_polje(2, 19)" onmouseout = "normalno_polje(2, 19)"></div>
+                    <div id = "2, 20" class = "polje" onmousedown = "pritisnuto_polje(2, 20)" onmouseover = "prekriveno_polje(2, 20)" onmouseup = "kliknuto_polje(2, 20)" onmouseout = "normalno_polje(2, 20)"></div>
+                    <div id = "2, 21" class = "polje" onmousedown = "pritisnuto_polje(2, 21)" onmouseover = "prekriveno_polje(2, 21)" onmouseup = "kliknuto_polje(2, 21)" onmouseout = "normalno_polje(2, 21)"></div>
+                    <div id = "2, 22" class = "polje" onmousedown = "pritisnuto_polje(2, 22)" onmouseover = "prekriveno_polje(2, 22)" onmouseup = "kliknuto_polje(2, 22)" onmouseout = "normalno_polje(2, 22)"></div>
+                    <div id = "2, 23" class = "polje" onmousedown = "pritisnuto_polje(2, 23)" onmouseover = "prekriveno_polje(2, 23)" onmouseup = "kliknuto_polje(2, 23)" onmouseout = "normalno_polje(2, 23)"></div>
+                    <div id = "2, 24" class = "polje" onmousedown = "pritisnuto_polje(2, 24)" onmouseover = "prekriveno_polje(2, 24)" onmouseup = "kliknuto_polje(2, 24)" onmouseout = "normalno_polje(2, 24)"></div>
+                    <div id = "2, 25" class = "polje" onmousedown = "pritisnuto_polje(2, 25)" onmouseover = "prekriveno_polje(2, 25)" onmouseup = "kliknuto_polje(2, 25)" onmouseout = "normalno_polje(2, 25)"></div>
+                    <div id = "2, 26" class = "polje" onmousedown = "pritisnuto_polje(2, 26)" onmouseover = "prekriveno_polje(2, 26)" onmouseup = "kliknuto_polje(2, 26)" onmouseout = "normalno_polje(2, 26)"></div>
+                    <div id = "2, 27" class = "polje" onmousedown = "pritisnuto_polje(2, 27)" onmouseover = "prekriveno_polje(2, 27)" onmouseup = "kliknuto_polje(2, 27)" onmouseout = "normalno_polje(2, 27)"></div>
+                    <div id = "2, 28" class = "polje" onmousedown = "pritisnuto_polje(2, 28)" onmouseover = "prekriveno_polje(2, 28)" onmouseup = "kliknuto_polje(2, 28)" onmouseout = "normalno_polje(2, 28)"></div>
+                    <div id = "2, 29" class = "polje" onmousedown = "pritisnuto_polje(2, 29)" onmouseover = "prekriveno_polje(2, 29)" onmouseup = "kliknuto_polje(2, 29)" onmouseout = "normalno_polje(2, 29)"></div>
+                    <div id = "2, 30" class = "polje" onmousedown = "pritisnuto_polje(2, 30)" onmouseover = "prekriveno_polje(2, 30)" onmouseup = "kliknuto_polje(2, 30)" onmouseout = "normalno_polje(2, 30)"></div>
+                    <div id = "2, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(2, 31)" onmouseover = "prekriveno_polje(2, 31)" onmouseup = "kliknuto_polje(2, 31)" onmouseout = "normalno_polje(2, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "3, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(3, 0)" onmouseover = "prekriveno_polje(3, 0)" onmouseup = "kliknuto_polje(3, 0)" onmouseout = "normalno_polje(3, 0)"></div>
+                    <div id = "3, 1" class = "polje" onmousedown = "pritisnuto_polje(3, 1)" onmouseover = "prekriveno_polje(3, 1)" onmouseup = "kliknuto_polje(3, 1)" onmouseout = "normalno_polje(3, 1)"></div>
+                    <div id = "3, 2" class = "polje" onmousedown = "pritisnuto_polje(3, 2)" onmouseover = "prekriveno_polje(3, 2)" onmouseup = "kliknuto_polje(3, 2)" onmouseout = "normalno_polje(3, 2)"></div>
+                    <div id = "3, 3" class = "polje" onmousedown = "pritisnuto_polje(3, 3)" onmouseover = "prekriveno_polje(3, 3)" onmouseup = "kliknuto_polje(3, 3)" onmouseout = "normalno_polje(3, 3)"></div>
+                    <div id = "3, 4" class = "polje" onmousedown = "pritisnuto_polje(3, 4)" onmouseover = "prekriveno_polje(3, 4)" onmouseup = "kliknuto_polje(3, 4)" onmouseout = "normalno_polje(3, 4)"></div>
+                    <div id = "3, 5" class = "polje" onmousedown = "pritisnuto_polje(3, 5)" onmouseover = "prekriveno_polje(3, 5)" onmouseup = "kliknuto_polje(3, 5)" onmouseout = "normalno_polje(3, 5)"></div>
+                    <div id = "3, 6" class = "polje" onmousedown = "pritisnuto_polje(3, 6)" onmouseover = "prekriveno_polje(3, 6)" onmouseup = "kliknuto_polje(3, 6)" onmouseout = "normalno_polje(3, 6)"></div>
+                    <div id = "3, 7" class = "polje" onmousedown = "pritisnuto_polje(3, 7)" onmouseover = "prekriveno_polje(3, 7)" onmouseup = "kliknuto_polje(3, 7)" onmouseout = "normalno_polje(3, 7)"></div>
+                    <div id = "3, 8" class = "polje" onmousedown = "pritisnuto_polje(3, 8)" onmouseover = "prekriveno_polje(3, 8)" onmouseup = "kliknuto_polje(3, 8)" onmouseout = "normalno_polje(3, 8)"></div>
+                    <div id = "3, 9" class = "polje" onmousedown = "pritisnuto_polje(3, 9)" onmouseover = "prekriveno_polje(3, 9)" onmouseup = "kliknuto_polje(3, 9)" onmouseout = "normalno_polje(3, 9)"></div>
+                    <div id = "3, 10" class = "polje" onmousedown = "pritisnuto_polje(3, 10)" onmouseover = "prekriveno_polje(3, 10)" onmouseup = "kliknuto_polje(3, 10)" onmouseout = "normalno_polje(3, 10)"></div>
+                    <div id = "3, 11" class = "polje" onmousedown = "pritisnuto_polje(3, 11)" onmouseover = "prekriveno_polje(3, 11)" onmouseup = "kliknuto_polje(3, 11)" onmouseout = "normalno_polje(3, 11)"></div>
+                    <div id = "3, 12" class = "polje" onmousedown = "pritisnuto_polje(3, 12)" onmouseover = "prekriveno_polje(3, 12)" onmouseup = "kliknuto_polje(3, 12)" onmouseout = "normalno_polje(3, 12)"></div>
+                    <div id = "3, 13" class = "polje" onmousedown = "pritisnuto_polje(3, 13)" onmouseover = "prekriveno_polje(3, 13)" onmouseup = "kliknuto_polje(3, 13)" onmouseout = "normalno_polje(3, 13)"></div>
+                    <div id = "3, 14" class = "polje" onmousedown = "pritisnuto_polje(3, 14)" onmouseover = "prekriveno_polje(3, 14)" onmouseup = "kliknuto_polje(3, 14)" onmouseout = "normalno_polje(3, 14)"></div>
+                    <div id = "3, 15" class = "polje" onmousedown = "pritisnuto_polje(3, 15)" onmouseover = "prekriveno_polje(3, 15)" onmouseup = "kliknuto_polje(3, 15)" onmouseout = "normalno_polje(3, 15)"></div>
+                    <div id = "3, 16" class = "polje" onmousedown = "pritisnuto_polje(3, 16)" onmouseover = "prekriveno_polje(3, 16)" onmouseup = "kliknuto_polje(3, 16)" onmouseout = "normalno_polje(3, 16)"></div>
+                    <div id = "3, 17" class = "polje" onmousedown = "pritisnuto_polje(3, 17)" onmouseover = "prekriveno_polje(3, 17)" onmouseup = "kliknuto_polje(3, 17)" onmouseout = "normalno_polje(3, 17)"></div>
+                    <div id = "3, 18" class = "polje" onmousedown = "pritisnuto_polje(3, 18)" onmouseover = "prekriveno_polje(3, 18)" onmouseup = "kliknuto_polje(3, 18)" onmouseout = "normalno_polje(3, 18)"></div>
+                    <div id = "3, 19" class = "polje" onmousedown = "pritisnuto_polje(3, 19)" onmouseover = "prekriveno_polje(3, 19)" onmouseup = "kliknuto_polje(3, 19)" onmouseout = "normalno_polje(3, 19)"></div>
+                    <div id = "3, 20" class = "polje" onmousedown = "pritisnuto_polje(3, 20)" onmouseover = "prekriveno_polje(3, 20)" onmouseup = "kliknuto_polje(3, 20)" onmouseout = "normalno_polje(3, 20)"></div>
+                    <div id = "3, 21" class = "polje" onmousedown = "pritisnuto_polje(3, 21)" onmouseover = "prekriveno_polje(3, 21)" onmouseup = "kliknuto_polje(3, 21)" onmouseout = "normalno_polje(3, 21)"></div>
+                    <div id = "3, 22" class = "polje" onmousedown = "pritisnuto_polje(3, 22)" onmouseover = "prekriveno_polje(3, 22)" onmouseup = "kliknuto_polje(3, 22)" onmouseout = "normalno_polje(3, 22)"></div>
+                    <div id = "3, 23" class = "polje" onmousedown = "pritisnuto_polje(3, 23)" onmouseover = "prekriveno_polje(3, 23)" onmouseup = "kliknuto_polje(3, 23)" onmouseout = "normalno_polje(3, 23)"></div>
+                    <div id = "3, 24" class = "polje" onmousedown = "pritisnuto_polje(3, 24)" onmouseover = "prekriveno_polje(3, 24)" onmouseup = "kliknuto_polje(3, 24)" onmouseout = "normalno_polje(3, 24)"></div>
+                    <div id = "3, 25" class = "polje" onmousedown = "pritisnuto_polje(3, 25)" onmouseover = "prekriveno_polje(3, 25)" onmouseup = "kliknuto_polje(3, 25)" onmouseout = "normalno_polje(3, 25)"></div>
+                    <div id = "3, 26" class = "polje" onmousedown = "pritisnuto_polje(3, 26)" onmouseover = "prekriveno_polje(3, 26)" onmouseup = "kliknuto_polje(3, 26)" onmouseout = "normalno_polje(3, 26)"></div>
+                    <div id = "3, 27" class = "polje" onmousedown = "pritisnuto_polje(3, 27)" onmouseover = "prekriveno_polje(3, 27)" onmouseup = "kliknuto_polje(3, 27)" onmouseout = "normalno_polje(3, 27)"></div>
+                    <div id = "3, 28" class = "polje" onmousedown = "pritisnuto_polje(3, 28)" onmouseover = "prekriveno_polje(3, 28)" onmouseup = "kliknuto_polje(3, 28)" onmouseout = "normalno_polje(3, 28)"></div>
+                    <div id = "3, 29" class = "polje" onmousedown = "pritisnuto_polje(3, 29)" onmouseover = "prekriveno_polje(3, 29)" onmouseup = "kliknuto_polje(3, 29)" onmouseout = "normalno_polje(3, 29)"></div>
+                    <div id = "3, 30" class = "polje" onmousedown = "pritisnuto_polje(3, 30)" onmouseover = "prekriveno_polje(3, 30)" onmouseup = "kliknuto_polje(3, 30)" onmouseout = "normalno_polje(3, 30)"></div>
+                    <div id = "3, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(3, 31)" onmouseover = "prekriveno_polje(3, 31)" onmouseup = "kliknuto_polje(3, 31)" onmouseout = "normalno_polje(3, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "4, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(4, 0)" onmouseover = "prekriveno_polje(4, 0)" onmouseup = "kliknuto_polje(4, 0)" onmouseout = "normalno_polje(4, 0)"></div>
+                    <div id = "4, 1" class = "polje" onmousedown = "pritisnuto_polje(4, 1)" onmouseover = "prekriveno_polje(4, 1)" onmouseup = "kliknuto_polje(4, 1)" onmouseout = "normalno_polje(4, 1)"></div>
+                    <div id = "4, 2" class = "polje" onmousedown = "pritisnuto_polje(4, 2)" onmouseover = "prekriveno_polje(4, 2)" onmouseup = "kliknuto_polje(4, 2)" onmouseout = "normalno_polje(4, 2)"></div>
+                    <div id = "4, 3" class = "polje" onmousedown = "pritisnuto_polje(4, 3)" onmouseover = "prekriveno_polje(4, 3)" onmouseup = "kliknuto_polje(4, 3)" onmouseout = "normalno_polje(4, 3)"></div>
+                    <div id = "4, 4" class = "polje" onmousedown = "pritisnuto_polje(4, 4)" onmouseover = "prekriveno_polje(4, 4)" onmouseup = "kliknuto_polje(4, 4)" onmouseout = "normalno_polje(4, 4)"></div>
+                    <div id = "4, 5" class = "polje" onmousedown = "pritisnuto_polje(4, 5)" onmouseover = "prekriveno_polje(4, 5)" onmouseup = "kliknuto_polje(4, 5)" onmouseout = "normalno_polje(4, 5)"></div>
+                    <div id = "4, 6" class = "polje" onmousedown = "pritisnuto_polje(4, 6)" onmouseover = "prekriveno_polje(4, 6)" onmouseup = "kliknuto_polje(4, 6)" onmouseout = "normalno_polje(4, 6)"></div>
+                    <div id = "4, 7" class = "polje" onmousedown = "pritisnuto_polje(4, 7)" onmouseover = "prekriveno_polje(4, 7)" onmouseup = "kliknuto_polje(4, 7)" onmouseout = "normalno_polje(4, 7)"></div>
+                    <div id = "4, 8" class = "polje" onmousedown = "pritisnuto_polje(4, 8)" onmouseover = "prekriveno_polje(4, 8)" onmouseup = "kliknuto_polje(4, 8)" onmouseout = "normalno_polje(4, 8)"></div>
+                    <div id = "4, 9" class = "polje" onmousedown = "pritisnuto_polje(4, 9)" onmouseover = "prekriveno_polje(4, 9)" onmouseup = "kliknuto_polje(4, 9)" onmouseout = "normalno_polje(4, 9)"></div>
+                    <div id = "4, 10" class = "polje" onmousedown = "pritisnuto_polje(4, 10)" onmouseover = "prekriveno_polje(4, 10)" onmouseup = "kliknuto_polje(4, 10)" onmouseout = "normalno_polje(4, 10)"></div>
+                    <div id = "4, 11" class = "polje" onmousedown = "pritisnuto_polje(4, 11)" onmouseover = "prekriveno_polje(4, 11)" onmouseup = "kliknuto_polje(4, 11)" onmouseout = "normalno_polje(4, 11)"></div>
+                    <div id = "4, 12" class = "polje" onmousedown = "pritisnuto_polje(4, 12)" onmouseover = "prekriveno_polje(4, 12)" onmouseup = "kliknuto_polje(4, 12)" onmouseout = "normalno_polje(4, 12)"></div>
+                    <div id = "4, 13" class = "polje" onmousedown = "pritisnuto_polje(4, 13)" onmouseover = "prekriveno_polje(4, 13)" onmouseup = "kliknuto_polje(4, 13)" onmouseout = "normalno_polje(4, 13)"></div>
+                    <div id = "4, 14" class = "polje" onmousedown = "pritisnuto_polje(4, 14)" onmouseover = "prekriveno_polje(4, 14)" onmouseup = "kliknuto_polje(4, 14)" onmouseout = "normalno_polje(4, 14)"></div>
+                    <div id = "4, 15" class = "polje" onmousedown = "pritisnuto_polje(4, 15)" onmouseover = "prekriveno_polje(4, 15)" onmouseup = "kliknuto_polje(4, 15)" onmouseout = "normalno_polje(4, 15)"></div>
+                    <div id = "4, 16" class = "polje" onmousedown = "pritisnuto_polje(4, 16)" onmouseover = "prekriveno_polje(4, 16)" onmouseup = "kliknuto_polje(4, 16)" onmouseout = "normalno_polje(4, 16)"></div>
+                    <div id = "4, 17" class = "polje" onmousedown = "pritisnuto_polje(4, 17)" onmouseover = "prekriveno_polje(4, 17)" onmouseup = "kliknuto_polje(4, 17)" onmouseout = "normalno_polje(4, 17)"></div>
+                    <div id = "4, 18" class = "polje" onmousedown = "pritisnuto_polje(4, 18)" onmouseover = "prekriveno_polje(4, 18)" onmouseup = "kliknuto_polje(4, 18)" onmouseout = "normalno_polje(4, 18)"></div>
+                    <div id = "4, 19" class = "polje" onmousedown = "pritisnuto_polje(4, 19)" onmouseover = "prekriveno_polje(4, 19)" onmouseup = "kliknuto_polje(4, 19)" onmouseout = "normalno_polje(4, 19)"></div>
+                    <div id = "4, 20" class = "polje" onmousedown = "pritisnuto_polje(4, 20)" onmouseover = "prekriveno_polje(4, 20)" onmouseup = "kliknuto_polje(4, 20)" onmouseout = "normalno_polje(4, 20)"></div>
+                    <div id = "4, 21" class = "polje" onmousedown = "pritisnuto_polje(4, 21)" onmouseover = "prekriveno_polje(4, 21)" onmouseup = "kliknuto_polje(4, 21)" onmouseout = "normalno_polje(4, 21)"></div>
+                    <div id = "4, 22" class = "polje" onmousedown = "pritisnuto_polje(4, 22)" onmouseover = "prekriveno_polje(4, 22)" onmouseup = "kliknuto_polje(4, 22)" onmouseout = "normalno_polje(4, 22)"></div>
+                    <div id = "4, 23" class = "polje" onmousedown = "pritisnuto_polje(4, 23)" onmouseover = "prekriveno_polje(4, 23)" onmouseup = "kliknuto_polje(4, 23)" onmouseout = "normalno_polje(4, 23)"></div>
+                    <div id = "4, 24" class = "polje" onmousedown = "pritisnuto_polje(4, 24)" onmouseover = "prekriveno_polje(4, 24)" onmouseup = "kliknuto_polje(4, 24)" onmouseout = "normalno_polje(4, 24)"></div>
+                    <div id = "4, 25" class = "polje" onmousedown = "pritisnuto_polje(4, 25)" onmouseover = "prekriveno_polje(4, 25)" onmouseup = "kliknuto_polje(4, 25)" onmouseout = "normalno_polje(4, 25)"></div>
+                    <div id = "4, 26" class = "polje" onmousedown = "pritisnuto_polje(4, 26)" onmouseover = "prekriveno_polje(4, 26)" onmouseup = "kliknuto_polje(4, 26)" onmouseout = "normalno_polje(4, 26)"></div>
+                    <div id = "4, 27" class = "polje" onmousedown = "pritisnuto_polje(4, 27)" onmouseover = "prekriveno_polje(4, 27)" onmouseup = "kliknuto_polje(4, 27)" onmouseout = "normalno_polje(4, 27)"></div>
+                    <div id = "4, 28" class = "polje" onmousedown = "pritisnuto_polje(4, 28)" onmouseover = "prekriveno_polje(4, 28)" onmouseup = "kliknuto_polje(4, 28)" onmouseout = "normalno_polje(4, 28)"></div>
+                    <div id = "4, 29" class = "polje" onmousedown = "pritisnuto_polje(4, 29)" onmouseover = "prekriveno_polje(4, 29)" onmouseup = "kliknuto_polje(4, 29)" onmouseout = "normalno_polje(4, 29)"></div>
+                    <div id = "4, 30" class = "polje" onmousedown = "pritisnuto_polje(4, 30)" onmouseover = "prekriveno_polje(4, 30)" onmouseup = "kliknuto_polje(4, 30)" onmouseout = "normalno_polje(4, 30)"></div>
+                    <div id = "4, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(4, 31)" onmouseover = "prekriveno_polje(4, 31)" onmouseup = "kliknuto_polje(4, 31)" onmouseout = "normalno_polje(4, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "5, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(5, 0)" onmouseover = "prekriveno_polje(5, 0)" onmouseup = "kliknuto_polje(5, 0)" onmouseout = "normalno_polje(5, 0)"></div>
+                    <div id = "5, 1" class = "polje" onmousedown = "pritisnuto_polje(5, 1)" onmouseover = "prekriveno_polje(5, 1)" onmouseup = "kliknuto_polje(5, 1)" onmouseout = "normalno_polje(5, 1)"></div>
+                    <div id = "5, 2" class = "polje" onmousedown = "pritisnuto_polje(5, 2)" onmouseover = "prekriveno_polje(5, 2)" onmouseup = "kliknuto_polje(5, 2)" onmouseout = "normalno_polje(5, 2)"></div>
+                    <div id = "5, 3" class = "polje" onmousedown = "pritisnuto_polje(5, 3)" onmouseover = "prekriveno_polje(5, 3)" onmouseup = "kliknuto_polje(5, 3)" onmouseout = "normalno_polje(5, 3)"></div>
+                    <div id = "5, 4" class = "polje" onmousedown = "pritisnuto_polje(5, 4)" onmouseover = "prekriveno_polje(5, 4)" onmouseup = "kliknuto_polje(5, 4)" onmouseout = "normalno_polje(5, 4)"></div>
+                    <div id = "5, 5" class = "polje" onmousedown = "pritisnuto_polje(5, 5)" onmouseover = "prekriveno_polje(5, 5)" onmouseup = "kliknuto_polje(5, 5)" onmouseout = "normalno_polje(5, 5)"></div>
+                    <div id = "5, 6" class = "polje" onmousedown = "pritisnuto_polje(5, 6)" onmouseover = "prekriveno_polje(5, 6)" onmouseup = "kliknuto_polje(5, 6)" onmouseout = "normalno_polje(5, 6)"></div>
+                    <div id = "5, 7" class = "polje" onmousedown = "pritisnuto_polje(5, 7)" onmouseover = "prekriveno_polje(5, 7)" onmouseup = "kliknuto_polje(5, 7)" onmouseout = "normalno_polje(5, 7)"></div>
+                    <div id = "5, 8" class = "polje" onmousedown = "pritisnuto_polje(5, 8)" onmouseover = "prekriveno_polje(5, 8)" onmouseup = "kliknuto_polje(5, 8)" onmouseout = "normalno_polje(5, 8)"></div>
+                    <div id = "5, 9" class = "polje" onmousedown = "pritisnuto_polje(5, 9)" onmouseover = "prekriveno_polje(5, 9)" onmouseup = "kliknuto_polje(5, 9)" onmouseout = "normalno_polje(5, 9)"></div>
+                    <div id = "5, 10" class = "polje" onmousedown = "pritisnuto_polje(5, 10)" onmouseover = "prekriveno_polje(5, 10)" onmouseup = "kliknuto_polje(5, 10)" onmouseout = "normalno_polje(5, 10)"></div>
+                    <div id = "5, 11" class = "polje" onmousedown = "pritisnuto_polje(5, 11)" onmouseover = "prekriveno_polje(5, 11)" onmouseup = "kliknuto_polje(5, 11)" onmouseout = "normalno_polje(5, 11)"></div>
+                    <div id = "5, 12" class = "polje" onmousedown = "pritisnuto_polje(5, 12)" onmouseover = "prekriveno_polje(5, 12)" onmouseup = "kliknuto_polje(5, 12)" onmouseout = "normalno_polje(5, 12)"></div>
+                    <div id = "5, 13" class = "polje" onmousedown = "pritisnuto_polje(5, 13)" onmouseover = "prekriveno_polje(5, 13)" onmouseup = "kliknuto_polje(5, 13)" onmouseout = "normalno_polje(5, 13)"></div>
+                    <div id = "5, 14" class = "polje" onmousedown = "pritisnuto_polje(5, 14)" onmouseover = "prekriveno_polje(5, 14)" onmouseup = "kliknuto_polje(5, 14)" onmouseout = "normalno_polje(5, 14)"></div>
+                    <div id = "5, 15" class = "polje" onmousedown = "pritisnuto_polje(5, 15)" onmouseover = "prekriveno_polje(5, 15)" onmouseup = "kliknuto_polje(5, 15)" onmouseout = "normalno_polje(5, 15)"></div>
+                    <div id = "5, 16" class = "polje" onmousedown = "pritisnuto_polje(5, 16)" onmouseover = "prekriveno_polje(5, 16)" onmouseup = "kliknuto_polje(5, 16)" onmouseout = "normalno_polje(5, 16)"></div>
+                    <div id = "5, 17" class = "polje" onmousedown = "pritisnuto_polje(5, 17)" onmouseover = "prekriveno_polje(5, 17)" onmouseup = "kliknuto_polje(5, 17)" onmouseout = "normalno_polje(5, 17)"></div>
+                    <div id = "5, 18" class = "polje" onmousedown = "pritisnuto_polje(5, 18)" onmouseover = "prekriveno_polje(5, 18)" onmouseup = "kliknuto_polje(5, 18)" onmouseout = "normalno_polje(5, 18)"></div>
+                    <div id = "5, 19" class = "polje" onmousedown = "pritisnuto_polje(5, 19)" onmouseover = "prekriveno_polje(5, 19)" onmouseup = "kliknuto_polje(5, 19)" onmouseout = "normalno_polje(5, 19)"></div>
+                    <div id = "5, 20" class = "polje" onmousedown = "pritisnuto_polje(5, 20)" onmouseover = "prekriveno_polje(5, 20)" onmouseup = "kliknuto_polje(5, 20)" onmouseout = "normalno_polje(5, 20)"></div>
+                    <div id = "5, 21" class = "polje" onmousedown = "pritisnuto_polje(5, 21)" onmouseover = "prekriveno_polje(5, 21)" onmouseup = "kliknuto_polje(5, 21)" onmouseout = "normalno_polje(5, 21)"></div>
+                    <div id = "5, 22" class = "polje" onmousedown = "pritisnuto_polje(5, 22)" onmouseover = "prekriveno_polje(5, 22)" onmouseup = "kliknuto_polje(5, 22)" onmouseout = "normalno_polje(5, 22)"></div>
+                    <div id = "5, 23" class = "polje" onmousedown = "pritisnuto_polje(5, 23)" onmouseover = "prekriveno_polje(5, 23)" onmouseup = "kliknuto_polje(5, 23)" onmouseout = "normalno_polje(5, 23)"></div>
+                    <div id = "5, 24" class = "polje" onmousedown = "pritisnuto_polje(5, 24)" onmouseover = "prekriveno_polje(5, 24)" onmouseup = "kliknuto_polje(5, 24)" onmouseout = "normalno_polje(5, 24)"></div>
+                    <div id = "5, 25" class = "polje" onmousedown = "pritisnuto_polje(5, 25)" onmouseover = "prekriveno_polje(5, 25)" onmouseup = "kliknuto_polje(5, 25)" onmouseout = "normalno_polje(5, 25)"></div>
+                    <div id = "5, 26" class = "polje" onmousedown = "pritisnuto_polje(5, 26)" onmouseover = "prekriveno_polje(5, 26)" onmouseup = "kliknuto_polje(5, 26)" onmouseout = "normalno_polje(5, 26)"></div>
+                    <div id = "5, 27" class = "polje" onmousedown = "pritisnuto_polje(5, 27)" onmouseover = "prekriveno_polje(5, 27)" onmouseup = "kliknuto_polje(5, 27)" onmouseout = "normalno_polje(5, 27)"></div>
+                    <div id = "5, 28" class = "polje" onmousedown = "pritisnuto_polje(5, 28)" onmouseover = "prekriveno_polje(5, 28)" onmouseup = "kliknuto_polje(5, 28)" onmouseout = "normalno_polje(5, 28)"></div>
+                    <div id = "5, 29" class = "polje" onmousedown = "pritisnuto_polje(5, 29)" onmouseover = "prekriveno_polje(5, 29)" onmouseup = "kliknuto_polje(5, 29)" onmouseout = "normalno_polje(5, 29)"></div>
+                    <div id = "5, 30" class = "polje" onmousedown = "pritisnuto_polje(5, 30)" onmouseover = "prekriveno_polje(5, 30)" onmouseup = "kliknuto_polje(5, 30)" onmouseout = "normalno_polje(5, 30)"></div>
+                    <div id = "5, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(5, 31)" onmouseover = "prekriveno_polje(5, 31)" onmouseup = "kliknuto_polje(5, 31)" onmouseout = "normalno_polje(5, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "6, 0" class ="sakriveno_polje" onmousedown = "pritisnuto_polje(6, 0)" onmouseover = "prekriveno_polje(6, 0)" onmouseup = "kliknuto_polje(6, 0)" onmouseout = "normalno_polje(6, 0)"></div>
+                    <div id = "6, 1" class = "polje" onmousedown = "pritisnuto_polje(6, 1)" onmouseover = "prekriveno_polje(6, 1)" onmouseup = "kliknuto_polje(6, 1)" onmouseout = "normalno_polje(6, 1)"></div>
+                    <div id = "6, 2" class = "polje" onmousedown = "pritisnuto_polje(6, 2)" onmouseover = "prekriveno_polje(6, 2)" onmouseup = "kliknuto_polje(6, 2)" onmouseout = "normalno_polje(6, 2)"></div>
+                    <div id = "6, 3" class = "polje" onmousedown = "pritisnuto_polje(6, 3)" onmouseover = "prekriveno_polje(6, 3)" onmouseup = "kliknuto_polje(6, 3)" onmouseout = "normalno_polje(6, 3)"></div>
+                    <div id = "6, 4" class = "polje" onmousedown = "pritisnuto_polje(6, 4)" onmouseover = "prekriveno_polje(6, 4)" onmouseup = "kliknuto_polje(6, 4)" onmouseout = "normalno_polje(6, 4)"></div>
+                    <div id = "6, 5" class = "polje" onmousedown = "pritisnuto_polje(6, 5)" onmouseover = "prekriveno_polje(6, 5)" onmouseup = "kliknuto_polje(6, 5)" onmouseout = "normalno_polje(6, 5)"></div>
+                    <div id = "6, 6" class = "polje" onmousedown = "pritisnuto_polje(6, 6)" onmouseover = "prekriveno_polje(6, 6)" onmouseup = "kliknuto_polje(6, 6)" onmouseout = "normalno_polje(6, 6)"></div>
+                    <div id = "6, 7" class = "polje" onmousedown = "pritisnuto_polje(6, 7)" onmouseover = "prekriveno_polje(6, 7)" onmouseup = "kliknuto_polje(6, 7)" onmouseout = "normalno_polje(6, 7)"></div>
+                    <div id = "6, 8" class = "polje" onmousedown = "pritisnuto_polje(6, 8)" onmouseover = "prekriveno_polje(6, 8)" onmouseup = "kliknuto_polje(6, 8)" onmouseout = "normalno_polje(6, 8)"></div>
+                    <div id = "6, 9" class = "polje" onmousedown = "pritisnuto_polje(6, 9)" onmouseover = "prekriveno_polje(6, 9)" onmouseup = "kliknuto_polje(6, 9)" onmouseout = "normalno_polje(6, 9)"></div>
+                    <div id = "6, 10" class = "polje" onmousedown = "pritisnuto_polje(6, 10)" onmouseover = "prekriveno_polje(6, 10)" onmouseup = "kliknuto_polje(6, 10)" onmouseout = "normalno_polje(6, 10)"></div>
+                    <div id = "6, 11" class = "polje" onmousedown = "pritisnuto_polje(6, 11)" onmouseover = "prekriveno_polje(6, 11)" onmouseup = "kliknuto_polje(6, 11)" onmouseout = "normalno_polje(6, 11)"></div>
+                    <div id = "6, 12" class = "polje" onmousedown = "pritisnuto_polje(6, 12)" onmouseover = "prekriveno_polje(6, 12)" onmouseup = "kliknuto_polje(6, 12)" onmouseout = "normalno_polje(6, 12)"></div>
+                    <div id = "6, 13" class = "polje" onmousedown = "pritisnuto_polje(6, 13)" onmouseover = "prekriveno_polje(6, 13)" onmouseup = "kliknuto_polje(6, 13)" onmouseout = "normalno_polje(6, 13)"></div>
+                    <div id = "6, 14" class = "polje" onmousedown = "pritisnuto_polje(6, 14)" onmouseover = "prekriveno_polje(6, 14)" onmouseup = "kliknuto_polje(6, 14)" onmouseout = "normalno_polje(6, 14)"></div>
+                    <div id = "6, 15" class = "polje" onmousedown = "pritisnuto_polje(6, 15)" onmouseover = "prekriveno_polje(6, 15)" onmouseup = "kliknuto_polje(6, 15)" onmouseout = "normalno_polje(6, 15)"></div>
+                    <div id = "6, 16" class = "polje" onmousedown = "pritisnuto_polje(6, 16)" onmouseover = "prekriveno_polje(6, 16)" onmouseup = "kliknuto_polje(6, 16)" onmouseout = "normalno_polje(6, 16)"></div>
+                    <div id = "6, 17" class = "polje" onmousedown = "pritisnuto_polje(6, 17)" onmouseover = "prekriveno_polje(6, 17)" onmouseup = "kliknuto_polje(6, 17)" onmouseout = "normalno_polje(6, 17)"></div>
+                    <div id = "6, 18" class = "polje" onmousedown = "pritisnuto_polje(6, 18)" onmouseover = "prekriveno_polje(6, 18)" onmouseup = "kliknuto_polje(6, 18)" onmouseout = "normalno_polje(6, 18)"></div>
+                    <div id = "6, 19" class = "polje" onmousedown = "pritisnuto_polje(6, 19)" onmouseover = "prekriveno_polje(6, 19)" onmouseup = "kliknuto_polje(6, 19)" onmouseout = "normalno_polje(6, 19)"></div>
+                    <div id = "6, 20" class = "polje" onmousedown = "pritisnuto_polje(6, 20)" onmouseover = "prekriveno_polje(6, 20)" onmouseup = "kliknuto_polje(6, 20)" onmouseout = "normalno_polje(6, 20)"></div>
+                    <div id = "6, 21" class = "polje" onmousedown = "pritisnuto_polje(6, 21)" onmouseover = "prekriveno_polje(6, 21)" onmouseup = "kliknuto_polje(6, 21)" onmouseout = "normalno_polje(6, 21)"></div>
+                    <div id = "6, 22" class = "polje" onmousedown = "pritisnuto_polje(6, 22)" onmouseover = "prekriveno_polje(6, 22)" onmouseup = "kliknuto_polje(6, 22)" onmouseout = "normalno_polje(6, 22)"></div>
+                    <div id = "6, 23" class = "polje" onmousedown = "pritisnuto_polje(6, 23)" onmouseover = "prekriveno_polje(6, 23)" onmouseup = "kliknuto_polje(6, 23)" onmouseout = "normalno_polje(6, 23)"></div>
+                    <div id = "6, 24" class = "polje" onmousedown = "pritisnuto_polje(6, 24)" onmouseover = "prekriveno_polje(6, 24)" onmouseup = "kliknuto_polje(6, 24)" onmouseout = "normalno_polje(6, 24)"></div>
+                    <div id = "6, 25" class = "polje" onmousedown = "pritisnuto_polje(6, 25)" onmouseover = "prekriveno_polje(6, 25)" onmouseup = "kliknuto_polje(6, 25)" onmouseout = "normalno_polje(6, 25)"></div>
+                    <div id = "6, 26" class = "polje" onmousedown = "pritisnuto_polje(6, 26)" onmouseover = "prekriveno_polje(6, 26)" onmouseup = "kliknuto_polje(6, 26)" onmouseout = "normalno_polje(6, 26)"></div>
+                    <div id = "6, 27" class = "polje" onmousedown = "pritisnuto_polje(6, 27)" onmouseover = "prekriveno_polje(6, 27)" onmouseup = "kliknuto_polje(6, 27)" onmouseout = "normalno_polje(6, 27)"></div>
+                    <div id = "6, 28" class = "polje" onmousedown = "pritisnuto_polje(6, 28)" onmouseover = "prekriveno_polje(6, 28)" onmouseup = "kliknuto_polje(6, 28)" onmouseout = "normalno_polje(6, 28)"></div>
+                    <div id = "6, 29" class = "polje" onmousedown = "pritisnuto_polje(6, 29)" onmouseover = "prekriveno_polje(6, 29)" onmouseup = "kliknuto_polje(6, 29)" onmouseout = "normalno_polje(6, 29)"></div>
+                    <div id = "6, 30" class = "polje" onmousedown = "pritisnuto_polje(6, 30)" onmouseover = "prekriveno_polje(6, 30)" onmouseup = "kliknuto_polje(6, 30)" onmouseout = "normalno_polje(6, 30)"></div>
+                    <div id = "6, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(6, 31)" onmouseover = "prekriveno_polje(6, 31)" onmouseup = "kliknuto_polje(6, 31)" onmouseout = "normalno_polje(6, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "7, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(7, 0)" onmouseover = "prekriveno_polje(7, 0)" onmouseup = "kliknuto_polje(7, 0)" onmouseout = "normalno_polje(7, 0)"></div>
+                    <div id = "7, 1" class = "polje" onmousedown = "pritisnuto_polje(7, 1)" onmouseover = "prekriveno_polje(7, 1)" onmouseup = "kliknuto_polje(7, 1)" onmouseout = "normalno_polje(7, 1)"></div>
+                    <div id = "7, 2" class = "polje" onmousedown = "pritisnuto_polje(7, 2)" onmouseover = "prekriveno_polje(7, 2)" onmouseup = "kliknuto_polje(7, 2)" onmouseout = "normalno_polje(7, 2)"></div>
+                    <div id = "7, 3" class = "polje" onmousedown = "pritisnuto_polje(7, 3)" onmouseover = "prekriveno_polje(7, 3)" onmouseup = "kliknuto_polje(7, 3)" onmouseout = "normalno_polje(7, 3)"></div>
+                    <div id = "7, 4" class = "polje" onmousedown = "pritisnuto_polje(7, 4)" onmouseover = "prekriveno_polje(7, 4)" onmouseup = "kliknuto_polje(7, 4)" onmouseout = "normalno_polje(7, 4)"></div>
+                    <div id = "7, 5" class = "polje" onmousedown = "pritisnuto_polje(7, 5)" onmouseover = "prekriveno_polje(7, 5)" onmouseup = "kliknuto_polje(7, 5)" onmouseout = "normalno_polje(7, 5)"></div>
+                    <div id = "7, 6" class = "polje" onmousedown = "pritisnuto_polje(7, 6)" onmouseover = "prekriveno_polje(7, 6)" onmouseup = "kliknuto_polje(7, 6)" onmouseout = "normalno_polje(7, 6)"></div>
+                    <div id = "7, 7" class = "polje" onmousedown = "pritisnuto_polje(7, 7)" onmouseover = "prekriveno_polje(7, 7)" onmouseup = "kliknuto_polje(7, 7)" onmouseout = "normalno_polje(7, 7)"></div>
+                    <div id = "7, 8" class = "polje" onmousedown = "pritisnuto_polje(7, 8)" onmouseover = "prekriveno_polje(7, 8)" onmouseup = "kliknuto_polje(7, 8)" onmouseout = "normalno_polje(7, 8)"></div>
+                    <div id = "7, 9" class = "polje" onmousedown = "pritisnuto_polje(7, 9)" onmouseover = "prekriveno_polje(7, 9)" onmouseup = "kliknuto_polje(7, 9)" onmouseout = "normalno_polje(7, 9)"></div>
+                    <div id = "7, 10" class = "polje" onmousedown = "pritisnuto_polje(7, 10)" onmouseover = "prekriveno_polje(7, 10)" onmouseup = "kliknuto_polje(7, 10)" onmouseout = "normalno_polje(7, 10)"></div>
+                    <div id = "7, 11" class = "polje" onmousedown = "pritisnuto_polje(7, 11)" onmouseover = "prekriveno_polje(7, 11)" onmouseup = "kliknuto_polje(7, 11)" onmouseout = "normalno_polje(7, 11)"></div>
+                    <div id = "7, 12" class = "polje" onmousedown = "pritisnuto_polje(7, 12)" onmouseover = "prekriveno_polje(7, 12)" onmouseup = "kliknuto_polje(7, 12)" onmouseout = "normalno_polje(7, 12)"></div>
+                    <div id = "7, 13" class = "polje" onmousedown = "pritisnuto_polje(7, 13)" onmouseover = "prekriveno_polje(7, 13)" onmouseup = "kliknuto_polje(7, 13)" onmouseout = "normalno_polje(7, 13)"></div>
+                    <div id = "7, 14" class = "polje" onmousedown = "pritisnuto_polje(7, 14)" onmouseover = "prekriveno_polje(7, 14)" onmouseup = "kliknuto_polje(7, 14)" onmouseout = "normalno_polje(7, 14)"></div>
+                    <div id = "7, 15" class = "polje" onmousedown = "pritisnuto_polje(7, 15)" onmouseover = "prekriveno_polje(7, 15)" onmouseup = "kliknuto_polje(7, 15)" onmouseout = "normalno_polje(7, 15)"></div>
+                    <div id = "7, 16" class = "polje" onmousedown = "pritisnuto_polje(7, 16)" onmouseover = "prekriveno_polje(7, 16)" onmouseup = "kliknuto_polje(7, 16)" onmouseout = "normalno_polje(7, 16)"></div>
+                    <div id = "7, 17" class = "polje" onmousedown = "pritisnuto_polje(7, 17)" onmouseover = "prekriveno_polje(7, 17)" onmouseup = "kliknuto_polje(7, 17)" onmouseout = "normalno_polje(7, 17)"></div>
+                    <div id = "7, 18" class = "polje" onmousedown = "pritisnuto_polje(7, 18)" onmouseover = "prekriveno_polje(7, 18)" onmouseup = "kliknuto_polje(7, 18)" onmouseout = "normalno_polje(7, 18)"></div>
+                    <div id = "7, 19" class = "polje" onmousedown = "pritisnuto_polje(7, 19)" onmouseover = "prekriveno_polje(7, 19)" onmouseup = "kliknuto_polje(7, 19)" onmouseout = "normalno_polje(7, 19)"></div>
+                    <div id = "7, 20" class = "polje" onmousedown = "pritisnuto_polje(7, 20)" onmouseover = "prekriveno_polje(7, 20)" onmouseup = "kliknuto_polje(7, 20)" onmouseout = "normalno_polje(7, 20)"></div>
+                    <div id = "7, 21" class = "polje" onmousedown = "pritisnuto_polje(7, 21)" onmouseover = "prekriveno_polje(7, 21)" onmouseup = "kliknuto_polje(7, 21)" onmouseout = "normalno_polje(7, 21)"></div>
+                    <div id = "7, 22" class = "polje" onmousedown = "pritisnuto_polje(7, 22)" onmouseover = "prekriveno_polje(7, 22)" onmouseup = "kliknuto_polje(7, 22)" onmouseout = "normalno_polje(7, 22)"></div>
+                    <div id = "7, 23" class = "polje" onmousedown = "pritisnuto_polje(7, 23)" onmouseover = "prekriveno_polje(7, 23)" onmouseup = "kliknuto_polje(7, 23)" onmouseout = "normalno_polje(7, 23)"></div>
+                    <div id = "7, 24" class = "polje" onmousedown = "pritisnuto_polje(7, 24)" onmouseover = "prekriveno_polje(7, 24)" onmouseup = "kliknuto_polje(7, 24)" onmouseout = "normalno_polje(7, 24)"></div>
+                    <div id = "7, 25" class = "polje" onmousedown = "pritisnuto_polje(7, 25)" onmouseover = "prekriveno_polje(7, 25)" onmouseup = "kliknuto_polje(7, 25)" onmouseout = "normalno_polje(7, 25)"></div>
+                    <div id = "7, 26" class = "polje" onmousedown = "pritisnuto_polje(7, 26)" onmouseover = "prekriveno_polje(7, 26)" onmouseup = "kliknuto_polje(7, 26)" onmouseout = "normalno_polje(7, 26)"></div>
+                    <div id = "7, 27" class = "polje" onmousedown = "pritisnuto_polje(7, 27)" onmouseover = "prekriveno_polje(7, 27)" onmouseup = "kliknuto_polje(7, 27)" onmouseout = "normalno_polje(7, 27)"></div>
+                    <div id = "7, 28" class = "polje" onmousedown = "pritisnuto_polje(7, 28)" onmouseover = "prekriveno_polje(7, 28)" onmouseup = "kliknuto_polje(7, 28)" onmouseout = "normalno_polje(7, 28)"></div>
+                    <div id = "7, 29" class = "polje" onmousedown = "pritisnuto_polje(7, 29)" onmouseover = "prekriveno_polje(7, 29)" onmouseup = "kliknuto_polje(7, 29)" onmouseout = "normalno_polje(7, 29)"></div>
+                    <div id = "7, 30" class = "polje" onmousedown = "pritisnuto_polje(7, 30)" onmouseover = "prekriveno_polje(7, 30)" onmouseup = "kliknuto_polje(7, 30)" onmouseout = "normalno_polje(7, 30)"></div>
+                    <div id = "7, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(7, 31)" onmouseover = "prekriveno_polje(7, 31)" onmouseup = "kliknuto_polje(7, 31)" onmouseout = "normalno_polje(7, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "8, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(8, 0)" onmouseover = "prekriveno_polje(8, 0)" onmouseup = "kliknuto_polje(8, 0)" onmouseout = "normalno_polje(8, 0)"></div>
+                    <div id = "8, 1" class = "polje" onmousedown = "pritisnuto_polje(8, 1)" onmouseover = "prekriveno_polje(8, 1)" onmouseup = "kliknuto_polje(8, 1)" onmouseout = "normalno_polje(8, 1)"></div>
+                    <div id = "8, 2" class = "polje" onmousedown = "pritisnuto_polje(8, 2)" onmouseover = "prekriveno_polje(8, 2)" onmouseup = "kliknuto_polje(8, 2)" onmouseout = "normalno_polje(8, 2)"></div>
+                    <div id = "8, 3" class = "polje" onmousedown = "pritisnuto_polje(8, 3)" onmouseover = "prekriveno_polje(8, 3)" onmouseup = "kliknuto_polje(8, 3)" onmouseout = "normalno_polje(8, 3)"></div>
+                    <div id = "8, 4" class = "polje" onmousedown = "pritisnuto_polje(8, 4)" onmouseover = "prekriveno_polje(8, 4)" onmouseup = "kliknuto_polje(8, 4)" onmouseout = "normalno_polje(8, 4)"></div>
+                    <div id = "8, 5" class = "polje" onmousedown = "pritisnuto_polje(8, 5)" onmouseover = "prekriveno_polje(8, 5)" onmouseup = "kliknuto_polje(8, 5)" onmouseout = "normalno_polje(8, 5)"></div>
+                    <div id = "8, 6" class = "polje" onmousedown = "pritisnuto_polje(8, 6)" onmouseover = "prekriveno_polje(8, 6)" onmouseup = "kliknuto_polje(8, 6)" onmouseout = "normalno_polje(8, 6)"></div>
+                    <div id = "8, 7" class = "polje" onmousedown = "pritisnuto_polje(8, 7)" onmouseover = "prekriveno_polje(8, 7)" onmouseup = "kliknuto_polje(8, 7)" onmouseout = "normalno_polje(8, 7)"></div>
+                    <div id = "8, 8" class = "polje" onmousedown = "pritisnuto_polje(8, 8)" onmouseover = "prekriveno_polje(8, 8)" onmouseup = "kliknuto_polje(8, 8)" onmouseout = "normalno_polje(8, 8)"></div>
+                    <div id = "8, 9" class = "polje" onmousedown = "pritisnuto_polje(8, 9)" onmouseover = "prekriveno_polje(8, 9)" onmouseup = "kliknuto_polje(8, 9)" onmouseout = "normalno_polje(8, 9)"></div>
+                    <div id = "8, 10" class = "polje" onmousedown = "pritisnuto_polje(8, 10)" onmouseover = "prekriveno_polje(8, 10)" onmouseup = "kliknuto_polje(8, 10)" onmouseout = "normalno_polje(8, 10)"></div>
+                    <div id = "8, 11" class = "polje" onmousedown = "pritisnuto_polje(8, 11)" onmouseover = "prekriveno_polje(8, 11)" onmouseup = "kliknuto_polje(8, 11)" onmouseout = "normalno_polje(8, 11)"></div>
+                    <div id = "8, 12" class = "polje" onmousedown = "pritisnuto_polje(8, 12)" onmouseover = "prekriveno_polje(8, 12)" onmouseup = "kliknuto_polje(8, 12)" onmouseout = "normalno_polje(8, 12)"></div>
+                    <div id = "8, 13" class = "polje" onmousedown = "pritisnuto_polje(8, 13)" onmouseover = "prekriveno_polje(8, 13)" onmouseup = "kliknuto_polje(8, 13)" onmouseout = "normalno_polje(8, 13)"></div>
+                    <div id = "8, 14" class = "polje" onmousedown = "pritisnuto_polje(8, 14)" onmouseover = "prekriveno_polje(8, 14)" onmouseup = "kliknuto_polje(8, 14)" onmouseout = "normalno_polje(8, 14)"></div>
+                    <div id = "8, 15" class = "polje" onmousedown = "pritisnuto_polje(8, 15)" onmouseover = "prekriveno_polje(8, 15)" onmouseup = "kliknuto_polje(8, 15)" onmouseout = "normalno_polje(8, 15)"></div>
+                    <div id = "8, 16" class = "polje" onmousedown = "pritisnuto_polje(8, 16)" onmouseover = "prekriveno_polje(8, 16)" onmouseup = "kliknuto_polje(8, 16)" onmouseout = "normalno_polje(8, 16)"></div>
+                    <div id = "8, 17" class = "polje" onmousedown = "pritisnuto_polje(8, 17)" onmouseover = "prekriveno_polje(8, 17)" onmouseup = "kliknuto_polje(8, 17)" onmouseout = "normalno_polje(8, 17)"></div>
+                    <div id = "8, 18" class = "polje" onmousedown = "pritisnuto_polje(8, 18)" onmouseover = "prekriveno_polje(8, 18)" onmouseup = "kliknuto_polje(8, 18)" onmouseout = "normalno_polje(8, 18)"></div>
+                    <div id = "8, 19" class = "polje" onmousedown = "pritisnuto_polje(8, 19)" onmouseover = "prekriveno_polje(8, 19)" onmouseup = "kliknuto_polje(8, 19)" onmouseout = "normalno_polje(8, 19)"></div>
+                    <div id = "8, 20" class = "polje" onmousedown = "pritisnuto_polje(8, 20)" onmouseover = "prekriveno_polje(8, 20)" onmouseup = "kliknuto_polje(8, 20)" onmouseout = "normalno_polje(8, 20)"></div>
+                    <div id = "8, 21" class = "polje" onmousedown = "pritisnuto_polje(8, 21)" onmouseover = "prekriveno_polje(8, 21)" onmouseup = "kliknuto_polje(8, 21)" onmouseout = "normalno_polje(8, 21)"></div>
+                    <div id = "8, 22" class = "polje" onmousedown = "pritisnuto_polje(8, 22)" onmouseover = "prekriveno_polje(8, 22)" onmouseup = "kliknuto_polje(8, 22)" onmouseout = "normalno_polje(8, 22)"></div>
+                    <div id = "8, 23" class = "polje" onmousedown = "pritisnuto_polje(8, 23)" onmouseover = "prekriveno_polje(8, 23)" onmouseup = "kliknuto_polje(8, 23)" onmouseout = "normalno_polje(8, 23)"></div>
+                    <div id = "8, 24" class = "polje" onmousedown = "pritisnuto_polje(8, 24)" onmouseover = "prekriveno_polje(8, 24)" onmouseup = "kliknuto_polje(8, 24)" onmouseout = "normalno_polje(8, 24)"></div>
+                    <div id = "8, 25" class = "polje" onmousedown = "pritisnuto_polje(8, 25)" onmouseover = "prekriveno_polje(8, 25)" onmouseup = "kliknuto_polje(8, 25)" onmouseout = "normalno_polje(8, 25)"></div>
+                    <div id = "8, 26" class = "polje" onmousedown = "pritisnuto_polje(8, 26)" onmouseover = "prekriveno_polje(8, 26)" onmouseup = "kliknuto_polje(8, 26)" onmouseout = "normalno_polje(8, 26)"></div>
+                    <div id = "8, 27" class = "polje" onmousedown = "pritisnuto_polje(8, 27)" onmouseover = "prekriveno_polje(8, 27)" onmouseup = "kliknuto_polje(8, 27)" onmouseout = "normalno_polje(8, 27)"></div>
+                    <div id = "8, 28" class = "polje" onmousedown = "pritisnuto_polje(8, 28)" onmouseover = "prekriveno_polje(8, 28)" onmouseup = "kliknuto_polje(8, 28)" onmouseout = "normalno_polje(8, 28)"></div>
+                    <div id = "8, 29" class = "polje" onmousedown = "pritisnuto_polje(8, 29)" onmouseover = "prekriveno_polje(8, 29)" onmouseup = "kliknuto_polje(8, 29)" onmouseout = "normalno_polje(8, 29)"></div>
+                    <div id = "8, 30" class = "polje" onmousedown = "pritisnuto_polje(8, 30)" onmouseover = "prekriveno_polje(8, 30)" onmouseup = "kliknuto_polje(8, 30)" onmouseout = "normalno_polje(8, 30)"></div>
+                    <div id = "8, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(8, 31)" onmouseover = "prekriveno_polje(8, 31)" onmouseup = "kliknuto_polje(8, 31)" onmouseout = "normalno_polje(8, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "9, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(9, 0)" onmouseover = "prekriveno_polje(9, 0)" onmouseup = "kliknuto_polje(9, 0)" onmouseout = "normalno_polje(9, 0)"></div>
+                    <div id = "9, 1" class = "polje" onmousedown = "pritisnuto_polje(9, 1)" onmouseover = "prekriveno_polje(9, 1)" onmouseup = "kliknuto_polje(9, 1)" onmouseout = "normalno_polje(9, 1)"></div>
+                    <div id = "9, 2" class = "polje" onmousedown = "pritisnuto_polje(9, 2)" onmouseover = "prekriveno_polje(9, 2)" onmouseup = "kliknuto_polje(9, 2)" onmouseout = "normalno_polje(9, 2)"></div>
+                    <div id = "9, 3" class = "polje" onmousedown = "pritisnuto_polje(9, 3)" onmouseover = "prekriveno_polje(9, 3)" onmouseup = "kliknuto_polje(9, 3)" onmouseout = "normalno_polje(9, 3)"></div>
+                    <div id = "9, 4" class = "polje" onmousedown = "pritisnuto_polje(9, 4)" onmouseover = "prekriveno_polje(9, 4)" onmouseup = "kliknuto_polje(9, 4)" onmouseout = "normalno_polje(9, 4)"></div>
+                    <div id = "9, 5" class = "polje" onmousedown = "pritisnuto_polje(9, 5)" onmouseover = "prekriveno_polje(9, 5)" onmouseup = "kliknuto_polje(9, 5)" onmouseout = "normalno_polje(9, 5)"></div>
+                    <div id = "9, 6" class = "polje" onmousedown = "pritisnuto_polje(9, 6)" onmouseover = "prekriveno_polje(9, 6)" onmouseup = "kliknuto_polje(9, 6)" onmouseout = "normalno_polje(9, 6)"></div>
+                    <div id = "9, 7" class = "polje" onmousedown = "pritisnuto_polje(9, 7)" onmouseover = "prekriveno_polje(9, 7)" onmouseup = "kliknuto_polje(9, 7)" onmouseout = "normalno_polje(9, 7)"></div>
+                    <div id = "9, 8" class = "polje" onmousedown = "pritisnuto_polje(9, 8)" onmouseover = "prekriveno_polje(9, 8)" onmouseup = "kliknuto_polje(9, 8)" onmouseout = "normalno_polje(9, 8)"></div>
+                    <div id = "9, 9" class = "polje" onmousedown = "pritisnuto_polje(9, 9)" onmouseover = "prekriveno_polje(9, 9)" onmouseup = "kliknuto_polje(9, 9)" onmouseout = "normalno_polje(9, 9)"></div>
+                    <div id = "9, 10" class = "polje" onmousedown = "pritisnuto_polje(9, 10)" onmouseover = "prekriveno_polje(9, 10)" onmouseup = "kliknuto_polje(9, 10)" onmouseout = "normalno_polje(9, 10)"></div>
+                    <div id = "9, 11" class = "polje" onmousedown = "pritisnuto_polje(9, 11)" onmouseover = "prekriveno_polje(9, 11)" onmouseup = "kliknuto_polje(9, 11)" onmouseout = "normalno_polje(9, 11)"></div>
+                    <div id = "9, 12" class = "polje" onmousedown = "pritisnuto_polje(9, 12)" onmouseover = "prekriveno_polje(9, 12)" onmouseup = "kliknuto_polje(9, 12)" onmouseout = "normalno_polje(9, 12)"></div>
+                    <div id = "9, 13" class = "polje" onmousedown = "pritisnuto_polje(9, 13)" onmouseover = "prekriveno_polje(9, 13)" onmouseup = "kliknuto_polje(9, 13)" onmouseout = "normalno_polje(9, 13)"></div>
+                    <div id = "9, 14" class = "polje" onmousedown = "pritisnuto_polje(9, 14)" onmouseover = "prekriveno_polje(9, 14)" onmouseup = "kliknuto_polje(9, 14)" onmouseout = "normalno_polje(9, 14)"></div>
+                    <div id = "9, 15" class = "polje" onmousedown = "pritisnuto_polje(9, 15)" onmouseover = "prekriveno_polje(9, 15)" onmouseup = "kliknuto_polje(9, 15)" onmouseout = "normalno_polje(9, 15)"></div>
+                    <div id = "9, 16" class = "polje" onmousedown = "pritisnuto_polje(9, 16)" onmouseover = "prekriveno_polje(9, 16)" onmouseup = "kliknuto_polje(9, 16)" onmouseout = "normalno_polje(9, 16)"></div>
+                    <div id = "9, 17" class = "polje" onmousedown = "pritisnuto_polje(9, 17)" onmouseover = "prekriveno_polje(9, 17)" onmouseup = "kliknuto_polje(9, 17)" onmouseout = "normalno_polje(9, 17)"></div>
+                    <div id = "9, 18" class = "polje" onmousedown = "pritisnuto_polje(9, 18)" onmouseover = "prekriveno_polje(9, 18)" onmouseup = "kliknuto_polje(9, 18)" onmouseout = "normalno_polje(9, 18)"></div>
+                    <div id = "9, 19" class = "polje" onmousedown = "pritisnuto_polje(9, 19)" onmouseover = "prekriveno_polje(9, 19)" onmouseup = "kliknuto_polje(9, 19)" onmouseout = "normalno_polje(9, 19)"></div>
+                    <div id = "9, 20" class = "polje" onmousedown = "pritisnuto_polje(9, 20)" onmouseover = "prekriveno_polje(9, 20)" onmouseup = "kliknuto_polje(9, 20)" onmouseout = "normalno_polje(9, 20)"></div>
+                    <div id = "9, 21" class = "polje" onmousedown = "pritisnuto_polje(9, 21)" onmouseover = "prekriveno_polje(9, 21)" onmouseup = "kliknuto_polje(9, 21)" onmouseout = "normalno_polje(9, 21)"></div>
+                    <div id = "9, 22" class = "polje" onmousedown = "pritisnuto_polje(9, 22)" onmouseover = "prekriveno_polje(9, 22)" onmouseup = "kliknuto_polje(9, 22)" onmouseout = "normalno_polje(9, 22)"></div>
+                    <div id = "9, 23" class = "polje" onmousedown = "pritisnuto_polje(9, 23)" onmouseover = "prekriveno_polje(9, 23)" onmouseup = "kliknuto_polje(9, 23)" onmouseout = "normalno_polje(9, 23)"></div>
+                    <div id = "9, 24" class = "polje" onmousedown = "pritisnuto_polje(9, 24)" onmouseover = "prekriveno_polje(9, 24)" onmouseup = "kliknuto_polje(9, 24)" onmouseout = "normalno_polje(9, 24)"></div>
+                    <div id = "9, 25" class = "polje" onmousedown = "pritisnuto_polje(9, 25)" onmouseover = "prekriveno_polje(9, 25)" onmouseup = "kliknuto_polje(9, 25)" onmouseout = "normalno_polje(9, 25)"></div>
+                    <div id = "9, 26" class = "polje" onmousedown = "pritisnuto_polje(9, 26)" onmouseover = "prekriveno_polje(9, 26)" onmouseup = "kliknuto_polje(9, 26)" onmouseout = "normalno_polje(9, 26)"></div>
+                    <div id = "9, 27" class = "polje" onmousedown = "pritisnuto_polje(9, 27)" onmouseover = "prekriveno_polje(9, 27)" onmouseup = "kliknuto_polje(9, 27)" onmouseout = "normalno_polje(9, 27)"></div>
+                    <div id = "9, 28" class = "polje" onmousedown = "pritisnuto_polje(9, 28)" onmouseover = "prekriveno_polje(9, 28)" onmouseup = "kliknuto_polje(9, 28)" onmouseout = "normalno_polje(9, 28)"></div>
+                    <div id = "9, 29" class = "polje" onmousedown = "pritisnuto_polje(9, 29)" onmouseover = "prekriveno_polje(9, 29)" onmouseup = "kliknuto_polje(9, 29)" onmouseout = "normalno_polje(9, 29)"></div>
+                    <div id = "9, 30" class = "polje" onmousedown = "pritisnuto_polje(9, 30)" onmouseover = "prekriveno_polje(9, 30)" onmouseup = "kliknuto_polje(9, 30)" onmouseout = "normalno_polje(9, 30)"></div>
+                    <div id = "9, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(9, 31)" onmouseover = "prekriveno_polje(9, 31)" onmouseup = "kliknuto_polje(9, 31)" onmouseout = "normalno_polje(9, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "10, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(10, 0)" onmouseover = "prekriveno_polje(10, 0)" onmouseup = "kliknuto_polje(10, 0)" onmouseout = "normalno_polje(10, 0)"></div>
+                    <div id = "10, 1" class = "polje" onmousedown = "pritisnuto_polje(10, 1)" onmouseover = "prekriveno_polje(10, 1)" onmouseup = "kliknuto_polje(10, 1)" onmouseout = "normalno_polje(10, 1)"></div>
+                    <div id = "10, 2" class = "polje" onmousedown = "pritisnuto_polje(10, 2)" onmouseover = "prekriveno_polje(10, 2)" onmouseup = "kliknuto_polje(10, 2)" onmouseout = "normalno_polje(10, 2)"></div>
+                    <div id = "10, 3" class = "polje" onmousedown = "pritisnuto_polje(10, 3)" onmouseover = "prekriveno_polje(10, 3)" onmouseup = "kliknuto_polje(10, 3)" onmouseout = "normalno_polje(10, 3)"></div>
+                    <div id = "10, 4" class = "polje" onmousedown = "pritisnuto_polje(10, 4)" onmouseover = "prekriveno_polje(10, 4)" onmouseup = "kliknuto_polje(10, 4)" onmouseout = "normalno_polje(10, 4)"></div>
+                    <div id = "10, 5" class = "polje" onmousedown = "pritisnuto_polje(10, 5)" onmouseover = "prekriveno_polje(10, 5)" onmouseup = "kliknuto_polje(10, 5)" onmouseout = "normalno_polje(10, 5)"></div>
+                    <div id = "10, 6" class = "polje" onmousedown = "pritisnuto_polje(10, 6)" onmouseover = "prekriveno_polje(10, 6)" onmouseup = "kliknuto_polje(10, 6)" onmouseout = "normalno_polje(10, 6)"></div>
+                    <div id = "10, 7" class = "polje" onmousedown = "pritisnuto_polje(10, 7)" onmouseover = "prekriveno_polje(10, 7)" onmouseup = "kliknuto_polje(10, 7)" onmouseout = "normalno_polje(10, 7)"></div>
+                    <div id = "10, 8" class = "polje" onmousedown = "pritisnuto_polje(10, 8)" onmouseover = "prekriveno_polje(10, 8)" onmouseup = "kliknuto_polje(10, 8)" onmouseout = "normalno_polje(10, 8)"></div>
+                    <div id = "10, 9" class = "polje" onmousedown = "pritisnuto_polje(10, 9)" onmouseover = "prekriveno_polje(10, 9)" onmouseup = "kliknuto_polje(10, 9)" onmouseout = "normalno_polje(10, 9)"></div>
+                    <div id = "10, 10" class = "polje" onmousedown = "pritisnuto_polje(10, 10)" onmouseover = "prekriveno_polje(10, 10)" onmouseup = "kliknuto_polje(10, 10)" onmouseout = "normalno_polje(10, 10)"></div>
+                    <div id = "10, 11" class = "polje" onmousedown = "pritisnuto_polje(10, 11)" onmouseover = "prekriveno_polje(10, 11)" onmouseup = "kliknuto_polje(10, 11)" onmouseout = "normalno_polje(10, 11)"></div>
+                    <div id = "10, 12" class = "polje" onmousedown = "pritisnuto_polje(10, 12)" onmouseover = "prekriveno_polje(10, 12)" onmouseup = "kliknuto_polje(10, 12)" onmouseout = "normalno_polje(10, 12)"></div>
+                    <div id = "10, 13" class = "polje" onmousedown = "pritisnuto_polje(10, 13)" onmouseover = "prekriveno_polje(10, 13)" onmouseup = "kliknuto_polje(10, 13)" onmouseout = "normalno_polje(10, 13)"></div>
+                    <div id = "10, 14" class = "polje" onmousedown = "pritisnuto_polje(10, 14)" onmouseover = "prekriveno_polje(10, 14)" onmouseup = "kliknuto_polje(10, 14)" onmouseout = "normalno_polje(10, 14)"></div>
+                    <div id = "10, 15" class = "polje" onmousedown = "pritisnuto_polje(10, 15)" onmouseover = "prekriveno_polje(10, 15)" onmouseup = "kliknuto_polje(10, 15)" onmouseout = "normalno_polje(10, 15)"></div>
+                    <div id = "10, 16" class = "polje" onmousedown = "pritisnuto_polje(10, 16)" onmouseover = "prekriveno_polje(10, 16)" onmouseup = "kliknuto_polje(10, 16)" onmouseout = "normalno_polje(10, 16)"></div>
+                    <div id = "10, 17" class = "polje" onmousedown = "pritisnuto_polje(10, 17)" onmouseover = "prekriveno_polje(10, 17)" onmouseup = "kliknuto_polje(10, 17)" onmouseout = "normalno_polje(10, 17)"></div>
+                    <div id = "10, 18" class = "polje" onmousedown = "pritisnuto_polje(10, 18)" onmouseover = "prekriveno_polje(10, 18)" onmouseup = "kliknuto_polje(10, 18)" onmouseout = "normalno_polje(10, 18)"></div>
+                    <div id = "10, 19" class = "polje" onmousedown = "pritisnuto_polje(10, 19)" onmouseover = "prekriveno_polje(10, 19)" onmouseup = "kliknuto_polje(10, 19)" onmouseout = "normalno_polje(10, 19)"></div>
+                    <div id = "10, 20" class = "polje" onmousedown = "pritisnuto_polje(10, 20)" onmouseover = "prekriveno_polje(10, 20)" onmouseup = "kliknuto_polje(10, 20)" onmouseout = "normalno_polje(10, 20)"></div>
+                    <div id = "10, 21" class = "polje" onmousedown = "pritisnuto_polje(10, 21)" onmouseover = "prekriveno_polje(10, 21)" onmouseup = "kliknuto_polje(10, 21)" onmouseout = "normalno_polje(10, 21)"></div>
+                    <div id = "10, 22" class = "polje" onmousedown = "pritisnuto_polje(10, 22)" onmouseover = "prekriveno_polje(10, 22)" onmouseup = "kliknuto_polje(10, 22)" onmouseout = "normalno_polje(10, 22)"></div>
+                    <div id = "10, 23" class = "polje" onmousedown = "pritisnuto_polje(10, 23)" onmouseover = "prekriveno_polje(10, 23)" onmouseup = "kliknuto_polje(10, 23)" onmouseout = "normalno_polje(10, 23)"></div>
+                    <div id = "10, 24" class = "polje" onmousedown = "pritisnuto_polje(10, 24)" onmouseover = "prekriveno_polje(10, 24)" onmouseup = "kliknuto_polje(10, 24)" onmouseout = "normalno_polje(10, 24)"></div>
+                    <div id = "10, 25" class = "polje" onmousedown = "pritisnuto_polje(10, 25)" onmouseover = "prekriveno_polje(10, 25)" onmouseup = "kliknuto_polje(10, 25)" onmouseout = "normalno_polje(10, 25)"></div>
+                    <div id = "10, 26" class = "polje" onmousedown = "pritisnuto_polje(10, 26)" onmouseover = "prekriveno_polje(10, 26)" onmouseup = "kliknuto_polje(10, 26)" onmouseout = "normalno_polje(10, 26)"></div>
+                    <div id = "10, 27" class = "polje" onmousedown = "pritisnuto_polje(10, 27)" onmouseover = "prekriveno_polje(10, 27)" onmouseup = "kliknuto_polje(10, 27)" onmouseout = "normalno_polje(10, 27)"></div>
+                    <div id = "10, 28" class = "polje" onmousedown = "pritisnuto_polje(10, 28)" onmouseover = "prekriveno_polje(10, 28)" onmouseup = "kliknuto_polje(10, 28)" onmouseout = "normalno_polje(10, 28)"></div>
+                    <div id = "10, 29" class = "polje" onmousedown = "pritisnuto_polje(10, 29)" onmouseover = "prekriveno_polje(10, 29)" onmouseup = "kliknuto_polje(10, 29)" onmouseout = "normalno_polje(10, 29)"></div>
+                    <div id = "10, 30" class = "polje" onmousedown = "pritisnuto_polje(10, 30)" onmouseover = "prekriveno_polje(10, 30)" onmouseup = "kliknuto_polje(10, 30)" onmouseout = "normalno_polje(10, 30)"></div>
+                    <div id = "10, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(10, 31)" onmouseover = "prekriveno_polje(10, 31)" onmouseup = "kliknuto_polje(10, 31)" onmouseout = "normalno_polje(10, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "11, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(11, 0)" onmouseover = "prekriveno_polje(11, 0)" onmouseup = "kliknuto_polje(11, 0)" onmouseout = "normalno_polje(11, 0)"></div>
+                    <div id = "11, 1" class = "polje" onmousedown = "pritisnuto_polje(11, 1)" onmouseover = "prekriveno_polje(11, 1)" onmouseup = "kliknuto_polje(11, 1)" onmouseout = "normalno_polje(11, 1)"></div>
+                    <div id = "11, 2" class = "polje" onmousedown = "pritisnuto_polje(11, 2)" onmouseover = "prekriveno_polje(11, 2)" onmouseup = "kliknuto_polje(11, 2)" onmouseout = "normalno_polje(11, 2)"></div>
+                    <div id = "11, 3" class = "polje" onmousedown = "pritisnuto_polje(11, 3)" onmouseover = "prekriveno_polje(11, 3)" onmouseup = "kliknuto_polje(11, 3)" onmouseout = "normalno_polje(11, 3)"></div>
+                    <div id = "11, 4" class = "polje" onmousedown = "pritisnuto_polje(11, 4)" onmouseover = "prekriveno_polje(11, 4)" onmouseup = "kliknuto_polje(11, 4)" onmouseout = "normalno_polje(11, 4)"></div>
+                    <div id = "11, 5" class = "polje" onmousedown = "pritisnuto_polje(11, 5)" onmouseover = "prekriveno_polje(11, 5)" onmouseup = "kliknuto_polje(11, 5)" onmouseout = "normalno_polje(11, 5)"></div>
+                    <div id = "11, 6" class = "polje" onmousedown = "pritisnuto_polje(11, 6)" onmouseover = "prekriveno_polje(11, 6)" onmouseup = "kliknuto_polje(11, 6)" onmouseout = "normalno_polje(11, 6)"></div>
+                    <div id = "11, 7" class = "polje" onmousedown = "pritisnuto_polje(11, 7)" onmouseover = "prekriveno_polje(11, 7)" onmouseup = "kliknuto_polje(11, 7)" onmouseout = "normalno_polje(11, 7)"></div>
+                    <div id = "11, 8" class = "polje" onmousedown = "pritisnuto_polje(11, 8)" onmouseover = "prekriveno_polje(11, 8)" onmouseup = "kliknuto_polje(11, 8)" onmouseout = "normalno_polje(11, 8)"></div>
+                    <div id = "11, 9" class = "polje" onmousedown = "pritisnuto_polje(11, 9)" onmouseover = "prekriveno_polje(11, 9)" onmouseup = "kliknuto_polje(11, 9)" onmouseout = "normalno_polje(11, 9)"></div>
+                    <div id = "11, 10" class = "polje" onmousedown = "pritisnuto_polje(11, 10)" onmouseover = "prekriveno_polje(11, 10)" onmouseup = "kliknuto_polje(11, 10)" onmouseout = "normalno_polje(11, 10)"></div>
+                    <div id = "11, 11" class = "polje" onmousedown = "pritisnuto_polje(11, 11)" onmouseover = "prekriveno_polje(11, 11)" onmouseup = "kliknuto_polje(11, 11)" onmouseout = "normalno_polje(11, 11)"></div>
+                    <div id = "11, 12" class = "polje" onmousedown = "pritisnuto_polje(11, 12)" onmouseover = "prekriveno_polje(11, 12)" onmouseup = "kliknuto_polje(11, 12)" onmouseout = "normalno_polje(11, 12)"></div>
+                    <div id = "11, 13" class = "polje" onmousedown = "pritisnuto_polje(11, 13)" onmouseover = "prekriveno_polje(11, 13)" onmouseup = "kliknuto_polje(11, 13)" onmouseout = "normalno_polje(11, 13)"></div>
+                    <div id = "11, 14" class = "polje" onmousedown = "pritisnuto_polje(11, 14)" onmouseover = "prekriveno_polje(11, 14)" onmouseup = "kliknuto_polje(11, 14)" onmouseout = "normalno_polje(11, 14)"></div>
+                    <div id = "11, 15" class = "polje" onmousedown = "pritisnuto_polje(11, 15)" onmouseover = "prekriveno_polje(11, 15)" onmouseup = "kliknuto_polje(11, 15)" onmouseout = "normalno_polje(11, 15)"></div>
+                    <div id = "11, 16" class = "polje" onmousedown = "pritisnuto_polje(11, 16)" onmouseover = "prekriveno_polje(11, 16)" onmouseup = "kliknuto_polje(11, 16)" onmouseout = "normalno_polje(11, 16)"></div>
+                    <div id = "11, 17" class = "polje" onmousedown = "pritisnuto_polje(11, 17)" onmouseover = "prekriveno_polje(11, 17)" onmouseup = "kliknuto_polje(11, 17)" onmouseout = "normalno_polje(11, 17)"></div>
+                    <div id = "11, 18" class = "polje" onmousedown = "pritisnuto_polje(11, 18)" onmouseover = "prekriveno_polje(11, 18)" onmouseup = "kliknuto_polje(11, 18)" onmouseout = "normalno_polje(11, 18)"></div>
+                    <div id = "11, 19" class = "polje" onmousedown = "pritisnuto_polje(11, 19)" onmouseover = "prekriveno_polje(11, 19)" onmouseup = "kliknuto_polje(11, 19)" onmouseout = "normalno_polje(11, 19)"></div>
+                    <div id = "11, 20" class = "polje" onmousedown = "pritisnuto_polje(11, 20)" onmouseover = "prekriveno_polje(11, 20)" onmouseup = "kliknuto_polje(11, 20)" onmouseout = "normalno_polje(11, 20)"></div>
+                    <div id = "11, 21" class = "polje" onmousedown = "pritisnuto_polje(11, 21)" onmouseover = "prekriveno_polje(11, 21)" onmouseup = "kliknuto_polje(11, 21)" onmouseout = "normalno_polje(11, 21)"></div>
+                    <div id = "11, 22" class = "polje" onmousedown = "pritisnuto_polje(11, 22)" onmouseover = "prekriveno_polje(11, 22)" onmouseup = "kliknuto_polje(11, 22)" onmouseout = "normalno_polje(11, 22)"></div>
+                    <div id = "11, 23" class = "polje" onmousedown = "pritisnuto_polje(11, 23)" onmouseover = "prekriveno_polje(11, 23)" onmouseup = "kliknuto_polje(11, 23)" onmouseout = "normalno_polje(11, 23)"></div>
+                    <div id = "11, 24" class = "polje" onmousedown = "pritisnuto_polje(11, 24)" onmouseover = "prekriveno_polje(11, 24)" onmouseup = "kliknuto_polje(11, 24)" onmouseout = "normalno_polje(11, 24)"></div>
+                    <div id = "11, 25" class = "polje" onmousedown = "pritisnuto_polje(11, 25)" onmouseover = "prekriveno_polje(11, 25)" onmouseup = "kliknuto_polje(11, 25)" onmouseout = "normalno_polje(11, 25)"></div>
+                    <div id = "11, 26" class = "polje" onmousedown = "pritisnuto_polje(11, 26)" onmouseover = "prekriveno_polje(11, 26)" onmouseup = "kliknuto_polje(11, 26)" onmouseout = "normalno_polje(11, 26)"></div>
+                    <div id = "11, 27" class = "polje" onmousedown = "pritisnuto_polje(11, 27)" onmouseover = "prekriveno_polje(11, 27)" onmouseup = "kliknuto_polje(11, 27)" onmouseout = "normalno_polje(11, 27)"></div>
+                    <div id = "11, 28" class = "polje" onmousedown = "pritisnuto_polje(11, 28)" onmouseover = "prekriveno_polje(11, 28)" onmouseup = "kliknuto_polje(11, 28)" onmouseout = "normalno_polje(11, 28)"></div>
+                    <div id = "11, 29" class = "polje" onmousedown = "pritisnuto_polje(11, 29)" onmouseover = "prekriveno_polje(11, 29)" onmouseup = "kliknuto_polje(11, 29)" onmouseout = "normalno_polje(11, 29)"></div>
+                    <div id = "11, 30" class = "polje" onmousedown = "pritisnuto_polje(11, 30)" onmouseover = "prekriveno_polje(11, 30)" onmouseup = "kliknuto_polje(11, 30)" onmouseout = "normalno_polje(11, 30)"></div>
+                    <div id = "11, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(11, 31)" onmouseover = "prekriveno_polje(11, 31)" onmouseup = "kliknuto_polje(11, 31)" onmouseout = "normalno_polje(11, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "12, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(12, 0)" onmouseover = "prekriveno_polje(12, 0)" onmouseup = "kliknuto_polje(12, 0)" onmouseout = "normalno_polje(12, 0)"></div>
+                    <div id = "12, 1" class = "polje" onmousedown = "pritisnuto_polje(12, 1)" onmouseover = "prekriveno_polje(12, 1)" onmouseup = "kliknuto_polje(12, 1)" onmouseout = "normalno_polje(12, 1)"></div>
+                    <div id = "12, 2" class = "polje" onmousedown = "pritisnuto_polje(12, 2)" onmouseover = "prekriveno_polje(12, 2)" onmouseup = "kliknuto_polje(12, 2)" onmouseout = "normalno_polje(12, 2)"></div>
+                    <div id = "12, 3" class = "polje" onmousedown = "pritisnuto_polje(12, 3)" onmouseover = "prekriveno_polje(12, 3)" onmouseup = "kliknuto_polje(12, 3)" onmouseout = "normalno_polje(12, 3)"></div>
+                    <div id = "12, 4" class = "polje" onmousedown = "pritisnuto_polje(12, 4)" onmouseover = "prekriveno_polje(12, 4)" onmouseup = "kliknuto_polje(12, 4)" onmouseout = "normalno_polje(12, 4)"></div>
+                    <div id = "12, 5" class = "polje" onmousedown = "pritisnuto_polje(12, 5)" onmouseover = "prekriveno_polje(12, 5)" onmouseup = "kliknuto_polje(12, 5)" onmouseout = "normalno_polje(12, 5)"></div>
+                    <div id = "12, 6" class = "polje" onmousedown = "pritisnuto_polje(12, 6)" onmouseover = "prekriveno_polje(12, 6)" onmouseup = "kliknuto_polje(12, 6)" onmouseout = "normalno_polje(12, 6)"></div>
+                    <div id = "12, 7" class = "polje" onmousedown = "pritisnuto_polje(12, 7)" onmouseover = "prekriveno_polje(12, 7)" onmouseup = "kliknuto_polje(12, 7)" onmouseout = "normalno_polje(12, 7)"></div>
+                    <div id = "12, 8" class = "polje" onmousedown = "pritisnuto_polje(12, 8)" onmouseover = "prekriveno_polje(12, 8)" onmouseup = "kliknuto_polje(12, 8)" onmouseout = "normalno_polje(12, 8)"></div>
+                    <div id = "12, 9" class = "polje" onmousedown = "pritisnuto_polje(12, 9)" onmouseover = "prekriveno_polje(12, 9)" onmouseup = "kliknuto_polje(12, 9)" onmouseout = "normalno_polje(12, 9)"></div>
+                    <div id = "12, 10" class = "polje" onmousedown = "pritisnuto_polje(12, 10)" onmouseover = "prekriveno_polje(12, 10)" onmouseup = "kliknuto_polje(12, 10)" onmouseout = "normalno_polje(12, 10)"></div>
+                    <div id = "12, 11" class = "polje" onmousedown = "pritisnuto_polje(12, 11)" onmouseover = "prekriveno_polje(12, 11)" onmouseup = "kliknuto_polje(12, 11)" onmouseout = "normalno_polje(12, 11)"></div>
+                    <div id = "12, 12" class = "polje" onmousedown = "pritisnuto_polje(12, 12)" onmouseover = "prekriveno_polje(12, 12)" onmouseup = "kliknuto_polje(12, 12)" onmouseout = "normalno_polje(12, 12)"></div>
+                    <div id = "12, 13" class = "polje" onmousedown = "pritisnuto_polje(12, 13)" onmouseover = "prekriveno_polje(12, 13)" onmouseup = "kliknuto_polje(12, 13)" onmouseout = "normalno_polje(12, 13)"></div>
+                    <div id = "12, 14" class = "polje" onmousedown = "pritisnuto_polje(12, 14)" onmouseover = "prekriveno_polje(12, 14)" onmouseup = "kliknuto_polje(12, 14)" onmouseout = "normalno_polje(12, 14)"></div>
+                    <div id = "12, 15" class = "polje" onmousedown = "pritisnuto_polje(12, 15)" onmouseover = "prekriveno_polje(12, 15)" onmouseup = "kliknuto_polje(12, 15)" onmouseout = "normalno_polje(12, 15)"></div>
+                    <div id = "12, 16" class = "polje" onmousedown = "pritisnuto_polje(12, 16)" onmouseover = "prekriveno_polje(12, 16)" onmouseup = "kliknuto_polje(12, 16)" onmouseout = "normalno_polje(12, 16)"></div>
+                    <div id = "12, 17" class = "polje" onmousedown = "pritisnuto_polje(12, 17)" onmouseover = "prekriveno_polje(12, 17)" onmouseup = "kliknuto_polje(12, 17)" onmouseout = "normalno_polje(12, 17)"></div>
+                    <div id = "12, 18" class = "polje" onmousedown = "pritisnuto_polje(12, 18)" onmouseover = "prekriveno_polje(12, 18)" onmouseup = "kliknuto_polje(12, 18)" onmouseout = "normalno_polje(12, 18)"></div>
+                    <div id = "12, 19" class = "polje" onmousedown = "pritisnuto_polje(12, 19)" onmouseover = "prekriveno_polje(12, 19)" onmouseup = "kliknuto_polje(12, 19)" onmouseout = "normalno_polje(12, 19)"></div>
+                    <div id = "12, 20" class = "polje" onmousedown = "pritisnuto_polje(12, 20)" onmouseover = "prekriveno_polje(12, 20)" onmouseup = "kliknuto_polje(12, 20)" onmouseout = "normalno_polje(12, 20)"></div>
+                    <div id = "12, 21" class = "polje" onmousedown = "pritisnuto_polje(12, 21)" onmouseover = "prekriveno_polje(12, 21)" onmouseup = "kliknuto_polje(12, 21)" onmouseout = "normalno_polje(12, 21)"></div>
+                    <div id = "12, 22" class = "polje" onmousedown = "pritisnuto_polje(12, 22)" onmouseover = "prekriveno_polje(12, 22)" onmouseup = "kliknuto_polje(12, 22)" onmouseout = "normalno_polje(12, 22)"></div>
+                    <div id = "12, 23" class = "polje" onmousedown = "pritisnuto_polje(12, 23)" onmouseover = "prekriveno_polje(12, 23)" onmouseup = "kliknuto_polje(12, 23)" onmouseout = "normalno_polje(12, 23)"></div>
+                    <div id = "12, 24" class = "polje" onmousedown = "pritisnuto_polje(12, 24)" onmouseover = "prekriveno_polje(12, 24)" onmouseup = "kliknuto_polje(12, 24)" onmouseout = "normalno_polje(12, 24)"></div>
+                    <div id = "12, 25" class = "polje" onmousedown = "pritisnuto_polje(12, 25)" onmouseover = "prekriveno_polje(12, 25)" onmouseup = "kliknuto_polje(12, 25)" onmouseout = "normalno_polje(12, 25)"></div>
+                    <div id = "12, 26" class = "polje" onmousedown = "pritisnuto_polje(12, 26)" onmouseover = "prekriveno_polje(12, 26)" onmouseup = "kliknuto_polje(12, 26)" onmouseout = "normalno_polje(12, 26)"></div>
+                    <div id = "12, 27" class = "polje" onmousedown = "pritisnuto_polje(12, 27)" onmouseover = "prekriveno_polje(12, 27)" onmouseup = "kliknuto_polje(12, 27)" onmouseout = "normalno_polje(12, 27)"></div>
+                    <div id = "12, 28" class = "polje" onmousedown = "pritisnuto_polje(12, 28)" onmouseover = "prekriveno_polje(12, 28)" onmouseup = "kliknuto_polje(12, 28)" onmouseout = "normalno_polje(12, 28)"></div>
+                    <div id = "12, 29" class = "polje" onmousedown = "pritisnuto_polje(12, 29)" onmouseover = "prekriveno_polje(12, 29)" onmouseup = "kliknuto_polje(12, 29)" onmouseout = "normalno_polje(12, 29)"></div>
+                    <div id = "12, 30" class = "polje" onmousedown = "pritisnuto_polje(12, 30)" onmouseover = "prekriveno_polje(12, 30)" onmouseup = "kliknuto_polje(12, 30)" onmouseout = "normalno_polje(12, 30)"></div>
+                    <div id = "12, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(12, 31)" onmouseover = "prekriveno_polje(12, 31)" onmouseup = "kliknuto_polje(12, 31)" onmouseout = "normalno_polje(12, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "13, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(13, 0)" onmouseover = "prekriveno_polje(13, 0)" onmouseup = "kliknuto_polje(13, 0)" onmouseout = "normalno_polje(13, 0)"></div>
+                    <div id = "13, 1" class = "polje" onmousedown = "pritisnuto_polje(13, 1)" onmouseover = "prekriveno_polje(13, 1)" onmouseup = "kliknuto_polje(13, 1)" onmouseout = "normalno_polje(13, 1)"></div>
+                    <div id = "13, 2" class = "polje" onmousedown = "pritisnuto_polje(13, 2)" onmouseover = "prekriveno_polje(13, 2)" onmouseup = "kliknuto_polje(13, 2)" onmouseout = "normalno_polje(13, 2)"></div>
+                    <div id = "13, 3" class = "polje" onmousedown = "pritisnuto_polje(13, 3)" onmouseover = "prekriveno_polje(13, 3)" onmouseup = "kliknuto_polje(13, 3)" onmouseout = "normalno_polje(13, 3)"></div>
+                    <div id = "13, 4" class = "polje" onmousedown = "pritisnuto_polje(13, 4)" onmouseover = "prekriveno_polje(13, 4)" onmouseup = "kliknuto_polje(13, 4)" onmouseout = "normalno_polje(13, 4)"></div>
+                    <div id = "13, 5" class = "polje" onmousedown = "pritisnuto_polje(13, 5)" onmouseover = "prekriveno_polje(13, 5)" onmouseup = "kliknuto_polje(13, 5)" onmouseout = "normalno_polje(13, 5)"></div>
+                    <div id = "13, 6" class = "polje" onmousedown = "pritisnuto_polje(13, 6)" onmouseover = "prekriveno_polje(13, 6)" onmouseup = "kliknuto_polje(13, 6)" onmouseout = "normalno_polje(13, 6)"></div>
+                    <div id = "13, 7" class = "polje" onmousedown = "pritisnuto_polje(13, 7)" onmouseover = "prekriveno_polje(13, 7)" onmouseup = "kliknuto_polje(13, 7)" onmouseout = "normalno_polje(13, 7)"></div>
+                    <div id = "13, 8" class = "polje" onmousedown = "pritisnuto_polje(13, 8)" onmouseover = "prekriveno_polje(13, 8)" onmouseup = "kliknuto_polje(13, 8)" onmouseout = "normalno_polje(13, 8)"></div>
+                    <div id = "13, 9" class = "polje" onmousedown = "pritisnuto_polje(13, 9)" onmouseover = "prekriveno_polje(13, 9)" onmouseup = "kliknuto_polje(13, 9)" onmouseout = "normalno_polje(13, 9)"></div>
+                    <div id = "13, 10" class = "polje" onmousedown = "pritisnuto_polje(13, 10)" onmouseover = "prekriveno_polje(13, 10)" onmouseup = "kliknuto_polje(13, 10)" onmouseout = "normalno_polje(13, 10)"></div>
+                    <div id = "13, 11" class = "polje" onmousedown = "pritisnuto_polje(13, 11)" onmouseover = "prekriveno_polje(13, 11)" onmouseup = "kliknuto_polje(13, 11)" onmouseout = "normalno_polje(13, 11)"></div>
+                    <div id = "13, 12" class = "polje" onmousedown = "pritisnuto_polje(13, 12)" onmouseover = "prekriveno_polje(13, 12)" onmouseup = "kliknuto_polje(13, 12)" onmouseout = "normalno_polje(13, 12)"></div>
+                    <div id = "13, 13" class = "polje" onmousedown = "pritisnuto_polje(13, 13)" onmouseover = "prekriveno_polje(13, 13)" onmouseup = "kliknuto_polje(13, 13)" onmouseout = "normalno_polje(13, 13)"></div>
+                    <div id = "13, 14" class = "polje" onmousedown = "pritisnuto_polje(13, 14)" onmouseover = "prekriveno_polje(13, 14)" onmouseup = "kliknuto_polje(13, 14)" onmouseout = "normalno_polje(13, 14)"></div>
+                    <div id = "13, 15" class = "polje" onmousedown = "pritisnuto_polje(13, 15)" onmouseover = "prekriveno_polje(13, 15)" onmouseup = "kliknuto_polje(13, 15)" onmouseout = "normalno_polje(13, 15)"></div>
+                    <div id = "13, 16" class = "polje" onmousedown = "pritisnuto_polje(13, 16)" onmouseover = "prekriveno_polje(13, 16)" onmouseup = "kliknuto_polje(13, 16)" onmouseout = "normalno_polje(13, 16)"></div>
+                    <div id = "13, 17" class = "polje" onmousedown = "pritisnuto_polje(13, 17)" onmouseover = "prekriveno_polje(13, 17)" onmouseup = "kliknuto_polje(13, 17)" onmouseout = "normalno_polje(13, 17)"></div>
+                    <div id = "13, 18" class = "polje" onmousedown = "pritisnuto_polje(13, 18)" onmouseover = "prekriveno_polje(13, 18)" onmouseup = "kliknuto_polje(13, 18)" onmouseout = "normalno_polje(13, 18)"></div>
+                    <div id = "13, 19" class = "polje" onmousedown = "pritisnuto_polje(13, 19)" onmouseover = "prekriveno_polje(13, 19)" onmouseup = "kliknuto_polje(13, 19)" onmouseout = "normalno_polje(13, 19)"></div>
+                    <div id = "13, 20" class = "polje" onmousedown = "pritisnuto_polje(13, 20)" onmouseover = "prekriveno_polje(13, 20)" onmouseup = "kliknuto_polje(13, 20)" onmouseout = "normalno_polje(13, 20)"></div>
+                    <div id = "13, 21" class = "polje" onmousedown = "pritisnuto_polje(13, 21)" onmouseover = "prekriveno_polje(13, 21)" onmouseup = "kliknuto_polje(13, 21)" onmouseout = "normalno_polje(13, 21)"></div>
+                    <div id = "13, 22" class = "polje" onmousedown = "pritisnuto_polje(13, 22)" onmouseover = "prekriveno_polje(13, 22)" onmouseup = "kliknuto_polje(13, 22)" onmouseout = "normalno_polje(13, 22)"></div>
+                    <div id = "13, 23" class = "polje" onmousedown = "pritisnuto_polje(13, 23)" onmouseover = "prekriveno_polje(13, 23)" onmouseup = "kliknuto_polje(13, 23)" onmouseout = "normalno_polje(13, 23)"></div>
+                    <div id = "13, 24" class = "polje" onmousedown = "pritisnuto_polje(13, 24)" onmouseover = "prekriveno_polje(13, 24)" onmouseup = "kliknuto_polje(13, 24)" onmouseout = "normalno_polje(13, 24)"></div>
+                    <div id = "13, 25" class = "polje" onmousedown = "pritisnuto_polje(13, 25)" onmouseover = "prekriveno_polje(13, 25)" onmouseup = "kliknuto_polje(13, 25)" onmouseout = "normalno_polje(13, 25)"></div>
+                    <div id = "13, 26" class = "polje" onmousedown = "pritisnuto_polje(13, 26)" onmouseover = "prekriveno_polje(13, 26)" onmouseup = "kliknuto_polje(13, 26)" onmouseout = "normalno_polje(13, 26)"></div>
+                    <div id = "13, 27" class = "polje" onmousedown = "pritisnuto_polje(13, 27)" onmouseover = "prekriveno_polje(13, 27)" onmouseup = "kliknuto_polje(13, 27)" onmouseout = "normalno_polje(13, 27)"></div>
+                    <div id = "13, 28" class = "polje" onmousedown = "pritisnuto_polje(13, 28)" onmouseover = "prekriveno_polje(13, 28)" onmouseup = "kliknuto_polje(13, 28)" onmouseout = "normalno_polje(13, 28)"></div>
+                    <div id = "13, 29" class = "polje" onmousedown = "pritisnuto_polje(13, 29)" onmouseover = "prekriveno_polje(13, 29)" onmouseup = "kliknuto_polje(13, 29)" onmouseout = "normalno_polje(13, 29)"></div>
+                    <div id = "13, 30" class = "polje" onmousedown = "pritisnuto_polje(13, 30)" onmouseover = "prekriveno_polje(13, 30)" onmouseup = "kliknuto_polje(13, 30)" onmouseout = "normalno_polje(13, 30)"></div>
+                    <div id = "13, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(13, 31)" onmouseover = "prekriveno_polje(13, 31)" onmouseup = "kliknuto_polje(13, 31)" onmouseout = "normalno_polje(13, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "14, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(14, 0)" onmouseover = "prekriveno_polje(14, 0)" onmouseup = "kliknuto_polje(14, 0)" onmouseout = "normalno_polje(14, 0)"></div>
+                    <div id = "14, 1" class = "polje" onmousedown = "pritisnuto_polje(14, 1)" onmouseover = "prekriveno_polje(14, 1)" onmouseup = "kliknuto_polje(14, 1)" onmouseout = "normalno_polje(14, 1)"></div>
+                    <div id = "14, 2" class = "polje" onmousedown = "pritisnuto_polje(14, 2)" onmouseover = "prekriveno_polje(14, 2)" onmouseup = "kliknuto_polje(14, 2)" onmouseout = "normalno_polje(14, 2)"></div>
+                    <div id = "14, 3" class = "polje" onmousedown = "pritisnuto_polje(14, 3)" onmouseover = "prekriveno_polje(14, 3)" onmouseup = "kliknuto_polje(14, 3)" onmouseout = "normalno_polje(14, 3)"></div>
+                    <div id = "14, 4" class = "polje" onmousedown = "pritisnuto_polje(14, 4)" onmouseover = "prekriveno_polje(14, 4)" onmouseup = "kliknuto_polje(14, 4)" onmouseout = "normalno_polje(14, 4)"></div>
+                    <div id = "14, 5" class = "polje" onmousedown = "pritisnuto_polje(14, 5)" onmouseover = "prekriveno_polje(14, 5)" onmouseup = "kliknuto_polje(14, 5)" onmouseout = "normalno_polje(14, 5)"></div>
+                    <div id = "14, 6" class = "polje" onmousedown = "pritisnuto_polje(14, 6)" onmouseover = "prekriveno_polje(14, 6)" onmouseup = "kliknuto_polje(14, 6)" onmouseout = "normalno_polje(14, 6)"></div>
+                    <div id = "14, 7" class = "polje" onmousedown = "pritisnuto_polje(14, 7)" onmouseover = "prekriveno_polje(14, 7)" onmouseup = "kliknuto_polje(14, 7)" onmouseout = "normalno_polje(14, 7)"></div>
+                    <div id = "14, 8" class = "polje" onmousedown = "pritisnuto_polje(14, 8)" onmouseover = "prekriveno_polje(14, 8)" onmouseup = "kliknuto_polje(14, 8)" onmouseout = "normalno_polje(14, 8)"></div>
+                    <div id = "14, 9" class = "polje" onmousedown = "pritisnuto_polje(14, 9)" onmouseover = "prekriveno_polje(14, 9)" onmouseup = "kliknuto_polje(14, 9)" onmouseout = "normalno_polje(14, 9)"></div>
+                    <div id = "14, 10" class = "polje" onmousedown = "pritisnuto_polje(14, 10)" onmouseover = "prekriveno_polje(14, 10)" onmouseup = "kliknuto_polje(14, 10)" onmouseout = "normalno_polje(14, 10)"></div>
+                    <div id = "14, 11" class = "polje" onmousedown = "pritisnuto_polje(14, 11)" onmouseover = "prekriveno_polje(14, 11)" onmouseup = "kliknuto_polje(14, 11)" onmouseout = "normalno_polje(14, 11)"></div>
+                    <div id = "14, 12" class = "polje" onmousedown = "pritisnuto_polje(14, 12)" onmouseover = "prekriveno_polje(14, 12)" onmouseup = "kliknuto_polje(14, 12)" onmouseout = "normalno_polje(14, 12)"></div>
+                    <div id = "14, 13" class = "polje" onmousedown = "pritisnuto_polje(14, 13)" onmouseover = "prekriveno_polje(14, 13)" onmouseup = "kliknuto_polje(14, 13)" onmouseout = "normalno_polje(14, 13)"></div>
+                    <div id = "14, 14" class = "polje" onmousedown = "pritisnuto_polje(14, 14)" onmouseover = "prekriveno_polje(14, 14)" onmouseup = "kliknuto_polje(14, 14)" onmouseout = "normalno_polje(14, 14)"></div>
+                    <div id = "14, 15" class = "polje" onmousedown = "pritisnuto_polje(14, 15)" onmouseover = "prekriveno_polje(14, 15)" onmouseup = "kliknuto_polje(14, 15)" onmouseout = "normalno_polje(14, 15)"></div>
+                    <div id = "14, 16" class = "polje" onmousedown = "pritisnuto_polje(14, 16)" onmouseover = "prekriveno_polje(14, 16)" onmouseup = "kliknuto_polje(14, 16)" onmouseout = "normalno_polje(14, 16)"></div>
+                    <div id = "14, 17" class = "polje" onmousedown = "pritisnuto_polje(14, 17)" onmouseover = "prekriveno_polje(14, 17)" onmouseup = "kliknuto_polje(14, 17)" onmouseout = "normalno_polje(14, 17)"></div>
+                    <div id = "14, 18" class = "polje" onmousedown = "pritisnuto_polje(14, 18)" onmouseover = "prekriveno_polje(14, 18)" onmouseup = "kliknuto_polje(14, 18)" onmouseout = "normalno_polje(14, 18)"></div>
+                    <div id = "14, 19" class = "polje" onmousedown = "pritisnuto_polje(14, 19)" onmouseover = "prekriveno_polje(14, 19)" onmouseup = "kliknuto_polje(14, 19)" onmouseout = "normalno_polje(14, 19)"></div>
+                    <div id = "14, 20" class = "polje" onmousedown = "pritisnuto_polje(14, 20)" onmouseover = "prekriveno_polje(14, 20)" onmouseup = "kliknuto_polje(14, 20)" onmouseout = "normalno_polje(14, 20)"></div>
+                    <div id = "14, 21" class = "polje" onmousedown = "pritisnuto_polje(14, 21)" onmouseover = "prekriveno_polje(14, 21)" onmouseup = "kliknuto_polje(14, 21)" onmouseout = "normalno_polje(14, 21)"></div>
+                    <div id = "14, 22" class = "polje" onmousedown = "pritisnuto_polje(14, 22)" onmouseover = "prekriveno_polje(14, 22)" onmouseup = "kliknuto_polje(14, 22)" onmouseout = "normalno_polje(14, 22)"></div>
+                    <div id = "14, 23" class = "polje" onmousedown = "pritisnuto_polje(14, 23)" onmouseover = "prekriveno_polje(14, 23)" onmouseup = "kliknuto_polje(14, 23)" onmouseout = "normalno_polje(14, 23)"></div>
+                    <div id = "14, 24" class = "polje" onmousedown = "pritisnuto_polje(14, 24)" onmouseover = "prekriveno_polje(14, 24)" onmouseup = "kliknuto_polje(14, 24)" onmouseout = "normalno_polje(14, 24)"></div>
+                    <div id = "14, 25" class = "polje" onmousedown = "pritisnuto_polje(14, 25)" onmouseover = "prekriveno_polje(14, 25)" onmouseup = "kliknuto_polje(14, 25)" onmouseout = "normalno_polje(14, 25)"></div>
+                    <div id = "14, 26" class = "polje" onmousedown = "pritisnuto_polje(14, 26)" onmouseover = "prekriveno_polje(14, 26)" onmouseup = "kliknuto_polje(14, 26)" onmouseout = "normalno_polje(14, 26)"></div>
+                    <div id = "14, 27" class = "polje" onmousedown = "pritisnuto_polje(14, 27)" onmouseover = "prekriveno_polje(14, 27)" onmouseup = "kliknuto_polje(14, 27)" onmouseout = "normalno_polje(14, 27)"></div>
+                    <div id = "14, 28" class = "polje" onmousedown = "pritisnuto_polje(14, 28)" onmouseover = "prekriveno_polje(14, 28)" onmouseup = "kliknuto_polje(14, 28)" onmouseout = "normalno_polje(14, 28)"></div>
+                    <div id = "14, 29" class = "polje" onmousedown = "pritisnuto_polje(14, 29)" onmouseover = "prekriveno_polje(14, 29)" onmouseup = "kliknuto_polje(14, 29)" onmouseout = "normalno_polje(14, 29)"></div>
+                    <div id = "14, 30" class = "polje" onmousedown = "pritisnuto_polje(14, 30)" onmouseover = "prekriveno_polje(14, 30)" onmouseup = "kliknuto_polje(14, 30)" onmouseout = "normalno_polje(14, 30)"></div>
+                    <div id = "14, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(14, 31)" onmouseover = "prekriveno_polje(14, 31)" onmouseup = "kliknuto_polje(14, 31)" onmouseout = "normalno_polje(14, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "15, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(15, 0)" onmouseover = "prekriveno_polje(15, 0)" onmouseup = "kliknuto_polje(15, 0)" onmouseout = "normalno_polje(15, 0)"></div>
+                    <div id = "15, 1" class = "polje" onmousedown = "pritisnuto_polje(15, 1)" onmouseover = "prekriveno_polje(15, 1)" onmouseup = "kliknuto_polje(15, 1)" onmouseout = "normalno_polje(15, 1)"></div>
+                    <div id = "15, 2" class = "polje" onmousedown = "pritisnuto_polje(15, 2)" onmouseover = "prekriveno_polje(15, 2)" onmouseup = "kliknuto_polje(15, 2)" onmouseout = "normalno_polje(15, 2)"></div>
+                    <div id = "15, 3" class = "polje" onmousedown = "pritisnuto_polje(15, 3)" onmouseover = "prekriveno_polje(15, 3)" onmouseup = "kliknuto_polje(15, 3)" onmouseout = "normalno_polje(15, 3)"></div>
+                    <div id = "15, 4" class = "polje" onmousedown = "pritisnuto_polje(15, 4)" onmouseover = "prekriveno_polje(15, 4)" onmouseup = "kliknuto_polje(15, 4)" onmouseout = "normalno_polje(15, 4)"></div>
+                    <div id = "15, 5" class = "polje" onmousedown = "pritisnuto_polje(15, 5)" onmouseover = "prekriveno_polje(15, 5)" onmouseup = "kliknuto_polje(15, 5)" onmouseout = "normalno_polje(15, 5)"></div>
+                    <div id = "15, 6" class = "polje" onmousedown = "pritisnuto_polje(15, 6)" onmouseover = "prekriveno_polje(15, 6)" onmouseup = "kliknuto_polje(15, 6)" onmouseout = "normalno_polje(15, 6)"></div>
+                    <div id = "15, 7" class = "polje" onmousedown = "pritisnuto_polje(15, 7)" onmouseover = "prekriveno_polje(15, 7)" onmouseup = "kliknuto_polje(15, 7)" onmouseout = "normalno_polje(15, 7)"></div>
+                    <div id = "15, 8" class = "polje" onmousedown = "pritisnuto_polje(15, 8)" onmouseover = "prekriveno_polje(15, 8)" onmouseup = "kliknuto_polje(15, 8)" onmouseout = "normalno_polje(15, 8)"></div>
+                    <div id = "15, 9" class = "polje" onmousedown = "pritisnuto_polje(15, 9)" onmouseover = "prekriveno_polje(15, 9)" onmouseup = "kliknuto_polje(15, 9)" onmouseout = "normalno_polje(15, 9)"></div>
+                    <div id = "15, 10" class = "polje" onmousedown = "pritisnuto_polje(15, 10)" onmouseover = "prekriveno_polje(15, 10)" onmouseup = "kliknuto_polje(15, 10)" onmouseout = "normalno_polje(15, 10)"></div>
+                    <div id = "15, 11" class = "polje" onmousedown = "pritisnuto_polje(15, 11)" onmouseover = "prekriveno_polje(15, 11)" onmouseup = "kliknuto_polje(15, 11)" onmouseout = "normalno_polje(15, 11)"></div>
+                    <div id = "15, 12" class = "polje" onmousedown = "pritisnuto_polje(15, 12)" onmouseover = "prekriveno_polje(15, 12)" onmouseup = "kliknuto_polje(15, 12)" onmouseout = "normalno_polje(15, 12)"></div>
+                    <div id = "15, 13" class = "polje" onmousedown = "pritisnuto_polje(15, 13)" onmouseover = "prekriveno_polje(15, 13)" onmouseup = "kliknuto_polje(15, 13)" onmouseout = "normalno_polje(15, 13)"></div>
+                    <div id = "15, 14" class = "polje" onmousedown = "pritisnuto_polje(15, 14)" onmouseover = "prekriveno_polje(15, 14)" onmouseup = "kliknuto_polje(15, 14)" onmouseout = "normalno_polje(15, 14)"></div>
+                    <div id = "15, 15" class = "polje" onmousedown = "pritisnuto_polje(15, 15)" onmouseover = "prekriveno_polje(15, 15)" onmouseup = "kliknuto_polje(15, 15)" onmouseout = "normalno_polje(15, 15)"></div>
+                    <div id = "15, 16" class = "polje" onmousedown = "pritisnuto_polje(15, 16)" onmouseover = "prekriveno_polje(15, 16)" onmouseup = "kliknuto_polje(15, 16)" onmouseout = "normalno_polje(15, 16)"></div>
+                    <div id = "15, 17" class = "polje" onmousedown = "pritisnuto_polje(15, 17)" onmouseover = "prekriveno_polje(15, 17)" onmouseup = "kliknuto_polje(15, 17)" onmouseout = "normalno_polje(15, 17)"></div>
+                    <div id = "15, 18" class = "polje" onmousedown = "pritisnuto_polje(15, 18)" onmouseover = "prekriveno_polje(15, 18)" onmouseup = "kliknuto_polje(15, 18)" onmouseout = "normalno_polje(15, 18)"></div>
+                    <div id = "15, 19" class = "polje" onmousedown = "pritisnuto_polje(15, 19)" onmouseover = "prekriveno_polje(15, 19)" onmouseup = "kliknuto_polje(15, 19)" onmouseout = "normalno_polje(15, 19)"></div>
+                    <div id = "15, 20" class = "polje" onmousedown = "pritisnuto_polje(15, 20)" onmouseover = "prekriveno_polje(15, 20)" onmouseup = "kliknuto_polje(15, 20)" onmouseout = "normalno_polje(15, 20)"></div>
+                    <div id = "15, 21" class = "polje" onmousedown = "pritisnuto_polje(15, 21)" onmouseover = "prekriveno_polje(15, 21)" onmouseup = "kliknuto_polje(15, 21)" onmouseout = "normalno_polje(15, 21)"></div>
+                    <div id = "15, 22" class = "polje" onmousedown = "pritisnuto_polje(15, 22)" onmouseover = "prekriveno_polje(15, 22)" onmouseup = "kliknuto_polje(15, 22)" onmouseout = "normalno_polje(15, 22)"></div>
+                    <div id = "15, 23" class = "polje" onmousedown = "pritisnuto_polje(15, 23)" onmouseover = "prekriveno_polje(15, 23)" onmouseup = "kliknuto_polje(15, 23)" onmouseout = "normalno_polje(15, 23)"></div>
+                    <div id = "15, 24" class = "polje" onmousedown = "pritisnuto_polje(15, 24)" onmouseover = "prekriveno_polje(15, 24)" onmouseup = "kliknuto_polje(15, 24)" onmouseout = "normalno_polje(15, 24)"></div>
+                    <div id = "15, 25" class = "polje" onmousedown = "pritisnuto_polje(15, 25)" onmouseover = "prekriveno_polje(15, 25)" onmouseup = "kliknuto_polje(15, 25)" onmouseout = "normalno_polje(15, 25)"></div>
+                    <div id = "15, 26" class = "polje" onmousedown = "pritisnuto_polje(15, 26)" onmouseover = "prekriveno_polje(15, 26)" onmouseup = "kliknuto_polje(15, 26)" onmouseout = "normalno_polje(15, 26)"></div>
+                    <div id = "15, 27" class = "polje" onmousedown = "pritisnuto_polje(15, 27)" onmouseover = "prekriveno_polje(15, 27)" onmouseup = "kliknuto_polje(15, 27)" onmouseout = "normalno_polje(15, 27)"></div>
+                    <div id = "15, 28" class = "polje" onmousedown = "pritisnuto_polje(15, 28)" onmouseover = "prekriveno_polje(15, 28)" onmouseup = "kliknuto_polje(15, 28)" onmouseout = "normalno_polje(15, 28)"></div>
+                    <div id = "15, 29" class = "polje" onmousedown = "pritisnuto_polje(15, 29)" onmouseover = "prekriveno_polje(15, 29)" onmouseup = "kliknuto_polje(15, 29)" onmouseout = "normalno_polje(15, 29)"></div>
+                    <div id = "15, 30" class = "polje" onmousedown = "pritisnuto_polje(15, 30)" onmouseover = "prekriveno_polje(15, 30)" onmouseup = "kliknuto_polje(15, 30)" onmouseout = "normalno_polje(15, 30)"></div>
+                    <div id = "15, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(15, 31)" onmouseover = "prekriveno_polje(15, 31)" onmouseup = "kliknuto_polje(15, 31)" onmouseout = "normalno_polje(15, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "vertikalna_kratka_ivica"></div>
+                    <div id = "16, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(16, 0)" onmouseover = "prekriveno_polje(16, 0)" onmouseup = "kliknuto_polje(16, 0)" onmouseout = "normalno_polje(16, 0)"></div>
+                    <div id = "16, 1" class = "polje" onmousedown = "pritisnuto_polje(16, 1)" onmouseover = "prekriveno_polje(16, 1)" onmouseup = "kliknuto_polje(16, 1)" onmouseout = "normalno_polje(16, 1)"></div>
+                    <div id = "16, 2" class = "polje" onmousedown = "pritisnuto_polje(16, 2)" onmouseover = "prekriveno_polje(16, 2)" onmouseup = "kliknuto_polje(16, 2)" onmouseout = "normalno_polje(16, 2)"></div>
+                    <div id = "16, 3" class = "polje" onmousedown = "pritisnuto_polje(16, 3)" onmouseover = "prekriveno_polje(16, 3)" onmouseup = "kliknuto_polje(16, 3)" onmouseout = "normalno_polje(16, 3)"></div>
+                    <div id = "16, 4" class = "polje" onmousedown = "pritisnuto_polje(16, 4)" onmouseover = "prekriveno_polje(16, 4)" onmouseup = "kliknuto_polje(16, 4)" onmouseout = "normalno_polje(16, 4)"></div>
+                    <div id = "16, 5" class = "polje" onmousedown = "pritisnuto_polje(16, 5)" onmouseover = "prekriveno_polje(16, 5)" onmouseup = "kliknuto_polje(16, 5)" onmouseout = "normalno_polje(16, 5)"></div>
+                    <div id = "16, 6" class = "polje" onmousedown = "pritisnuto_polje(16, 6)" onmouseover = "prekriveno_polje(16, 6)" onmouseup = "kliknuto_polje(16, 6)" onmouseout = "normalno_polje(16, 6)"></div>
+                    <div id = "16, 7" class = "polje" onmousedown = "pritisnuto_polje(16, 7)" onmouseover = "prekriveno_polje(16, 7)" onmouseup = "kliknuto_polje(16, 7)" onmouseout = "normalno_polje(16, 7)"></div>
+                    <div id = "16, 8" class = "polje" onmousedown = "pritisnuto_polje(16, 8)" onmouseover = "prekriveno_polje(16, 8)" onmouseup = "kliknuto_polje(16, 8)" onmouseout = "normalno_polje(16, 8)"></div>
+                    <div id = "16, 9" class = "polje" onmousedown = "pritisnuto_polje(16, 9)" onmouseover = "prekriveno_polje(16, 9)" onmouseup = "kliknuto_polje(16, 9)" onmouseout = "normalno_polje(16, 9)"></div>
+                    <div id = "16, 10" class = "polje" onmousedown = "pritisnuto_polje(16, 10)" onmouseover = "prekriveno_polje(16, 10)" onmouseup = "kliknuto_polje(16, 10)" onmouseout = "normalno_polje(16, 10)"></div>
+                    <div id = "16, 11" class = "polje" onmousedown = "pritisnuto_polje(16, 11)" onmouseover = "prekriveno_polje(16, 11)" onmouseup = "kliknuto_polje(16, 11)" onmouseout = "normalno_polje(16, 11)"></div>
+                    <div id = "16, 12" class = "polje" onmousedown = "pritisnuto_polje(16, 12)" onmouseover = "prekriveno_polje(16, 12)" onmouseup = "kliknuto_polje(16, 12)" onmouseout = "normalno_polje(16, 12)"></div>
+                    <div id = "16, 13" class = "polje" onmousedown = "pritisnuto_polje(16, 13)" onmouseover = "prekriveno_polje(16, 13)" onmouseup = "kliknuto_polje(16, 13)" onmouseout = "normalno_polje(16, 13)"></div>
+                    <div id = "16, 14" class = "polje" onmousedown = "pritisnuto_polje(16, 14)" onmouseover = "prekriveno_polje(16, 14)" onmouseup = "kliknuto_polje(16, 14)" onmouseout = "normalno_polje(16, 14)"></div>
+                    <div id = "16, 15" class = "polje" onmousedown = "pritisnuto_polje(16, 15)" onmouseover = "prekriveno_polje(16, 15)" onmouseup = "kliknuto_polje(16, 15)" onmouseout = "normalno_polje(16, 15)"></div>
+                    <div id = "16, 16" class = "polje" onmousedown = "pritisnuto_polje(16, 16)" onmouseover = "prekriveno_polje(16, 16)" onmouseup = "kliknuto_polje(16, 16)" onmouseout = "normalno_polje(16, 16)"></div>
+                    <div id = "16, 17" class = "polje" onmousedown = "pritisnuto_polje(16, 17)" onmouseover = "prekriveno_polje(16, 17)" onmouseup = "kliknuto_polje(16, 17)" onmouseout = "normalno_polje(16, 17)"></div>
+                    <div id = "16, 18" class = "polje" onmousedown = "pritisnuto_polje(16, 18)" onmouseover = "prekriveno_polje(16, 18)" onmouseup = "kliknuto_polje(16, 18)" onmouseout = "normalno_polje(16, 18)"></div>
+                    <div id = "16, 19" class = "polje" onmousedown = "pritisnuto_polje(16, 19)" onmouseover = "prekriveno_polje(16, 19)" onmouseup = "kliknuto_polje(16, 19)" onmouseout = "normalno_polje(16, 19)"></div>
+                    <div id = "16, 20" class = "polje" onmousedown = "pritisnuto_polje(16, 20)" onmouseover = "prekriveno_polje(16, 20)" onmouseup = "kliknuto_polje(16, 20)" onmouseout = "normalno_polje(16, 20)"></div>
+                    <div id = "16, 21" class = "polje" onmousedown = "pritisnuto_polje(16, 21)" onmouseover = "prekriveno_polje(16, 21)" onmouseup = "kliknuto_polje(16, 21)" onmouseout = "normalno_polje(16, 21)"></div>
+                    <div id = "16, 22" class = "polje" onmousedown = "pritisnuto_polje(16, 22)" onmouseover = "prekriveno_polje(16, 22)" onmouseup = "kliknuto_polje(16, 22)" onmouseout = "normalno_polje(16, 22)"></div>
+                    <div id = "16, 23" class = "polje" onmousedown = "pritisnuto_polje(16, 23)" onmouseover = "prekriveno_polje(16, 23)" onmouseup = "kliknuto_polje(16, 23)" onmouseout = "normalno_polje(16, 23)"></div>
+                    <div id = "16, 24" class = "polje" onmousedown = "pritisnuto_polje(16, 24)" onmouseover = "prekriveno_polje(16, 24)" onmouseup = "kliknuto_polje(16, 24)" onmouseout = "normalno_polje(16, 24)"></div>
+                    <div id = "16, 25" class = "polje" onmousedown = "pritisnuto_polje(16, 25)" onmouseover = "prekriveno_polje(16, 25)" onmouseup = "kliknuto_polje(16, 25)" onmouseout = "normalno_polje(16, 25)"></div>
+                    <div id = "16, 26" class = "polje" onmousedown = "pritisnuto_polje(16, 26)" onmouseover = "prekriveno_polje(16, 26)" onmouseup = "kliknuto_polje(16, 26)" onmouseout = "normalno_polje(16, 26)"></div>
+                    <div id = "16, 27" class = "polje" onmousedown = "pritisnuto_polje(16, 27)" onmouseover = "prekriveno_polje(16, 27)" onmouseup = "kliknuto_polje(16, 27)" onmouseout = "normalno_polje(16, 27)"></div>
+                    <div id = "16, 28" class = "polje" onmousedown = "pritisnuto_polje(16, 28)" onmouseover = "prekriveno_polje(16, 28)" onmouseup = "kliknuto_polje(16, 28)" onmouseout = "normalno_polje(16, 28)"></div>
+                    <div id = "16, 29" class = "polje" onmousedown = "pritisnuto_polje(16, 29)" onmouseover = "prekriveno_polje(16, 29)" onmouseup = "kliknuto_polje(16, 29)" onmouseout = "normalno_polje(16, 29)"></div>
+                    <div id = "16, 30" class = "polje" onmousedown = "pritisnuto_polje(16, 30)" onmouseover = "prekriveno_polje(16, 30)" onmouseup = "kliknuto_polje(16, 30)" onmouseout = "normalno_polje(16, 30)"></div>
+                    <div id = "16, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(16, 31)" onmouseover = "prekriveno_polje(16, 31)" onmouseup = "kliknuto_polje(16, 31)" onmouseout = "normalno_polje(16, 31)"></div>
+                    <div id = "vertikalna_kratka_ivica"></div>
+
+                    <div id = "17, 0" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 0)" onmouseover = "prekriveno_polje(17, 0)" onmouseup = "kliknuto_polje(17, 0)" onmouseout = "normalno_polje(17, 0)"></div>
+                    <div id = "17, 1" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 1)" onmouseover = "prekriveno_polje(17, 1)" onmouseup = "kliknuto_polje(17, 1)" onmouseout = "normalno_polje(17, 1)"></div>
+                    <div id = "17, 2" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 2)" onmouseover = "prekriveno_polje(17, 2)" onmouseup = "kliknuto_polje(17, 2)" onmouseout = "normalno_polje(17, 2)"></div>
+                    <div id = "17, 3" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 3)" onmouseover = "prekriveno_polje(17, 3)" onmouseup = "kliknuto_polje(17, 3)" onmouseout = "normalno_polje(17, 3)"></div>
+                    <div id = "17, 4" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 4)" onmouseover = "prekriveno_polje(17, 4)" onmouseup = "kliknuto_polje(17, 4)" onmouseout = "normalno_polje(17, 4)"></div>
+                    <div id = "17, 5" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 5)" onmouseover = "prekriveno_polje(17, 5)" onmouseup = "kliknuto_polje(17, 5)" onmouseout = "normalno_polje(17, 5)"></div>
+                    <div id = "17, 6" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 6)" onmouseover = "prekriveno_polje(17, 6)" onmouseup = "kliknuto_polje(17, 6)" onmouseout = "normalno_polje(17, 6)"></div>
+                    <div id = "17, 7" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 7)" onmouseover = "prekriveno_polje(17, 7)" onmouseup = "kliknuto_polje(17, 7)" onmouseout = "normalno_polje(17, 7)"></div>
+                    <div id = "17, 8" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 8)" onmouseover = "prekriveno_polje(17, 8)" onmouseup = "kliknuto_polje(17, 8)" onmouseout = "normalno_polje(17, 8)"></div>
+                    <div id = "17, 9" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 9)" onmouseover = "prekriveno_polje(17, 9)" onmouseup = "kliknuto_polje(17, 9)" onmouseout = "normalno_polje(17, 9)"></div>
+                    <div id = "17, 10" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 10)" onmouseover = "prekriveno_polje(17, 10)" onmouseup = "kliknuto_polje(17, 10)" onmouseout = "normalno_polje(17, 10)"></div>
+                    <div id = "17, 11" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 11)" onmouseover = "prekriveno_polje(17, 11)" onmouseup = "kliknuto_polje(17, 11)" onmouseout = "normalno_polje(17, 11)"></div>
+                    <div id = "17, 12" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 12)" onmouseover = "prekriveno_polje(17, 12)" onmouseup = "kliknuto_polje(17, 12)" onmouseout = "normalno_polje(17, 12)"></div>
+                    <div id = "17, 13" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 13)" onmouseover = "prekriveno_polje(17, 13)" onmouseup = "kliknuto_polje(17, 13)" onmouseout = "normalno_polje(17, 13)"></div>
+                    <div id = "17, 14" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 14)" onmouseover = "prekriveno_polje(17, 14)" onmouseup = "kliknuto_polje(17, 14)" onmouseout = "normalno_polje(17, 14)"></div>
+                    <div id = "17, 15" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 15)" onmouseover = "prekriveno_polje(17, 15)" onmouseup = "kliknuto_polje(17, 15)" onmouseout = "normalno_polje(17, 15)"></div>
+                    <div id = "17, 16" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 16)" onmouseover = "prekriveno_polje(17, 16)" onmouseup = "kliknuto_polje(17, 16)" onmouseout = "normalno_polje(17, 16)"></div>
+                    <div id = "17, 17" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 17)" onmouseover = "prekriveno_polje(17, 17)" onmouseup = "kliknuto_polje(17, 17)" onmouseout = "normalno_polje(17, 17)"></div>
+                    <div id = "17, 18" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 18)" onmouseover = "prekriveno_polje(17, 18)" onmouseup = "kliknuto_polje(17, 18)" onmouseout = "normalno_polje(17, 18)"></div>
+                    <div id = "17, 19" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 19)" onmouseover = "prekriveno_polje(17, 19)" onmouseup = "kliknuto_polje(17, 19)" onmouseout = "normalno_polje(17, 19)"></div>
+                    <div id = "17, 20" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 20)" onmouseover = "prekriveno_polje(17, 20)" onmouseup = "kliknuto_polje(17, 20)" onmouseout = "normalno_polje(17, 20)"></div>
+                    <div id = "17, 21" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 21)" onmouseover = "prekriveno_polje(17, 21)" onmouseup = "kliknuto_polje(17, 21)" onmouseout = "normalno_polje(17, 21)"></div>
+                    <div id = "17, 22" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 22)" onmouseover = "prekriveno_polje(17, 22)" onmouseup = "kliknuto_polje(17, 22)" onmouseout = "normalno_polje(17, 22)"></div>
+                    <div id = "17, 23" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 23)" onmouseover = "prekriveno_polje(17, 23)" onmouseup = "kliknuto_polje(17, 23)" onmouseout = "normalno_polje(17, 23)"></div>
+                    <div id = "17, 24" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 24)" onmouseover = "prekriveno_polje(17, 24)" onmouseup = "kliknuto_polje(17, 24)" onmouseout = "normalno_polje(17, 24)"></div>
+                    <div id = "17, 25" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 25)" onmouseover = "prekriveno_polje(17, 25)" onmouseup = "kliknuto_polje(17, 25)" onmouseout = "normalno_polje(17, 25)"></div>
+                    <div id = "17, 26" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 26)" onmouseover = "prekriveno_polje(17, 26)" onmouseup = "kliknuto_polje(17, 26)" onmouseout = "normalno_polje(17, 26)"></div>
+                    <div id = "17, 27" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 27)" onmouseover = "prekriveno_polje(17, 27)" onmouseup = "kliknuto_polje(17, 27)" onmouseout = "normalno_polje(17, 27)"></div>
+                    <div id = "17, 28" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 28)" onmouseover = "prekriveno_polje(17, 28)" onmouseup = "kliknuto_polje(17, 28)" onmouseout = "normalno_polje(17, 28)"></div>
+                    <div id = "17, 29" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 29)" onmouseover = "prekriveno_polje(17, 29)" onmouseup = "kliknuto_polje(17, 29)" onmouseout = "normalno_polje(17, 29)"></div>
+                    <div id = "17, 30" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 30)" onmouseover = "prekriveno_polje(17, 30)" onmouseup = "kliknuto_polje(17, 30)" onmouseout = "normalno_polje(17, 30)"></div>
+                    <div id = "17, 31" class = "sakriveno_polje" onmousedown = "pritisnuto_polje(17, 31)" onmouseover = "prekriveno_polje(17, 31)" onmouseup = "kliknuto_polje(17, 31)" onmouseout = "normalno_polje(17, 31)"></div>
+                    
+                </div>
+
+
+                <div id = "donja_leva_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div class = "horizontalna_ivica"></div>
+                <div id = "donja_desna_ivica"></div>
+            </div>
+            <div id = "footer"></div>
+
+
+        </div>
+    </div>
+
+    </center>
+</body>
+
+<script>
+    let pritisnut_levi_klik = 0;
+    let pritisnut_desni_klik = 0;
+    let generisana_tabla = 0;
+    let BROJ_MINA = 99;
+    let vreme_igre = 0;
+    let lista_mina = [];
+    let lista_zastavica = [];
+    let br_red;
+    let br_kolona;
+    let br_mina = BROJ_MINA;
+    let funkcija_interval = 0;
+    let dvoklik = 0;
+    let pocetno_stanje = document.getElementById("igra").innerHTML;
+    
+
+
+    let stotine = Math.floor(br_mina / 100);
+    let desetice = Math.floor(br_mina / 10);
+    let jedinice = br_mina % 10;
+    document.getElementById("br_mina1").style.backgroundImage = "url('./slike/" + stotine.toString() +"b.png')";
+    document.getElementById("br_mina2").style.backgroundImage = "url('./slike/" + desetice.toString() +"b.png')";
+    document.getElementById("br_mina3").style.backgroundImage = "url('./slike/" + jedinice.toString() +"b.png')";
+
+
+
+    //document.getElementById("dugmici").className = "dugmici_zavrseno";
+
+
+    document.onmouseup = function(){
+        pritisnut_levi_klik = 0;
+        pritisnut_desni_klik = 0;
+        if(document.getElementById("smajli").className != "kraj"){
+            document.getElementById("smajli").style.backgroundImage = "url('./slike/smajli_ziv.png')";
+        }
+    };
+
+    function velicina(){
+        if( Number(window.innerWidth) < 1020){
+            document.getElementById("right_container").style.display = "none";
+            
+            if( Number(window.innerWidth) < 780){
+                document.getElementById("left_container").style.display = "none";
+                
+            }
+            else{
+                document.getElementById("left_container").style.display = "inline-block";
+            }
+        }
+        else{
+            
+            document.getElementById("right_container").style.display = "inline-block";
+            if( Number(window.innerWidth) < 780){
+                document.getElementById("left_container").style.display = "none";
+                
+            }
+            else{
+                document.getElementById("left_container").style.display = "inline-block";
+            }
+        }
+        
+    }
+
+    function pritisnut_smajli(){
+        document.getElementById("smajli").style.backgroundImage = "url('./slike/smajli_pritisnut.png')";
+    }
+
+    function kliknut_smajli(){//ponovo pokreni igru
+        document.getElementById("smajli").style.backgroundImage = "url('./slike/smajli_ziv.png')";
+        document.getElementById("igra").innerHTML = pocetno_stanje;//ovde se html vraca u pocetno stanje
+        generisana_tabla = 0;//uslov kako bi se pri prvom kliku generisala tabla sa minama
+        lista_mina = [];
+        lista_zastavica = [];
+        br_mina = BROJ_MINA;//vrati broj mina na pocetni broj
+        vreme_igre = 0;//vrati vreme na 0 jer je kraj igre
+        clearInterval(funkcija_interval);
+        funkcija_interval = 0;//uslov kako bi pri prvom kliku na polje poceo brojanje
+        dvoklik = 0;//ako umres kada je ukljucen dvoklik, ne vrati se vr prom na 0 pa je zato ovde menjamo
+
+
+        let stotine = Math.floor(br_mina / 100);//postavljamo broj mina na broj BROJ_MINA
+        let desetice = Math.floor(br_mina / 10);
+        let jedinice = br_mina % 10;
+        document.getElementById("br_mina1").style.backgroundImage = "url('./slike/" + stotine.toString() +"b.png')";
+        document.getElementById("br_mina2").style.backgroundImage = "url('./slike/" + desetice.toString() +"b.png')";
+        document.getElementById("br_mina3").style.backgroundImage = "url('./slike/" + jedinice.toString() +"b.png')";
+        
+    }
+
+    function normalan_smajli(){//ako korisnik drzi smajlija i onda pomeri mis sa njega on se vraca u pocetno stanje
+        document.getElementById("smajli").style.backgroundImage = "url('./slike/smajli_ziv.png')";
+    }
+
+
+
+    function pritisnuto_polje(red, kolona){//ovde je pritisnut levi ili desni taster
+
+        id = red.toString() + ", " + kolona.toString();
+        if(event.which == 3 && pritisnut_levi_klik){
+            pritisnut_desni_klik = 1;
+            for(let a = -1; a < 2; a++){
+                for(let b = -1; b < 2; b++){
+                    if(document.getElementById((red + a).toString() + ", " + (kolona + b).toString()).className == "polje"){
+                        document.getElementById((red + a).toString() + ", " + (kolona + b).toString()).style.backgroundImage = "url('./slike/polje_prazno.png')";
+                    }
+                }
+            }
+        }
+        else{
+            if(event.which == 1 && pritisnut_desni_klik){
+            pritisnut_levi_klik = 1;
+            for(let a = -1; a < 2; a++){
+                for(let b = -1; b < 2; b++){
+                    if(document.getElementById((red + a).toString() + ", " + (kolona + b).toString()).className == "polje"){
+                        document.getElementById((red + a).toString() + ", " + (kolona + b).toString()).style.backgroundImage = "url('./slike/polje_prazno.png')";
+                    }
+                }
+            }
+        }
+        else{
+            if(event.which == 1){
+            
+            if(document.getElementById(id).className == "polje"){
+                document.getElementById(id).style.backgroundImage = "url('./slike/polje_prazno.png')";
+            }
+            
+            document.getElementById("smajli").style.backgroundImage = "url('./slike/smajli_uzbudjen.png')";
+            pritisnut_levi_klik = 1;
+            }
+            if(event.which == 3){
+                pritisnut_desni_klik = 1;
+            }
+        }
+        }
+        
+        
+
+        
+    }
+    function prekriveno_polje(red, kolona){//ako korisnik drzi levi taster ili dvoklik pritisnut i pomera mis po poljima
+        if(pritisnut_levi_klik && pritisnut_desni_klik){
+            for(let a = -1; a < 2; a++){
+                for(let b = -1; b < 2; b++){
+                    if(document.getElementById((red + a).toString() + ", " + (kolona + b).toString()).className == "polje"){
+                        document.getElementById((red + a).toString() + ", " + (kolona + b).toString()).style.backgroundImage = "url('./slike/polje_prazno.png')";
+                    }
+                }
+            }
+        }
+        else if(pritisnut_levi_klik){
+            id = red.toString() + ", " + kolona.toString();
+
+            if(document.getElementById(id).className == "polje"){
+                document.getElementById(id).style.backgroundImage = "url('./slike/polje_prazno.png')";
+            }
+        }
+    }
+
+    function normalno_polje(red, kolona){//ako korisnik drzi levi taster ili dvoklik pritisnut i pomera mis po poljima
+        if(pritisnut_levi_klik && pritisnut_desni_klik){
+            for(let a = -1; a < 2; a++){
+                for(let b = -1; b < 2; b++){
+                    if(document.getElementById((red + a).toString() + ", " + (kolona + b).toString()).className == "polje"){
+                        document.getElementById((red + a).toString() + ", " + (kolona + b).toString()).style.backgroundImage = "url('./slike/polje_nepoznato.png')";
+                    }
+                }
+            }
+        }
+        else if(pritisnut_levi_klik){
+            id = red.toString() + ", " + kolona.toString();
+            if(document.getElementById(id).className == "polje"){
+                document.getElementById(id).style.backgroundImage = "url('./slike/polje_nepoznato.png')";
+            }
+        }
+
+    }
+    
+
+    function kliknuto_polje(red, kolona){//ako korisnik pusti levi ili desni klik ili dvoklik
+        id = red.toString() + ", " + kolona.toString();
+        
+        if(!funkcija_interval){
+            funkcija_interval = setInterval(tajmer, 1000);
+        }
+        
+        if(pritisnut_levi_klik && pritisnut_desni_klik){// ako je pritisnut dvoklik i ako se pusti, racunar protumaci jedan pa drugi klik da je
+            //pusten(prvo levi pa desni ili obrnuto) pa je dodata promenljiva dvoklik i uslov kako bi se to sprecilo 
+            dvoklik = 1;
+
+            if(document.getElementById(id).className == "polje" || document.getElementById(id).className == "zastavica_polje"){
+                for(let a = -1; a < 2; a++){
+                    for(let b = -1; b < 2; b++){
+                        if(document.getElementById((red + a).toString() + ", " + (kolona + b).toString()).className == "polje"){
+                            document.getElementById((red + a).toString() + ", " + (kolona + b).toString()).style.backgroundImage = "url('./slike/polje_nepoznato.png')";
+                        }
+                    }
+                }
+            }
+            if(document.getElementById(id).className == "otvoreno_polje"){
+                otvaranje_3x3(red, kolona);
+
+            }
+            
+
+        }
+        else {
+            if(dvoklik){
+                dvoklik--;
+            }
+            else{
+
+                if(event.which == 1){//ako je levi klik onda se otvara polje
+
+                    if(document.getElementById(id).className == "polje"){
+                        if (!generisana_tabla){generisi(red, kolona);};
+            
+                        if(proveri_minu(id)){//proveravamo da li je to polje mina
+                            smrt(id);//ako jeste onda je igra zavrsena
+                        }
+                        else{
+                            proveri_okolinu_polja(red, kolona);//ako nije onda trazimo broj mina u 3x3 okolini i upisujemo ga u polje
+                        }
+                    }
+                }
+
+                if(event.which == 3){//ako je desni klik stavljamo ili skidamo zastavicu
+                    let a = 1;//uslov kako program ne bi prosao kroz oba uslova. ako prodje kroz prvi ne moze kroz drugi i obrnuto
+                    if(document.getElementById(id).className == "polje"){//stavljamo zastavicu
+                        document.getElementById(id).className = "zastavica_polje";
+                        document.getElementById(id).style.backgroundImage = "url('./slike/polje_zastavica.png')";
+                        br_mina--;
+                        a = 0;
+                        broj_preostalih_mina(br_mina, id, a);//menjamo brojac mina
+                        if(!br_mina){pobeda()};
+                    }
+                    if(document.getElementById(id).className == "zastavica_polje" && a){//skidamo zastavicu
+                        document.getElementById(id).className = "polje";
+                        document.getElementById(id).style.backgroundImage = "url('./slike/polje_nepoznato.png')";
+                        br_mina++;
+                        broj_preostalih_mina(br_mina, id, a);//menjamo brojac mina
+                        if(!br_mina){pobeda()};
+                    }
+                    
+                }
+            }
+        }
+
+    }
+
+
+    function proveri_minu(polje){//proverava da li je kliknuto polje mina
+        for(let i = 0; i < lista_mina.length; i++){
+            
+            if(lista_mina[i] == polje){
+                return 1;
+            }
+        }
+        return 0;
+    }
+
+    function proveri_okolinu_polja(red, kolona){//proverava kada se klikne na polje koji broj se stavlja u to polje
+        let num = 0;
+        
+        for(let j = -1; j<2; j++){//racunamo broj mina u 3x3
+            for(let k = -1; k<2; k++){
+                
+                for(let i = 0; i < BROJ_MINA; i++){
+                    if(((red + j).toString() + ", " + (kolona + k).toString()) == lista_mina[i]){
+                        num++;
+                    }
+                }
+
+            }
+        }
+
+        if(document.getElementById(red.toString() + ", " + kolona.toString()).className == "polje"){
+                document.getElementById(red.toString() + ", " + kolona.toString()).className = "otvoreno_polje";//sada je kliknuto polje otvoreno pa se menja klasa
+        }
+
+        if(num){//ako u 3x3 ima neka mina
+            document.getElementById((red).toString() + ", " + (kolona).toString()).style.backgroundImage = "url('./slike/" + num.toString() +".png')";
+        }
+        else{//ako u 3x3 nema mina pozivamo istu f-ju za sva polja u 3x3 okolini kako bi ih otvorili
+            document.getElementById((red).toString() + ", " + (kolona).toString()).style.backgroundImage = "url('./slike/polje_prazno.png')";
+
+            for(let a = -1; a < 2; a++){
+                for(let b = -1; b < 2; b++){
+                    if(document.getElementById((red + a).toString() + ", " + (kolona + b).toString()).className == "polje"){
+                        proveri_okolinu_polja(red + a, kolona + b);
+                    }
+                }
+            }
+        }
+
+    }
+
+    function otvaranje_3x3(red, kolona){
+
+        let num_mina = 0;
+        let num_zastavica = 0;
+        
+        for(let j = -1; j<2; j++){//racunamo broj mina u 3x3 i broj zastavica
+            for(let k = -1; k<2; k++){
+                
+                for(let i = 0; i < BROJ_MINA; i++){
+                    if(((red + j).toString() + ", " + (kolona + k).toString()) == lista_mina[i]){
+                        num_mina++;
+                    }
+                }
+                if(document.getElementById((red + j).toString() + ", " + (kolona + k).toString()).className == "zastavica_polje"){
+                    num_zastavica++;
+                }
+
+            }
+        }
+        if(num_mina == num_zastavica){
+
+            for(let j = -1; j<2; j++){
+                for(let k = -1; k<2; k++){
+                    
+                    if(document.getElementById((red + j).toString() + ", " + (kolona + k).toString()).className == "polje"){
+            
+                        if(proveri_minu((red + j).toString() + ", " + (kolona + k).toString())){
+                            
+
+                            if(document.getElementById("dugmici").className == "dugmici_zavrseno"){
+                                document.getElementById((red + j).toString() + ", " + (kolona + k).toString()).style.backgroundImage = "url('./slike/polje_mina_nagazena.png')";
+                            }
+
+                            else{
+                                smrt((red + j).toString() + ", " + (kolona + k).toString());
+                            }
+
+                        }
+                            
+                        else{
+                            
+                            proveri_okolinu_polja(red + j,kolona + k);
+                        }
+                    }
+
+                }
+            }
+
+        }
+        else{
+            for(let a = -1; a < 2; a++){
+                for(let b = -1; b < 2; b++){
+                    if(document.getElementById((red + a).toString() + ", " + (kolona + b).toString()).className == "polje"){
+                        document.getElementById((red + a).toString() + ", " + (kolona + b).toString()).style.backgroundImage = "url('./slike/polje_nepoznato.png')";
+                    }
+                }
+            }
+        }
+        
+        
+
+
+    }
+
+    function generisi(red, kolona){//generise pozicije mina
+        generisana_tabla = 1;
+        
+        for(let i = 0; i < BROJ_MINA; i++){
+            br_red = Math.trunc(Math.random()*16) + 1;
+            br_kolona = Math.trunc(Math.random()*30) + 1;
+
+            let polje  = br_red.toString() + ", " + br_kolona.toString();
+            lista_mina.push(polje);
+
+            for(let j = -1; j < 2; j++){//proveravamo da li je uneto polje u 3x3 okolini prvog kliknutog polja, ako jeste uklanjamo ga(to radimo kako bi igra bila lepsa, ne mora)
+                for(let k = -1; k<2; k++){
+                    if((br_red == (red + j))&&(br_kolona == (kolona + k)) ){
+                        i--;
+                        lista_mina.pop();
+                    }
+                }
+            }
+            for(let j = 0; j < lista_mina.length - 1; j++){//proveravamo da li je uneto polje vec u listi mina, ako jeste izbacujemo ga
+                if(polje == lista_mina[j]){
+                    i--;
+                    lista_mina.pop();
+                }
+            }
+            
+        }
+        lista_mina.sort();
+        console.log(lista_mina);
+    }
+
+
+    function tajmer(){//promena stanja brojaca vremena
+        vreme_igre++;
+        if(vreme_igre > 999){
+            vreme_igre = 999;
+        }
+        let stotine = Math.floor(vreme_igre / 100);
+        let desetice = Math.floor(vreme_igre / 10) % 10;
+        let jedinice = vreme_igre % 10;
+        if( vreme_igre < 1000){
+            document.getElementById("brojac1").style.backgroundImage = "url('./slike/" + stotine.toString() +"b.png')";
+            document.getElementById("brojac2").style.backgroundImage = "url('./slike/" + desetice.toString() +"b.png')";
+            document.getElementById("brojac3").style.backgroundImage = "url('./slike/" + jedinice.toString() +"b.png')";
+        }
+    }
+
+    function broj_preostalih_mina(broj_zastavica, polje, uslov){//promena stanja brojaca preostalih mina
+        if(uslov){//uklonjena zastavica
+            for(let i = 0; i < lista_zastavica.length; i++){
+                if(lista_zastavica[i] == polje){
+                    lista_zastavica.splice(i, 1);
+                }
+            }
+        }
+        else{//dodata zastavica
+            lista_zastavica.push(polje);
+        }
+        
+        if(br_mina >= 0){//ako je broj veci od nule onda samo ispisujemo broj mina
+            let stotine = Math.floor(br_mina / 100);
+            let desetice = Math.floor(br_mina / 10);
+            let jedinice = br_mina % 10;
+            document.getElementById("br_mina1").style.backgroundImage = "url('./slike/" + stotine.toString() +"b.png')";
+            document.getElementById("br_mina2").style.backgroundImage = "url('./slike/" + desetice.toString() +"b.png')";
+            document.getElementById("br_mina3").style.backgroundImage = "url('./slike/" + jedinice.toString() +"b.png')";
+            
+        }
+        else{//ako je manji od nule onda dodajemo minus na pocetak i proveravamo da li je korisnik oznacio vise od 198 polja :)
+            let pom_br = (br_mina) * (-1);
+            if(pom_br > 99){pom_br = 99};
+            let desetice = Math.floor(pom_br / 10);
+            let jedinice = pom_br % 10;
+            document.getElementById("br_mina1").style.backgroundImage = "url('./slike/minus.png')";
+            document.getElementById("br_mina2").style.backgroundImage = "url('./slike/" + desetice.toString() +"b.png')";
+            document.getElementById("br_mina3").style.backgroundImage = "url('./slike/" + jedinice.toString() +"b.png')";
+        }
+    }
+
+    function pobeda(){
+        
+        let uslov = 1;
+        
+        for(let i = 0; i < BROJ_MINA; i++){//proveravamo da li su sve zastavice lepo postavljene
+            let pom = 0;
+
+            for(let j = 0; j < BROJ_MINA; j++){
+                if(lista_zastavica[i] == lista_mina[j]){
+                    pom = 1;
+                }
+            }
+            if (pom == 0){uslov = 0; break;}
+        }
+
+        if(uslov){//ako su lepo postavljene onda je to kraj igre
+
+            document.getElementById("dugmici").className = "dugmici_zavrseno";//dodajemo klasu kako se ne bi mogla tabla menjati(pogledaj klasu ako nije jasno)
+           
+            document.getElementById("smajli").style.backgroundImage = "url('./slike/smajli_pro.png')";
+            document.getElementById("smajli").className = "kraj";//kako se ne bi promenio ponovo na zivog posle dignutog levog klika
+            document.getElementById("smajli").onmouseout = function(){;};
+
+            clearInterval(funkcija_interval);
+
+            for( let i = 1; i < 17; i++){//otvaramo sva preostala polja na tabli
+                for(let j = 1; j < 31; j++){
+                    
+                    if(document.getElementById(i.toString() + ", " + j.toString()).className == "polje"){ proveri_okolinu_polja(i, j);} 
+                }
+            }
+        }
+
+    }
+
+
+    function smrt(polje){
+        document.getElementById("dugmici").className = "dugmici_zavrseno";//dodajemo klasu kako se ne bi mogla tabla menjati(pogledaj klasu ako nije jasno)
+        clearInterval(funkcija_interval);
+        
+        for(let i = 0; i < BROJ_MINA; i++){//prikazujemo pozicije svih mina posle smrti
+            if( document.getElementById(lista_mina[i]).className != "zastavica_polje" && document.getElementById(lista_mina[i]).className != "otvoreno_polje"){
+                document.getElementById(lista_mina[i]).style.backgroundImage = "url('./slike/polje_mina.png')";
+                //document.getElementById(lista_mina[i]).className = "otvoreno_polje";
+            }
+        }
+        document.getElementById(polje).style.backgroundImage = "url('./slike/polje_mina_nagazena.png')";//polje na koje smo stali ima drugaciju minu
+        
+        
+        document.getElementById("smajli").style.backgroundImage = "url('./slike/smajli_mrtav.png')";
+        document.getElementById("smajli").className = "kraj";//kako se ne bi promenio ponovo na zivog posle dignutog levog klika
+        document.getElementById("smajli").onmouseout = function(){;};
+
+        for(let i = 0; i < lista_zastavica.length; i++){//proveravamo svaku zastavicu da li je lepo postavljena, ako nije menjamo sliku
+            let pom = 0;
+
+            for(let j = 0; j < BROJ_MINA; j++){
+                if(lista_zastavica[i] == lista_mina[j]){
+
+                    pom = 1;
+                }
+            }
+            
+            if(!pom){
+                document.getElementById(lista_zastavica[i]).style.backgroundImage = "url('./slike/polje_netacna_mina.png')";
+            }
+            
+        }
+        
+        
+    }
+
+</script>
+</html>
