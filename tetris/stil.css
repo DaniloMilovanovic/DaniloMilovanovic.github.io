@@ -382,6 +382,7 @@ a{
     border-style: ridge;
     border-color:aquamarine;
     border-width: 2.7px;
+    user-select: none;
 }
 
 #strelice{
