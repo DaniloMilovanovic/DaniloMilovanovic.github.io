@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake Slagalica</title>
+    <meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=0.65">
+</head>
+<body>
+    <center>
+    <div id = "container">
+        <div id = "naslov">Infinite skočko</div>
+        <div id = "broj_pokusaja">Broj pokušaja: <p style = "margin-top: 15px; font-size: 30px" id = "paragraf_brojac"> 0</p></div>
+        <button type = "button" onclick = zapocni() id = "dugme_zapocni">Započni igru</button>
+        
+        <hr style = "width:470px; border-style:dashed; border-width: 2px"></hr>
+        <div id = "istorija">
+
+        </div>
+
+        <div id = "odgovori">
+            
+
+            <div class = "uneto">
+                <div class = "uneti_kontejner"></div>
+                <div class = "uneti_kontejner"></div>
+                <div class = "uneti_kontejner"></div>
+                <div class = "uneti_kontejner"></div>
+            </div>
+            
+            <div class = "pogodjeni">
+                <div class = "pogodjeni_kontejner"></div>
+                <div class = "pogodjeni_kontejner"></div>
+                <div class = "pogodjeni_kontejner"></div>
+                <div class = "pogodjeni_kontejner"></div>
+            </div>
+            
+        </div>
+
+        <div id = "dugmici" style = "display: none;">
+            <button type = "button" id = "dugme1" class = "ponudjeni" onclick = "upisi('dugme1')">1</button>
+            <button type = "button" id = "dugme2" class = "ponudjeni" onclick = "upisi('dugme2')">2</button>
+            <button type = "button" id = "dugme3" class = "ponudjeni" onclick = "upisi('dugme3')">3</button>
+            <button type = "button" id = "dugme4" class = "ponudjeni" onclick = "upisi('dugme4')">4</button>
+            <button type = "button" id = "dugme5" class = "ponudjeni" onclick = "upisi('dugme5')">5</button>
+            <button type = "button" id = "dugme6" class = "ponudjeni" onclick = "upisi('dugme6')">6</button>
+            <br>
+            <button type = "button" id = "obrisi" class = "ponudjene_funkcije" onclick = obrisi()>obriši</button>
+            <button type = "button" id = "probaj" class = "ponudjene_funkcije" onclick = probaj()>probaj</button>
+            <button type = "button" id = "resetuj" class = "ponudjene_funkcije" onclick = resetuj()>Pokreni ponovo</button>
+            </div>
+        </div>
+    </center>
+</body>
+
+<script>
+    let brojevi = {};
+    var i = 1;
+    var broj_pokusaja = 0;
+    const obrazac = document.getElementById("odgovori").innerHTML;
+    function zapocni(){
+        document.getElementById("odgovori").style.display = "block";
+        document.getElementById("dugmici").style.display = "block";
+        document.getElementById("dugme_zapocni").style.display = "none";
+        document.getElementById("broj_pokusaja").style.display = "block";
+        brojevi[1] = Math.ceil(Math.random() * 6);
+        brojevi[2] = Math.ceil(Math.random() * 6);
+        brojevi[3] = Math.ceil(Math.random() * 6);
+        brojevi[4] = Math.ceil(Math.random() * 6);
+        //alert(brojevi[1].toString() + " " + brojevi[2].toString() + " " + brojevi[3].toString() + " " + brojevi[4].toString())
+    }
+    function upisi(ime){
+        let x = document.getElementsByClassName("uneti_kontejner");
+        let odgovori = {};
+        for (let l = 1; l < 5; l++){
+            odgovori[l-1] = x[x.length - 5 + l];
+        }
+
+        if(i < 5){
+           odgovori[i-1].innerHTML = Number(ime.replace("dugme", ""));
+            i++;
+        }
+        else{
+            alert("Popunili ste sva polja!");
+        }
+    }
+    function obrisi(){
+        
+        let x = document.getElementsByClassName("uneti_kontejner");
+        let odgovori = {};
+        for (let l = 1; l < 5; l++){
+            odgovori[l-1] = x[x.length - 5 + l];
+        }
+        if ((i-1)>=1){
+            odgovori[i-2].innerHTML = "";
+            i--;
+        }
+        else{
+            alert("Ne postoji popunjeno polje!");
+        }
+    }
+
+    function probaj(){
+        if(i==5){
+                
+            
+            let novi_brojevi = {};//nova lista za proveru unete kombinacije, brisacemo posle elemente iz ovog niza pa necemo
+            //da obrisemo pocetnu kombinaciju
+            let broj_pogodjenih = 0;
+            let polutacni = 0;
+
+            let x = document.getElementsByClassName("uneti_kontejner");
+            let odgovori = {};
+            
+
+            for (let l = 1; l < 5; l++){
+                novi_brojevi[l] = brojevi[l];
+                odgovori[l-1] = x[x.length - 5 + l];;
+            }
+
+
+            document.getElementById("istorija").innerHTML += document.getElementById("odgovori").innerHTML;
+
+
+            let y = document.getElementsByClassName("pogodjeni_kontejner");
+            let pogodjeni_odgovori = {};
+            for (let l = 1; l < 5; l++){
+                pogodjeni_odgovori[l - 1] = y[y.length -9 + l];
+            }
+
+
+            for (let k = 1; k < 5; k++){//proveravamo koja su polja na mestu
+                
+                
+                if(Number(odgovori[k - 1].innerHTML) == novi_brojevi[k]){
+                    odgovori[k - 1].innerHTML = "";
+                    novi_brojevi[k] = -1;
+                    
+                    pogodjeni_odgovori[broj_pogodjenih].className = "pogodjeni_kontejner1";
+                    broj_pogodjenih++;
+                    polutacni++;
+
+                }
+            }
+            for (let k = 1; k < 5; k++){//proveravamo koja polja nisu na mestu
+                let poruka;
+                for (let l = 1; l < 5; l++){
+                    if(Number(odgovori[k - 1].innerHTML) == novi_brojevi[l]){
+                        odgovori[k - 1].innerHTML = "";
+                        novi_brojevi[l] = -1;
+                        pogodjeni_odgovori[polutacni].className = "pogodjeni_kontejner2";
+                        polutacni++;
+                    }
+
+                }
+                odgovori[k - 1].innerHTML = "";
+            } 
+            i = 1; //da bi omogucili unos jer smo obrisali polja ali nismo brojac za funkciju upis()
+            broj_pokusaja ++;
+            document.getElementById("paragraf_brojac").innerHTML = broj_pokusaja.toString();
+
+            if(broj_pogodjenih == 4){
+                let poruka = document.createTextNode("Pobeda!!!");
+                let elem = document.createElement("p");
+                elem.appendChild(poruka);
+                elem.className = "pobeda";
+                
+                document.getElementById("odgovori").innerHTML = "";
+                document.getElementById("naslov").appendChild(elem);
+
+                document.getElementById("dugme1").onclick = null;
+                document.getElementById("dugme1").style.backgroundColor = "gray";
+
+                document.getElementById("dugme2").onclick = null;
+                document.getElementById("dugme2").style.backgroundColor = "gray";
+
+                document.getElementById("dugme3").onclick = null;
+                document.getElementById("dugme3").style.backgroundColor = "gray";
+
+                document.getElementById("dugme4").onclick = null;
+                document.getElementById("dugme4").style.backgroundColor = "gray";
+
+                document.getElementById("dugme5").onclick = null;
+                document.getElementById("dugme5").style.backgroundColor = "gray";
+
+                document.getElementById("dugme6").onclick = null;
+                document.getElementById("dugme6").style.backgroundColor = "gray";
+
+                document.getElementById("obrisi").onclick = null;
+                document.getElementById("obrisi").style.backgroundColor = "gray";
+
+                document.getElementById("probaj").onclick = null;
+                document.getElementById("probaj").style.backgroundColor = "gray";
+
+            }
+            if(broj_pokusaja >= 5){
+                let visina = 530 + 57*(broj_pokusaja - 4);
+                document.getElementById("container").style.height = visina.toString() + "px";
+            }
+        }
+        else{
+            alert("Niste popunili sva polja!");
+        }
+    }
+    function resetuj(){
+        brojevi[1] = Math.ceil(Math.random() * 6);
+        brojevi[2] = Math.ceil(Math.random() * 6);
+        brojevi[3] = Math.ceil(Math.random() * 6);
+        brojevi[4] = Math.ceil(Math.random() * 6);
+        //alert(brojevi[1].toString() + " " + brojevi[2].toString() + " " + brojevi[3].toString() + " " + brojevi[4].toString())
+
+        document.getElementById("istorija").innerHTML = "";
+        document.getElementById("odgovori").innerHTML = obrazac;
+
+        broj_pokusaja = 0;
+        document.getElementById("paragraf_brojac").innerHTML = broj_pokusaja.toString();
+        i = 1;
+        document.getElementById("dugme1").setAttribute('onclick',"upisi('dugme1')");
+        document.getElementById("dugme1").style.backgroundColor = "aqua";
+
+        document.getElementById("dugme2").setAttribute('onclick',"upisi('dugme2')");
+        document.getElementById("dugme2").style.backgroundColor = "aqua";
+
+        document.getElementById("dugme3").setAttribute('onclick',"upisi('dugme3')");
+        document.getElementById("dugme3").style.backgroundColor = "aqua";
+
+        document.getElementById("dugme4").setAttribute('onclick',"upisi('dugme4')");
+        document.getElementById("dugme4").style.backgroundColor = "aqua";
+
+        document.getElementById("dugme5").setAttribute('onclick',"upisi('dugme5')");
+        document.getElementById("dugme5").style.backgroundColor = "aqua";
+
+        document.getElementById("dugme6").setAttribute('onclick',"upisi('dugme6')");
+        document.getElementById("dugme6").style.backgroundColor = "aqua";
+
+        document.getElementById("obrisi").setAttribute('onclick',"obrisi()");
+        document.getElementById("obrisi").style.backgroundColor = "aqua";
+
+        document.getElementById("probaj").setAttribute('onclick',"probaj()");
+        document.getElementById("probaj").style.backgroundColor = "aqua";
+        document.getElementById("naslov").innerHTML = "Infinite skočko";
+
+        document.getElementById("container").style.height = (530).toString() + "px";
+    }
+        
+    
+        
+       
+</script>
+<style>
+#container{
+    max-width:550px;
+    height:550px;
+    background-color: gainsboro;
+    display:inline-block;
+    border-radius: 30px;
+    border-style: groove;
+}
+#naslov{
+    width: 300px;
+    font-size:40px;
+    float:left;
+}
+#broj_pokusaja{
+    height: 90px;
+    float:right;
+    margin:5px;
+    margin-right:40px;
+    padding:5px;
+    background-color: aqua;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color:black;
+    font-size: 26px;
+    display:none;
+}
+#dugme_zapocni{
+    margin:5px;
+    padding:5px;
+    background-color: aqua;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color:black;
+    font-size: 26px;
+    transition-duration:0.5s;
+}
+#dugme_zapocni:hover{
+    background-color:  rgb(0, 107, 140);
+}
+#odgovori{
+    width:550px;
+    height:200px;
+    margin:auto;
+    display:none;
+
+}
+.uneto{
+    width: 50%;
+    float:left;
+    height:55px;
+}
+.uneti_kontejner{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: aqua;
+    vertical-align:top; 
+    font-size: 26px;
+}
+
+
+.pogodjeni{
+    width: 50%;
+    float:right;
+    height:55px;
+}
+.pogodjeni_kontejner{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    border-style: solid;
+    margin: 3px;
+    vertical-align:top; 
+    font-size: 26px;
+    background-color: gainsboro;
+}
+.pogodjeni_kontejner1{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: black;
+    margin: 3px;
+    vertical-align:top; 
+    font-size: 26px;
+    background-color: red;
+}
+.pogodjeni_kontejner2{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: black;
+    margin: 3px;
+    vertical-align:top; 
+    font-size: 26px;
+    background-color: yellow;
+}
+.ponudjeni{
+    margin:5px;
+    padding:5px;
+    background-color: aqua;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color:black;
+    font-size: 26px;
+    transition-duration: 0.3s;
+}
+.ponudjeni:hover{
+    background-color: rgb(0, 107, 140);
+}
+.ponudjene_funkcije{
+    margin:5px;
+    padding:5px;
+    background-color: aqua;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color:black;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+.ponudjene_funkcije:hover{
+    background-color: rgb(0, 107, 140);
+}
+.pobeda{
+    display: block;
+    height: 30px;
+    margin:5px;
+    margin-right:20px;
+    margin-left:20px;
+    padding:5px;
+    background-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color:black;
+    font-size: 26px;
+}
+</style>
+</html>

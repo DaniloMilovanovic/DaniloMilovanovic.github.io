@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pravoslavni tetris</title>
+    <meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+    <div id = "header">
+        <p>Tetris</p>
+    </div>
+    <div id = "kontejner">
+        
+        <div id = "sredina">
+
+            <div id = "tabla">
+                <div id = "1-1" class = "ivicno_polje">1-1</div>
+                <div id = "1-2" class = "ivicno_polje">1-2</div>
+                <div id = "1-3" class = "ivicno_polje">1-3</div>
+                <div id = "1-4" class = "ivicno_polje">1-4</div>
+                <div id = "1-5" class = "ivicno_polje">1-5</div>
+                <div id = "1-6" class = "ivicno_polje">1-6</div>
+                <div id = "1-7" class = "ivicno_polje">1-7</div>
+                <div id = "1-8" class = "ivicno_polje">1-8</div>
+                <div id = "1-9" class = "ivicno_polje">1-9</div>
+                <div id = "1-10" class = "ivicno_polje">1-10</div>
+                <div id = "1-11" class = "ivicno_polje">1-11</div>
+                <div id = "1-12" class = "ivicno_polje">1-12</div>
+                <div id = "1-13" class = "ivicno_polje">1-13</div>
+                <div id = "1-14" class = "ivicno_polje">1-14</div>
+                <div id = "1-15" class = "ivicno_polje">1-15</div>
+                <div id = "1-16" class = "ivicno_polje">1-16</div>
+                <div id = "1-17" class = "ivicno_polje">1-17</div>
+                <div id = "1-18" class = "ivicno_polje">1-18</div>
+                <div id = "1-19" class = "ivicno_polje">1-19</div>
+                <div id = "1-20" class = "ivicno_polje">1-20</div>
+                <div id = "1-21" class = "ivicno_polje">1-21</div>
+                <div id = "2-1" class = "ivicno_polje">2-1</div>
+                <div id = "2-2" class = "ivicno_polje">2-2</div>
+                <div id = "2-3" class = "ivicno_polje">2-3</div>
+                <div id = "2-4" class = "ivicno_polje">2-4</div>
+                <div id = "2-5" class = "ivicno_polje">2-5</div>
+                <div id = "2-6" class = "ivicno_polje">2-6</div>
+                <div id = "2-7" class = "ivicno_polje">2-7</div>
+                <div id = "2-8" class = "ivicno_polje">2-8</div>
+                <div id = "2-9" class = "ivicno_polje">2-9</div>
+                <div id = "2-10" class = "ivicno_polje">2-10</div>
+                <div id = "2-11" class = "ivicno_polje">2-11</div>
+                <div id = "2-12" class = "ivicno_polje">2-12</div>
+                <div id = "2-13" class = "ivicno_polje">2-13</div>
+                <div id = "2-14" class = "ivicno_polje">2-14</div>
+                <div id = "2-15" class = "ivicno_polje">2-15</div>
+                <div id = "2-16" class = "ivicno_polje">2-16</div>
+                <div id = "2-17" class = "ivicno_polje">2-17</div>
+                <div id = "2-18" class = "ivicno_polje">2-18</div>
+                <div id = "2-19" class = "ivicno_polje">2-19</div>
+                <div id = "2-20" class = "ivicno_polje">2-20</div>
+                <div id = "2-21" class = "ivicno_polje">2-21</div>
+                <div id = "3-1" class = "polje">3-1</div>
+                <div id = "3-2" class = "polje">3-2</div>
+                <div id = "3-3" class = "polje">3-3</div>
+                <div id = "3-4" class = "polje">3-4</div>
+                <div id = "3-5" class = "polje">3-5</div>
+                <div id = "3-6" class = "polje">3-6</div>
+                <div id = "3-7" class = "polje">3-7</div>
+                <div id = "3-8" class = "polje">3-8</div>
+                <div id = "3-9" class = "polje">3-9</div>
+                <div id = "3-10" class = "polje">3-10</div>
+                <div id = "3-11" class = "polje">3-11</div>
+                <div id = "3-12" class = "polje">3-12</div>
+                <div id = "3-13" class = "polje">3-13</div>
+                <div id = "3-14" class = "polje">3-14</div>
+                <div id = "3-15" class = "polje">3-15</div>
+                <div id = "3-16" class = "polje">3-16</div>
+                <div id = "3-17" class = "polje">3-17</div>
+                <div id = "3-18" class = "polje">3-18</div>
+                <div id = "3-19" class = "polje">3-19</div>
+                <div id = "3-20" class = "polje">3-20</div>
+                <div id = "3-21" class = "ivicno_polje">3-21</div>
+                <div id = "4-1" class = "polje">4-1</div>
+                <div id = "4-2" class = "polje">4-2</div>
+                <div id = "4-3" class = "polje">4-3</div>
+                <div id = "4-4" class = "polje">4-4</div>
+                <div id = "4-5" class = "polje">4-5</div>
+                <div id = "4-6" class = "polje">4-6</div>
+                <div id = "4-7" class = "polje">4-7</div>
+                <div id = "4-8" class = "polje">4-8</div>
+                <div id = "4-9" class = "polje">4-9</div>
+                <div id = "4-10" class = "polje">4-10</div>
+                <div id = "4-11" class = "polje">4-11</div>
+                <div id = "4-12" class = "polje">4-12</div>
+                <div id = "4-13" class = "polje">4-13</div>
+                <div id = "4-14" class = "polje">4-14</div>
+                <div id = "4-15" class = "polje">4-15</div>
+                <div id = "4-16" class = "polje">4-16</div>
+                <div id = "4-17" class = "polje">4-17</div>
+                <div id = "4-18" class = "polje">4-18</div>
+                <div id = "4-19" class = "polje">4-19</div>
+                <div id = "4-20" class = "polje">4-20</div>
+                <div id = "4-21" class = "ivicno_polje">4-21</div>
+                <div id = "5-1" class = "polje">5-1</div>
+                <div id = "5-2" class = "polje">5-2</div>
+                <div id = "5-3" class = "polje">5-3</div>
+                <div id = "5-4" class = "polje">5-4</div>
+                <div id = "5-5" class = "polje">5-5</div>
+                <div id = "5-6" class = "polje">5-6</div>
+                <div id = "5-7" class = "polje">5-7</div>
+                <div id = "5-8" class = "polje">5-8</div>
+                <div id = "5-9" class = "polje">5-9</div>
+                <div id = "5-10" class = "polje">5-10</div>
+                <div id = "5-11" class = "polje">5-11</div>
+                <div id = "5-12" class = "polje">5-12</div>
+                <div id = "5-13" class = "polje">5-13</div>
+                <div id = "5-14" class = "polje">5-14</div>
+                <div id = "5-15" class = "polje">5-15</div>
+                <div id = "5-16" class = "polje">5-16</div>
+                <div id = "5-17" class = "polje">5-17</div>
+                <div id = "5-18" class = "polje">5-18</div>
+                <div id = "5-19" class = "polje">5-19</div>
+                <div id = "5-20" class = "polje">5-20</div>
+                <div id = "5-21" class = "ivicno_polje">5-21</div>
+                <div id = "6-1" class = "polje">6-1</div>
+                <div id = "6-2" class = "polje">6-2</div>
+                <div id = "6-3" class = "polje">6-3</div>
+                <div id = "6-4" class = "polje">6-4</div>
+                <div id = "6-5" class = "polje">6-5</div>
+                <div id = "6-6" class = "polje">6-6</div>
+                <div id = "6-7" class = "polje">6-7</div>
+                <div id = "6-8" class = "polje">6-8</div>
+                <div id = "6-9" class = "polje">6-9</div>
+                <div id = "6-10" class = "polje">6-10</div>
+                <div id = "6-11" class = "polje">6-11</div>
+                <div id = "6-12" class = "polje">6-12</div>
+                <div id = "6-13" class = "polje">6-13</div>
+                <div id = "6-14" class = "polje">6-14</div>
+                <div id = "6-15" class = "polje">6-15</div>
+                <div id = "6-16" class = "polje">6-16</div>
+                <div id = "6-17" class = "polje">6-17</div>
+                <div id = "6-18" class = "polje">6-18</div>
+                <div id = "6-19" class = "polje">6-19</div>
+                <div id = "6-20" class = "polje">6-20</div>
+                <div id = "6-21" class = "ivicno_polje">6-21</div>
+                <div id = "7-1" class = "polje">7-1</div>
+                <div id = "7-2" class = "polje">7-2</div>
+                <div id = "7-3" class = "polje">7-3</div>
+                <div id = "7-4" class = "polje">7-4</div>
+                <div id = "7-5" class = "polje">7-5</div>
+                <div id = "7-6" class = "polje">7-6</div>
+                <div id = "7-7" class = "polje">7-7</div>
+                <div id = "7-8" class = "polje">7-8</div>
+                <div id = "7-9" class = "polje">7-9</div>
+                <div id = "7-10" class = "polje">7-10</div>
+                <div id = "7-11" class = "polje">7-11</div>
+                <div id = "7-12" class = "polje">7-12</div>
+                <div id = "7-13" class = "polje">7-13</div>
+                <div id = "7-14" class = "polje">7-14</div>
+                <div id = "7-15" class = "polje">7-15</div>
+                <div id = "7-16" class = "polje">7-16</div>
+                <div id = "7-17" class = "polje">7-17</div>
+                <div id = "7-18" class = "polje">7-18</div>
+                <div id = "7-19" class = "polje">7-19</div>
+                <div id = "7-20" class = "polje">7-20</div>
+                <div id = "7-21" class = "ivicno_polje">7-21</div>
+                <div id = "8-1" class = "polje">8-1</div>
+                <div id = "8-2" class = "polje">8-2</div>
+                <div id = "8-3" class = "polje">8-3</div>
+                <div id = "8-4" class = "polje">8-4</div>
+                <div id = "8-5" class = "polje">8-5</div>
+                <div id = "8-6" class = "polje">8-6</div>
+                <div id = "8-7" class = "polje">8-7</div>
+                <div id = "8-8" class = "polje">8-8</div>
+                <div id = "8-9" class = "polje">8-9</div>
+                <div id = "8-10" class = "polje">8-10</div>
+                <div id = "8-11" class = "polje">8-11</div>
+                <div id = "8-12" class = "polje">8-12</div>
+                <div id = "8-13" class = "polje">8-13</div>
+                <div id = "8-14" class = "polje">8-14</div>
+                <div id = "8-15" class = "polje">8-15</div>
+                <div id = "8-16" class = "polje">8-16</div>
+                <div id = "8-17" class = "polje">8-17</div>
+                <div id = "8-18" class = "polje">8-18</div>
+                <div id = "8-19" class = "polje">8-19</div>
+                <div id = "8-20" class = "polje">8-20</div>
+                <div id = "8-21" class = "ivicno_polje">8-21</div>
+                <div id = "9-1" class = "polje">9-1</div>
+                <div id = "9-2" class = "polje">9-2</div>
+                <div id = "9-3" class = "polje">9-3</div>
+                <div id = "9-4" class = "polje">9-4</div>
+                <div id = "9-5" class = "polje">9-5</div>
+                <div id = "9-6" class = "polje">9-6</div>
+                <div id = "9-7" class = "polje">9-7</div>
+                <div id = "9-8" class = "polje">9-8</div>
+                <div id = "9-9" class = "polje">9-9</div>
+                <div id = "9-10" class = "polje">9-10</div>
+                <div id = "9-11" class = "polje">9-11</div>
+                <div id = "9-12" class = "polje">9-12</div>
+                <div id = "9-13" class = "polje">9-13</div>
+                <div id = "9-14" class = "polje">9-14</div>
+                <div id = "9-15" class = "polje">9-15</div>
+                <div id = "9-16" class = "polje">9-16</div>
+                <div id = "9-17" class = "polje">9-17</div>
+                <div id = "9-18" class = "polje">9-18</div>
+                <div id = "9-19" class = "polje">9-19</div>
+                <div id = "9-20" class = "polje">9-20</div>
+                <div id = "9-21" class = "ivicno_polje">9-21</div>
+                <div id = "10-1" class = "polje">10-1</div>
+                <div id = "10-2" class = "polje">10-2</div>
+                <div id = "10-3" class = "polje">10-3</div>
+                <div id = "10-4" class = "polje">10-4</div>
+                <div id = "10-5" class = "polje">10-5</div>
+                <div id = "10-6" class = "polje">10-6</div>
+                <div id = "10-7" class = "polje">10-7</div>
+                <div id = "10-8" class = "polje">10-8</div>
+                <div id = "10-9" class = "polje">10-9</div>
+                <div id = "10-10" class = "polje">10-10</div>
+                <div id = "10-11" class = "polje">10-11</div>
+                <div id = "10-12" class = "polje">10-12</div>
+                <div id = "10-13" class = "polje">10-13</div>
+                <div id = "10-14" class = "polje">10-14</div>
+                <div id = "10-15" class = "polje">10-15</div>
+                <div id = "10-16" class = "polje">10-16</div>
+                <div id = "10-17" class = "polje">10-17</div>
+                <div id = "10-18" class = "polje">10-18</div>
+                <div id = "10-19" class = "polje">10-19</div>
+                <div id = "10-20" class = "polje">10-20</div>
+                <div id = "10-21" class = "ivicno_polje">10-21</div>
+                <div id = "11-1" class = "polje">11-1</div>
+                <div id = "11-2" class = "polje">11-2</div>
+                <div id = "11-3" class = "polje">11-3</div>
+                <div id = "11-4" class = "polje">11-4</div>
+                <div id = "11-5" class = "polje">11-5</div>
+                <div id = "11-6" class = "polje">11-6</div>
+                <div id = "11-7" class = "polje">11-7</div>
+                <div id = "11-8" class = "polje">11-8</div>
+                <div id = "11-9" class = "polje">11-9</div>
+                <div id = "11-10" class = "polje">11-10</div>
+                <div id = "11-11" class = "polje">11-11</div>
+                <div id = "11-12" class = "polje">11-12</div>
+                <div id = "11-13" class = "polje">11-13</div>
+                <div id = "11-14" class = "polje">11-14</div>
+                <div id = "11-15" class = "polje">11-15</div>
+                <div id = "11-16" class = "polje">11-16</div>
+                <div id = "11-17" class = "polje">11-17</div>
+                <div id = "11-18" class = "polje">11-18</div>
+                <div id = "11-19" class = "polje">11-19</div>
+                <div id = "11-20" class = "polje">11-20</div>
+                <div id = "11-21" class = "ivicno_polje">11-21</div>
+                <div id = "12-1" class = "polje">12-1</div>
+                <div id = "12-2" class = "polje">12-2</div>
+                <div id = "12-3" class = "polje">12-3</div>
+                <div id = "12-4" class = "polje">12-4</div>
+                <div id = "12-5" class = "polje">12-5</div>
+                <div id = "12-6" class = "polje">12-6</div>
+                <div id = "12-7" class = "polje">12-7</div>
+                <div id = "12-8" class = "polje">12-8</div>
+                <div id = "12-9" class = "polje">12-9</div>
+                <div id = "12-10" class = "polje">12-10</div>
+                <div id = "12-11" class = "polje">12-11</div>
+                <div id = "12-12" class = "polje">12-12</div>
+                <div id = "12-13" class = "polje">12-13</div>
+                <div id = "12-14" class = "polje">12-14</div>
+                <div id = "12-15" class = "polje">12-15</div>
+                <div id = "12-16" class = "polje">12-16</div>
+                <div id = "12-17" class = "polje">12-17</div>
+                <div id = "12-18" class = "polje">12-18</div>
+                <div id = "12-19" class = "polje">12-19</div>
+                <div id = "12-20" class = "polje">12-20</div>
+                <div id = "12-21" class = "ivicno_polje">12-21</div>
+                <div id = "13-1" class = "ivicno_polje">13-1</div>
+                <div id = "13-2" class = "ivicno_polje">13-2</div>
+                <div id = "13-3" class = "ivicno_polje">13-3</div>
+                <div id = "13-4" class = "ivicno_polje">13-4</div>
+                <div id = "13-5" class = "ivicno_polje">13-5</div>
+                <div id = "13-6" class = "ivicno_polje">13-6</div>
+                <div id = "13-7" class = "ivicno_polje">13-7</div>
+                <div id = "13-8" class = "ivicno_polje">13-8</div>
+                <div id = "13-9" class = "ivicno_polje">13-9</div>
+                <div id = "13-10" class = "ivicno_polje">13-10</div>
+                <div id = "13-11" class = "ivicno_polje">13-11</div>
+                <div id = "13-12" class = "ivicno_polje">13-12</div>
+                <div id = "13-13" class = "ivicno_polje">13-13</div>
+                <div id = "13-14" class = "ivicno_polje">13-14</div>
+                <div id = "13-15" class = "ivicno_polje">13-15</div>
+                <div id = "13-16" class = "ivicno_polje">13-16</div>
+                <div id = "13-17" class = "ivicno_polje">13-17</div>
+                <div id = "13-18" class = "ivicno_polje">13-18</div>
+                <div id = "13-19" class = "ivicno_polje">13-19</div>
+                <div id = "13-20" class = "ivicno_polje">13-20</div>
+                <div id = "13-21" class = "ivicno_polje">13-21</div>
+                <div id = "14-1" class = "ivicno_polje">14-1</div>
+                <div id = "14-2" class = "ivicno_polje">14-2</div>
+                <div id = "14-3" class = "ivicno_polje">14-3</div>
+                <div id = "14-4" class = "ivicno_polje">14-4</div>
+                <div id = "14-5" class = "ivicno_polje">14-5</div>
+                <div id = "14-6" class = "ivicno_polje">14-6</div>
+                <div id = "14-7" class = "ivicno_polje">14-7</div>
+                <div id = "14-8" class = "ivicno_polje">14-8</div>
+                <div id = "14-9" class = "ivicno_polje">14-9</div>
+                <div id = "14-10" class = "ivicno_polje">14-10</div>
+                <div id = "14-11" class = "ivicno_polje">14-11</div>
+                <div id = "14-12" class = "ivicno_polje">14-12</div>
+                <div id = "14-13" class = "ivicno_polje">14-13</div>
+                <div id = "14-14" class = "ivicno_polje">14-14</div>
+                <div id = "14-15" class = "ivicno_polje">14-15</div>
+                <div id = "14-16" class = "ivicno_polje">14-16</div>
+                <div id = "14-17" class = "ivicno_polje">14-17</div>
+                <div id = "14-18" class = "ivicno_polje">14-18</div>
+                <div id = "14-19" class = "ivicno_polje">14-19</div>
+                <div id = "14-20" class = "ivicno_polje">14-20</div>
+                <div id = "14-21" class = "ivicno_polje">14-21</div>
+
+
+            </div>
+
+            <div id = "kontrole">
+                <a href="javascript:;"><div id = "zapocni" onclick = "zapocni()">Započni igru</div></a>
+                <div id = "sledeci">
+                    <div id = "1s" class = "polje">1</div>
+                    <div id = "2s" class = "polje">2</div>
+                    <div id = "3s" class = "polje">3</div>
+                    <div id = "4s" class = "polje">4</div>
+                    <div id = "5s" class = "polje">5</div>
+                    <div id = "6s" class = "polje">6</div>
+                    <div id = "7s" class = "polje">7</div>
+                    <div id = "8s" class = "polje">8</div>
+                    <div id = "9s" class = "polje">9</div>
+                    <div id = "10s" class = "polje">10</div>
+                    <div id = "11s" class = "polje">11</div>
+                    <div id = "12s" class = "polje">12</div>
+                    <div id = "13s" class = "polje">13</div>
+                    <div id = "14s" class = "polje">14</div>
+                    <div id = "15s" class = "polje">15</div>
+                    <div id = "16s" class = "polje">16</div>
+                    <div id = "17s" class = "polje">17</div>
+                    <div id = "18s" class = "polje">18</div>
+                    <div id = "19s" class = "polje">19</div>
+                    <div id = "20s" class = "polje">20</div>
+                </div>
+                <center>
+                <div id = "broj_poena">Broj poena: <br> 0</div>
+                <a href="javascript:;"><div id = "pauziraj" onclick = "pauziraj()">Pauziraj</div></a>
+                <a href="javascript:;"><div id = "nastavi" onclick = "nastavi()">Nastavi</div></a>
+                <a href="javascript:;"><div id = "reset" onclick = "restartuj()">Restartuj</div></a>
+                <a href="javascript:;"><div id = "nastavi"></div></a>
+                
+                <a href="javascript:;"><div id = "levo" class = "pomeranje" onclick = "levo()">Levo</div></a>
+                <a href="javascript:;"><div id = "okreni" class = "pomeranje">Okreni</div></a>
+                <a href="javascript:;"><div id = "desno" class = "pomeranje" onclick = "desno()">Desno</div></a>
+            </center>
+            </div>
+
+        </div>
+        
+    </div>
+    <div id = "footer">
+
+    </div>
+
+</body>
+<script>
+    let trenutni = Math.floor(Math.random() * 7);
+    let sledeci = Math.floor(Math.random() * 7);
+    let funkcija_interval;
+    let vreme = 200;
+    let element = {};
+    let novi_element = {};
+    let sledeci_element = {}
+    let izgubljeno = 1;
+    let pocetno_stanje = document.getElementById("tabla").innerHTML;
+    function zapocni(){
+        document.getElementById("zapocni").style.display = "none";
+        document.getElementById("sledeci").style.display = "flex";
+        document.getElementById("broj_poena").style.display = "block";
+        document.getElementById("pauziraj").style.display = "inline-block";
+        document.getElementById("reset").style.display = "inline-block";
+        document.getElementById("levo").style.display = "inline-block";
+        document.getElementById("okreni").style.display = "inline-block";
+        document.getElementById("desno").style.display = "inline-block";
+        document.getElementById("kontrole").style.height = "600px";
+        generisi_element(trenutni);
+        //pokazi_sledeci(sledeci)
+        funkcija_interval = setInterval(spustanje, vreme);
+    }
+    function ponovi(){
+        trenutni = sledeci;
+        sledeci = Math.floor(Math.random() * 7);
+        generisi_element(trenutni);
+        if(izgubljeno){
+            funkcija_interval = setInterval(spustanje, vreme);
+        }
+        else{
+            alert("Izgubili ste!");
+        }
+    }
+
+    function generisi_element(broj){
+        if(broj == 0){
+            element = ["7-1", "8-1", "7-2", "8-2"];
+        }
+        else if(broj == 1){
+            element = ["6-2", "7-2", "8-2", "9-2"];
+        }
+        else if(broj == 2){
+            element = ["7-1", "7-2", "8-2", "9-2"];
+        }
+        else if(broj == 3){
+            element = ["9-1", "7-2", "8-2", "9-2"];
+        }
+        else if(broj == 4){
+            element = ["8-1", "9-1", "7-2", "8-2"];
+        }
+        else if(broj == 5){
+            element = ["8-1", "7-2", "8-2", "9-2"];
+        }
+        else if(broj == 6){
+            element = ["7-1", "8-1", "8-2", "9-2"];
+        }
+
+        for(let i = 0; i < 4; i++){
+            if(document.getElementById(element[i]).className == "popunjeno_polje"){
+                izgubljeno = 0;
+            }
+            else{
+                document.getElementById(element[i]).className = "trenutni";
+            }
+            
+        }
+    }
+
+    function spustanje(){
+        let uslov = 1;
+        for(let i = 0; i < 4; i++){
+            document.getElementById(element[i]).className = "polje";
+            let pom = element[i].split("-");
+            
+            novi_element[i] = pom[0] + "-" + (Number(pom[1]) + 1).toString()
+            if((document.getElementById(novi_element[i]).className == "popunjeno_polje") || (Number(pom[1]) + 1 == 21)){
+                uslov = 0;
+                break;
+            }
+        }
+        if(uslov == 1){
+            
+            for(let i = 0; i < 4; i++){
+                element[i] = novi_element[i];
+                document.getElementById(element[i]).className = "trenutni";
+            }
+        }
+        else{
+            for(let i = 0; i < 4; i++){
+                document.getElementById(element[i]).className = "popunjeno_polje";
+                
+            }
+            clearInterval(funkcija_interval);
+            ponovi();
+
+        }
+    }
+
+    function pauziraj(){
+        clearInterval(funkcija_interval);
+        document.getElementById("pauziraj").style.display = "none";
+        document.getElementById("nastavi").style.display = "inline-block"
+    }
+    function nastavi(){
+        funkcija_interval = setInterval(spustanje, vreme);
+        document.getElementById("pauziraj").style.display = "inline-block";
+        document.getElementById("nastavi").style.display = "none"
+    }
+    function restartuj(){
+        document.getElementById("tabla").innerHTML = pocetno_stanje;
+        document.getElementById("pauziraj").style.display = "inline-block";
+        document.getElementById("nastavi").style.display = "none"
+        clearInterval(funkcija_interval);
+        izgubljeno = 1;
+        ponovi();
+    }
+
+    function levo(){
+        let uslov = 1;
+        for(let i = 0; i < 4; i++){
+            let pom = element[i].split("-");
+            novi_element[i] = (Number(pom[0]) - 1).toString() + "-" + pom[1];
+            
+            if((document.getElementById(novi_element[i]).className == "popunjeno_polje")||(document.getElementById(novi_element[i]).className == "ivicno_polje")){
+                uslov = 0;
+            }
+        }
+        
+        if(uslov){
+            for(let i = 0; i < 4; i++){
+                document.getElementById(element[i]).className = "polje";
+                element[i] = novi_element[i];
+                document.getElementById(element[i]).className = "trenutni";
+
+            }
+        }
+
+    }
+    function desno(){
+        let uslov = 1;
+        for(let i = 0; i < 4; i++){
+            let pom = element[i].split("-");
+            novi_element[i] = (Number(pom[0]) + 1).toString() + "-" + pom[1];
+            
+            if((document.getElementById(novi_element[i]).className == "popunjeno_polje")||(document.getElementById(novi_element[i]).className == "ivicno_polje")){
+                uslov = 0;
+            }
+        }
+        
+        if(uslov){
+            for(let i = 3; i >= 0; i--){
+                document.getElementById(element[i]).className = "polje";
+                element[i] = novi_element[i];
+                document.getElementById(element[i]).className = "trenutni";
+
+            }
+        }
+
+    }
+</script>
+</html>
